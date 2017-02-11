@@ -78,7 +78,7 @@ nav#lessons_nav {
     width: 18%;
 }
 
-article {
+article#lesson_content {
     font-size: 20px;
     float: right;
     width: 82%;
@@ -86,7 +86,6 @@ article {
 
 .lessons {
     margin-left: 15px;
-    max-height: 0;
     overflow: hidden;
     transition: max-height 100ms ease;
 }
