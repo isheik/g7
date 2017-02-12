@@ -4,16 +4,17 @@
     box-sizing: border-box;
 }
 
-html {
-    /* needed to work with 'position: absolute' in the footer
-     * implements "sticky" footer */
-    position: relative;
-    min-height: 100%;
-}
+html, body { height: 100%; }
 
 body {
+    display: table;
+    width: 100%;
     font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Verdana', sans-serif;
-    margin-bottom: 80px;
+}
+
+.page_row {
+    display: table-row;
+    width: 100%;
 }
 
 script { display: none; }
@@ -28,24 +29,24 @@ script { display: none; }
 nav ul { list-style-type: none; }
 
 /*************************************************************/
-header {
-    height: 70px;
-    background-color: blue;
+header.page_row {
+    height: 4.4em;
+    background-color: #0078d7;
 }
 
-#header_logo { margin-top: 10px; }
+#header_logo { margin-top: .62em; }
 
 #auth {
     float: right;
-    margin-top: 15px;
+    margin-top: 1em;
 }
 
 .auth_button {
     background-color: #000;
     color: #fff;
-    padding: .5em .5em;
+    padding: .2em .5em;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 1em;
 }
 
 nav.site_nav ul {
@@ -58,65 +59,82 @@ nav.site_nav ul {
 
 nav.site_nav ul li { display: table-cell; }
 
-nav#top_nav { background-color: #000; }
+nav#top_nav {
+    background-color: #2b2b2b;
+    height: max-content;
+}
 
 /* inherits from .site_nav */
 nav#top_nav li a {
     display: block;
-    height: 60px;
+    height: 2.5em;
     /* vertically align text, make same as height */
-    line-height: 60px;
+    line-height: 2.5em;
+    font-size: 1.5em;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 2px solid #000;
 }
+
+nav#top_nav li + li a { border-left-width: 0; }
 
 /*************************************************************/
 nav#lessons_nav {
     float: left;
-    width: 18%;
+    width: 18%; /* overridden by JavaScript */
+    border: solid #000;
+    /* border width should be equal to nav#top_nav li a */
+    border-width: 0 2px;
+}
+
+button.categories {
+    width: 100%;
+    text-align: left;
+    padding-left: 1em;
+    font-size: 1.3em;
+    background-color: #fff;
+    border: none;
+    border-left: 5px solid #000;
 }
 
 article#lesson_content {
-    font-size: 20px;
     float: right;
-    width: 82%;
+    width: 82%; /* overridden by JavaScript */
+    font-size: 1.25em;
+    padding: 1em;
 }
 
 .lessons {
-    margin-left: 15px;
+    margin-left: 3.5em;
     overflow: hidden;
     transition: max-height 100ms ease;
 }
 
 .lessons li a {
     display: block;
-    background-color: #ccc;
+    text-decoration: none;
     color: #000;
+    font-size: 1.1em;
 }
 
 /*************************************************************/
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* if you adjust height, adjust margin-bottom in body as well */
-    height: 80px;
-    background-color: black;
+footer.page_row {
+    height: 5em;
+    background-color: #2b2b2b;
     color: #fff;
 }
 
 /* has class .site_nav */
-nav#bottom {
-    margin: 10px 0 0 60px;
+nav#bottom_nav {
+    margin: .65em 0 0 3.75em;
     width: 60%;
 }
 
-nav#bottom ul li { text-align: center; }
+nav#bottom_nav ul li { text-align: center; }
 
-nav#bottom ul li a { color: #fff; }
+nav#bottom_nav ul li a { color: #fff; }
 
 #logo_copyright { float: right; }
 
-#footer_logo { margin-left: 20px; }
+#footer_logo { margin-left: 1.25em; }

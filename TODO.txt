@@ -1,1 +1,2 @@
-make sure site is still usable with JavaScript disabled
+make left column extend until footer (table-cell ruins alignment for some reason)
+add on-hover effects
