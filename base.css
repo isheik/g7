@@ -8,6 +8,7 @@ html, body { height: 100%; }
 
 body {
     display: table;
+    table-layout: fixed;
     width: 100%;
     font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Verdana', sans-serif;
 }
@@ -23,8 +24,6 @@ script { display: none; }
     width: 1000px;
     margin: auto;
 }
-
-.clear { clear: both; }
 
 nav ul { list-style-type: none; }
 
@@ -48,6 +47,13 @@ header.page_row {
     text-decoration: none;
     border-radius: 1em;
 }
+
+#auth a:hover {
+	color:#ffff66;
+	}
+
+#auth a:active {
+	color:#ffcc00 }
 
 nav.site_nav ul {
     /* helps distribute nav buttons evenly along the nav bar
@@ -79,13 +85,35 @@ nav#top_nav li a {
 
 nav#top_nav li + li a { border-left-width: 0; }
 
+#top_nav a:hover {color:#002db3;
+		background-color:#d9d9d9;}
+
 /*************************************************************/
+#content_wrapper { display: table; }
+
 nav#lessons_nav {
-    float: left;
+    display: table-cell;
     width: 18%; /* overridden by JavaScript */
     border: solid #000;
     /* border width should be equal to nav#top_nav li a */
     border-width: 0 2px;
+}
+
+/* Lessons column */
+#category_list {
+	list-style-type: none;
+	margin:0;
+    padding: 0;
+	height: 100%;
+	position:absolute;
+	overflow:auto;
+	background-color: #f1f1f1;
+}
+
+li button{
+	display: block;
+    color: #00802b;
+    padding: 9px 25px;
 }
 
 button.categories {
@@ -99,7 +127,7 @@ button.categories {
 }
 
 article#lesson_content {
-    float: right;
+    display: table-cell;
     width: 82%; /* overridden by JavaScript */
     font-size: 1.25em;
     padding: 1em;
@@ -131,9 +159,12 @@ nav#bottom_nav {
     width: 60%;
 }
 
-nav#bottom_nav ul li { text-align: center; }
+nav#bottom_nav ul li { text-align: center;}
 
-nav#bottom_nav ul li a { color: #fff; }
+nav#bottom_nav ul li a { color: #fff;}
+
+#bottom_nav a:hover{
+	color:#ffff66;}
 
 #logo_copyright { float: right; }
 
