@@ -138,3 +138,29 @@ nav#bottom_nav ul li a { color: #fff; }
 #logo_copyright { float: right; }
 
 #footer_logo { margin-left: 1.25em; }
+
+/*************************************************************/
+@media print {
+    body {
+        font-size: 12pt;  /* use the font-unit not depending on dpi */ 
+        margin:auto;
+    }
+    header.page_row {
+        background-color: #ffffff;
+    }
+    #auth {
+        display: none; /* delete auth buttons */
+    }
+    header.page_row .centered:after {
+        /* put copyright using Unicode hex escape */
+        content:"\00A9 Copyright 2017. All Rights Reserved."; 
+    }
+    article#lesson_content {
+        padding: 20px 0px;
+    }
+    #lessons_nav {
+        display: none;
+    }
+    .site_nav { display: none; }
+    footer.page_row { display: none; }
+}
