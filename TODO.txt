@@ -1,2 +1,0 @@
--make left column extend until footer (table-cell ruins alignment for some reason) || (Done)
--add on-hover effects || (Done)

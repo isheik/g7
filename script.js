@@ -17,12 +17,12 @@ function nav_exp_init() {
 }
 
 function set_main_width() {
-    var lessons_nav = document.getElementById("lessons_nav");
-
+    // set #lessons_nav width to 100%/(number of li elements in #top_nav)
+    // let #lesson_content fill the remaining width
     var percent_width = 
         100 / document.getElementById("top_nav").getElementsByTagName("li").length;
 
-    lessons_nav.style.width = percent_width + "%";
+    document.getElementById("lessons_nav").style.width = percent_width + "%";
 
     document.getElementById("lesson_content").style.width = 100 - percent_width + "%";
 }

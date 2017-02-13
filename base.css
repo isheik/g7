@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-html, body { height: 100%; }
+html, body {
+    height: 100%;
+}
 
 body {
     display: table;
@@ -25,7 +27,9 @@ script { display: none; }
     margin: auto;
 }
 
-nav ul { list-style-type: none; }
+nav ul {
+    list-style-type: none;
+}
 
 /*************************************************************/
 header.page_row {
@@ -33,7 +37,9 @@ header.page_row {
     background-color: #0078d7;
 }
 
-#header_logo { margin-top: .62em; }
+#header_logo {
+    margin-top: .62em;
+}
 
 #auth {
     float: right;
@@ -49,11 +55,12 @@ header.page_row {
 }
 
 #auth a:hover {
-	color:#ffff66;
-	}
+    color: #ffff66;
+}
 
 #auth a:active {
-	color:#ffcc00 }
+    color: #ffcc00;
+}
 
 nav.site_nav ul {
     /* helps distribute nav buttons evenly along the nav bar
@@ -85,22 +92,23 @@ nav#top_nav li a {
 
 nav#top_nav li + li a { border-left-width: 0; }
 
-#top_nav a:hover {color:#002db3;
-		background-color:#d9d9d9;}
+#top_nav a:hover {
+    color: #002db3;
+    background-color: #d9d9d9;
+}
 
 /*************************************************************/
-#content_wrapper { display: table; }
+#content_wrapper {
+    display: table;
+}
 
 nav#lessons_nav {
     display: table-cell;
     width: 18%; /* overridden by JavaScript */
-    border: solid #000;
-    /* border width should be equal to nav#top_nav li a */
-    border-width: 0 2px;
 }
 
 li button{
-	display: block;
+    display: block;
     color: #00802b;
     padding: 9px 25px;
 }
@@ -113,6 +121,7 @@ button.categories {
     background-color: #fff;
     border: none;
     border-left: 5px solid #000;
+    cursor: pointer;
 }
 
 article#lesson_content {
@@ -148,31 +157,44 @@ nav#bottom_nav {
     width: 60%;
 }
 
-nav#bottom_nav ul li { text-align: center;}
+nav#bottom_nav ul li {
+    text-align: center;
+}
 
-nav#bottom_nav ul li a { color: #fff;}
+nav#bottom_nav ul li a {
+    color: #fff;
+}
 
-#bottom_nav a:hover{
-	color:#ffff66;}
+#bottom_nav a:hover {
+    color: #ffff66;
+}
 
-#logo_copyright { float: right; }
+#logo_copyright {
+    float: right;
+}
 
-#footer_logo { margin-left: 1.25em; }
+#footer_logo {
+    margin-left: 1.25em;
+}
 
 /*************************************************************/
 @media print {
     body {
         font-size: 12pt;  /* use the font-unit not depending on dpi */ 
     }
+
     header.page_row {
         background-color: #ffffff;
     }
+
     header.page_row .centered:after {
         /* put copyright using Unicode hex escape */
         content:"\00A9 Copyright 2017. All Rights Reserved."; 
     }
+
     article#lesson_content {
         padding: 20px 0px;
     }
+
     #auth, nav#lessons_nav, .site_nav, footer.page_row { display: none; }
 }
