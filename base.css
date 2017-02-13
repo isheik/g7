@@ -163,13 +163,9 @@ nav#bottom_nav ul li a { color: #fff;}
 @media print {
     body {
         font-size: 12pt;  /* use the font-unit not depending on dpi */ 
-        margin:auto;
     }
     header.page_row {
         background-color: #ffffff;
-    }
-    #auth {
-        display: none; /* delete auth buttons */
     }
     header.page_row .centered:after {
         /* put copyright using Unicode hex escape */
@@ -178,9 +174,5 @@ nav#bottom_nav ul li a { color: #fff;}
     article#lesson_content {
         padding: 20px 0px;
     }
-    nav#lessons_nav {
-        display: none;
-    }
-    .site_nav { display: none; }
-    footer.page_row { display: none; }
+    #auth, nav#lessons_nav, .site_nav, footer.page_row { display: none; }
 }
