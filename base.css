@@ -49,6 +49,13 @@ header.page_row {
     border-radius: 1em;
 }
 
+#auth a:hover {
+	color:#ffff66;
+	}
+
+#auth a:active {
+	color:#ffcc00 }
+
 nav.site_nav ul {
     /* helps distribute nav buttons evenly along the nav bar
      * needs 'display: table-cell' in the child elements (li) to work properly */
@@ -79,6 +86,9 @@ nav#top_nav li a {
 
 nav#top_nav li + li a { border-left-width: 0; }
 
+#top_nav a:hover {color:#002db3;
+		background-color:#d9d9d9;}
+
 /*************************************************************/
 nav#lessons_nav {
     float: left;
@@ -86,6 +96,23 @@ nav#lessons_nav {
     border: solid #000;
     /* border width should be equal to nav#top_nav li a */
     border-width: 0 2px;
+}
+
+/* Lessons column */
+#category_list {
+	list-style-type: none;
+	margin:0;
+    padding: 0;
+	height: 100%;
+	position:absolute;
+	overflow:auto;
+	background-color: #f1f1f1;
+}
+
+li button{
+	display: block;
+    color: #00802b;
+    padding: 9px 25px;
 }
 
 button.categories {
@@ -131,9 +158,12 @@ nav#bottom_nav {
     width: 60%;
 }
 
-nav#bottom_nav ul li { text-align: center; }
+nav#bottom_nav ul li { text-align: center;}
 
-nav#bottom_nav ul li a { color: #fff; }
+nav#bottom_nav ul li a { color: #fff;}
+
+#bottom_nav a:hover{
+	color:#ffff66;}
 
 #logo_copyright { float: right; }
 
