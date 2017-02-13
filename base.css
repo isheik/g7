@@ -99,17 +99,6 @@ nav#lessons_nav {
     border-width: 0 2px;
 }
 
-/* Lessons column */
-#category_list {
-	list-style-type: none;
-	margin:0;
-    padding: 0;
-	height: 100%;
-	position:absolute;
-	overflow:auto;
-	background-color: #f1f1f1;
-}
-
 li button{
 	display: block;
     color: #00802b;
