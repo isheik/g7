@@ -19,11 +19,10 @@ function nav_exp_init() {
 function set_main_width() {
     var lessons_nav = document.getElementById("lessons_nav");
 
-    lessons_nav.style.width =
-        document.getElementById("top_nav")
-        .getElementsByTagName("li")[0].offsetWidth + "px";
+    var percent_width = 
+        100 / document.getElementById("top_nav").getElementsByTagName("li").length;
 
-    document.getElementById("lesson_content").style.width =
-        (document.getElementsByClassName("centered")[0].offsetWidth
-            - lessons_nav.offsetWidth) + "px";
+    lessons_nav.style.width = percent_width + "%";
+
+    document.getElementById("lesson_content").style.width = 100 - percent_width + "%";
 }
