@@ -189,7 +189,7 @@ nav#bottom_nav ul li a { color: #fff;}
     article#lesson_content {
         padding: 20px 0px;
     }
-    #lessons_nav {
+    nav#lessons_nav {
         display: none;
     }
     .site_nav { display: none; }
