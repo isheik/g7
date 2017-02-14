@@ -3,15 +3,16 @@ function nav_exp_init() {
     var categories = document.getElementsByClassName("categories");
 
     for(var i = 0; i < categories.length; i++) {
-        // set max-height to 0 here instead of in css so that
-        // lesson navigation is expanded by default if JavaScript is disabled
+        // collapse the lesson navigation here instead of in css
+        // this way it is expanded by default if JavaScript is disabled
         categories[i].nextElementSibling.style.maxHeight = "0px";
+        categories[i].classList.add("collapsed");
         categories[i].onclick =
             function() {
                 var lessons = this.nextElementSibling;
                 lessons.style.maxHeight =
-                    lessons.style.maxHeight == "0px" ?
-                    lessons.scrollHeight + "px" : "0px";
+                    this.classList.toggle("collapsed") ?
+                     "0px" : lessons.scrollHeight + "px";
             }
     }
 }
