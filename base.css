@@ -173,6 +173,35 @@ nav#bottom_nav ul li a {
 #footer_logo {
     margin-left: 1.25em;
 }
+/*************************************************************/
+#forum_topics { padding: 1em; }
+
+#forum_topics table,
+#forum_topics th,
+#forum_topics td {
+    border: 1px solid #000000;
+}
+
+#forum_topics h2 { margin-bottom: 1em; }
+
+.forum_header_row {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#forum_post_id_header { width: 8%; }
+
+#forum_topic_header { width: 75%; }
+
+#forum_post_date_header { width: 17%; }
+
+#forum_post_id_cell { text-align: center; }
+
+#forum_topic_cell { padding: 0.2em 0.5em; }
+
+#forum_topic_cell a { text-decoration: none; }
+
+#forum_post_date_cell { text-align: center; }
 
 /*************************************************************/
 @media print {
