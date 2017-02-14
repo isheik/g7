@@ -73,7 +73,7 @@ nav.site_nav ul li { display: table-cell; }
 
 nav#top_nav {
     background-color: #2b2b2b;
-    height: max-content;
+    height: 1px;
 }
 
 /* inherits from .site_nav */
