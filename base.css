@@ -97,12 +97,8 @@ nav#top_nav li + li a { border-left-width: 0; }
 }
 
 /*************************************************************/
-#content_wrapper {
-    display: table;
-}
-
 nav#lessons_nav {
-    display: table-cell;
+    float: left;
     width: 18%; /* overridden by JavaScript */
 }
 
@@ -125,7 +121,7 @@ button.categories.collapsed {
 }
 
 article#lesson_content {
-    display: table-cell;
+    float: right;
     width: 82%; /* overridden by JavaScript */
     font-size: 1.25em;
     padding: 1em;
@@ -195,6 +191,7 @@ nav#bottom_nav ul li a {
 
     article#lesson_content {
         padding: 20px 0px;
+        float: none;
     }
 
     #auth, nav#lessons_nav, .site_nav, footer.page_row { display: none; }
