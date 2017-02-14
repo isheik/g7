@@ -10,7 +10,6 @@ html, body {
 
 body {
     display: table;
-    table-layout: fixed;
     width: 100%;
     font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Verdana', sans-serif;
 }
