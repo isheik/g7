@@ -386,4 +386,42 @@ label {
     }
 
     #auth, nav#lessons_nav, .site_nav, footer.page_row { display: none; }
+
 }
+
+/********************************************************************/
+/* Index css */
+#lesson_grid {
+   text-align:center;
+}
+
+#content_wrapper h1 {
+    padding: 0.5em 0 0.5em 1em;
+    text-align: left;
+}
+
+#content_wrapper figure {
+    padding-bottom: 1em;
+    display: inline-block;
+    padding-left: 3em;
+}
+
+#content_wrapper a:link {
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+}
+
+#content_wrapper a:visited {
+    color: #262DA8;
+}
+
+#content_wrapper a:hover figcaption {
+    background-color: #E0E7F0;
+}
+
+#content_wrapper img {
+    vertical-align:middle;
+}
+
+/* index css end */
