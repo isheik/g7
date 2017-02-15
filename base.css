@@ -120,11 +120,14 @@ button.categories.collapsed {
     border-color: #000;
 }
 
+article {
+    font-size: 1.25em;
+    padding: 1em;
+}
+
 article#lesson_content {
     float: right;
     width: 82%; /* overridden by JavaScript */
-    font-size: 1.25em;
-    padding: 1em;
 }
 
 .lessons {
@@ -338,6 +341,28 @@ nav#bottom_nav ul li a {
 }
 .account_table {
     padding-top: 1em;
+}
+
+
+/*************************************************************/
+
+.form_container_sm {
+    display: inline-block;
+    width: 35%;
+    padding: 0.25em 1em 0.25em 1em;
+}
+
+.form_container_lg {
+    padding: 0.25em 1em 0.25em 1em;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+label {
+    font-size: 0.75em;
+    font-weight: thin;
 }
 
 /*************************************************************/
