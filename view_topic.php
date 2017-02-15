@@ -63,29 +63,31 @@
                 <article>
                     <div id="forum_view">
                         <h2>Forum</h2>
-                        <table id="forum_view_table" width="600">
+                        <p><a href="./forum.php">Return to forum top page</a></p>
+                        <table id="forum_view_table">
                             <tr>
-                                <th class="forum_post_table_header">Posted by</th>
-                                <td class="forum_post_table_body">testuser</td>
-                                <th class="forum_post_table_header">Posted Date</th>
-                                <td class="forum_post_table_body"><?php echo $rows['datetime']; ?></td>
+                                <th class="forum_view_header">Posted by</th>
+                                <td class="forum_view_body"><strong>testuser</strong></td>
+                                <th class="forum_view_header">Posted Date</th>
+                                <td class="forum_view_body"><?php echo $rows['datetime']; ?></td>
                             </tr>
                             <tr>
-                                <th class="forum_post_table_header">Title</th>
-                                <td colspan="3" class="forum_post_table_body"><strong><?php echo $rows['topic']; ?></strong></td>
+                                <th class="forum_view_header">Title</th>
+                                <td colspan="3" class="forum_view_body"><strong><?php echo $rows['topic']; ?></strong></td>
                             </tr>
                             <tr>
-                                <th class="forum_post_table_header">Content</th>
-                                <td colspan="3" class="forum_post_table_body"><?php echo $rows['detail']; ?></td>
+                                <th class="forum_view_header">Content</th>
+                                <td colspan="3" class="forum_view_body"><?php echo $rows['detail']; ?></td>
                             </tr>
-                            <tr>
-                                <th class="forum_post_table_header" id="forum_response_header">Response</th>
-                                <td colspan="3"><form><textarea id="forum_response_text"></textarea><div id="forum_post_button"><button type="submit">Post</button></form></td>
+                            <tr id="forum_response_form">
+                                <th class="forum_view_header" id="forum_response_header">Response</th>
+                                <td colspan="3"><form method="post" action="http://webdevbasics.net/scripts/demo.php"><textarea id="forum_response_text" name="input"></textarea><div id="forum_response_post_button"><button type="submit" name="post">Post</button></form></td>
                             </tr>
                         </table>
                     </div>
                     <div id="forum_comment">
                         <h3>Comments</h3>
+                        <!-- enumerate comments related to the post -->
                         <?php
                             $tbl_name2="response"; // Switch to table "response"
 
@@ -94,8 +96,7 @@
 
                             while($rows=mysqli_fetch_array($result2)){
                         ?>
-
-                        <table class="forum_comment">
+                        <table id="forum_comment_table">
                             <tr>
                                 <th class="forum_comment_header">commentator</th>
                                 <td class="forum_comment_body"><?php echo $rows['response']; ?></td>

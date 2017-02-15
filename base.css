@@ -174,7 +174,7 @@ nav#bottom_nav ul li a {
     margin-left: 1.25em;
 }
 /*************************************************************/
-#forum_topics { padding: 1em; }
+#forum_topics { padding: 1em 0; }
 
 #forum_topics table,
 #forum_topics th,
@@ -204,18 +204,27 @@ nav#bottom_nav ul li a {
 #forum_post_date_cell { text-align: center; }
 
 /*************************************************************/
-#forum_view_table {
-    table-layout: fixed;
-    word-wrap:break-word;
-
+#forum_view {
+    padding: 1em 0;
 }
 
-.forum_post_table_header {
+#forum_view p {
+    margin: 1em 0;
+}
+
+#forum_view_table {
+    width: 60%;
+    table-layout: fixed;    /* prvent the text from being out of table */
+    word-wrap:break-word;   /* use new line when the text exceeds the table width */
+}
+
+.forum_view_header {
     width: 6.5em;
     text-align: left;
 }
 
-.forum_post_table_body {
+.forum_view_body {
+    padding: 0.2em;
     background-color: #eeeeee;
 }
 
@@ -223,19 +232,27 @@ nav#bottom_nav ul li a {
     vertical-align: baseline;
 }
 
-#forum_post_button {
+#forum_response_post_button {
     text-align: right;
 }
 
 #forum_response_text {
     width: 100%;
-    height: 200px;
+    height: 7em;
 }
 
-.forum_comment {
-    width: 600px;
-    table-layout: fixed;
-    word-wrap:break-word;
+#forum_response_form th, #forum_response_form td {
+    padding-top: 1em;
+}
+
+#forum_comment {
+    margin: 2em 0;
+}
+
+#forum_comment_table {
+    width: 60%;
+    table-layout: fixed;    /* prvent the text from being out of table */
+    word-wrap:break-word;   /* use new line when the text exceeds the table width */
 }
 
 .forum_comment_header {
@@ -243,12 +260,10 @@ nav#bottom_nav ul li a {
 }
 
 .forum_comment_body {
+    padding: 0.2em;
     background-color: #eeeeee;
 }
 
-#forum_comment {
-    margin-top: 20px;
-}
 
 /*************************************************************/
 @media print {
