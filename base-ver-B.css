@@ -1,0 +1,16 @@
+/* this file only contains the differences between version A and version B */
+
+nav#lessons_nav {
+    float: none;
+    display: table-cell;
+}
+
+nav#lessons_nav h2 {
+    font-size: 1.8em;
+    padding-bottom: .8em;
+}
+
+article#lesson_content {
+    float: none;
+    display: table-cell;
+}
