@@ -59,7 +59,7 @@
                             </tr>
                             <tr id="forum_post_form">
                                 <th class="forum_post_header" id="forum_response_header">Response</th>
-                                <td><textarea id="forum_post_text" name="input"></textarea><div id="forum_response_post_button"><button type="submit" name="post">Post</button></td>
+                                <td><textarea id="forum_post_text" name="input"></textarea><div id="forum_response_post_button"><button type="submit" name="post">Post</button></div></td>
                             </tr>
                         </table>
                     </form>

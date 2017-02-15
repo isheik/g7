@@ -60,9 +60,9 @@
                     <p><a href="./add_topic.php">Create a new topic</a></p>
                     <table>
                         <tr class="forum_header_row">
-                            <th id="forum_post_id_header"><strong>Post #</strong></td>
-                            <th id="forum_topic_header"><strong>TOPIC</strong></td>
-                            <th id="forum_post_date_header"><strong>POSTED DATE</strong></td>
+                            <th id="forum_post_id_header"><strong>Post #</strong></th>
+                            <th id="forum_topic_header"><strong>TOPIC</strong></th>
+                            <th id="forum_post_date_header"><strong>POSTED DATE</strong></th>
                         </tr>
 
                         <!-- enumrate topics from SQL result -->
