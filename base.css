@@ -320,6 +320,14 @@ nav#bottom_nav ul li a {
 }
 
 /*************************************************************/
+#about {
+    padding: 1em 0;
+}
+#about h2 {
+    margin-bottom: 1em;
+}
+
+/*************************************************************/
 @media print {
     body {
         font-size: 12pt;  /* use the font-unit not depending on dpi */ 
