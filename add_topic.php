@@ -13,9 +13,14 @@
     // Temporarily using sample database. Need to change table name later.
     $tbl_name='topic';
 
-    // Inquiry forum post data
-    $sql="SELECT * FROM $tbl_name ORDER BY id DESC";
+    // get value of id that sent from address bar
+    $id=$_GET['id'];
+
+    // Inquiry post data
+    $sql="SELECT * FROM $tbl_name WHERE id='$id'";
     $result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+
+    $rows=mysqli_fetch_array($result);
 ?>
 
 
@@ -55,30 +60,21 @@
 
         <main class="page_row">
             <div id="content_wrapper" class="centered">
-                <article id="forum_topics">
+                <article id="forum_add_topic">
                     <h2>Forum</h2>
-                    <p><a href="./add_topic.php">Create a new topic</a></p>
-                    <table>
-                        <tr class="forum_header_row">
-                            <th id="forum_post_id_header"><strong>Post #</strong></td>
-                            <th id="forum_topic_header"><strong>TOPIC</strong></td>
-                            <th id="forum_post_date_header"><strong>POSTED DATE</strong></td>
-                        </tr>
-
-                        <!-- enumrate topics from SQL result -->
-                        <?php 
-                            while($rows=mysqli_fetch_array($result)){ 
-                        ?>
-                        <tr class="forum_contents_row">
-                            <td id="forum_post_id_cell"><?php echo $rows['id']; ?></td>
-                            <td id="forum_topic_cell"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a></td>
-                            <td id="forum_post_date_cell"><?php echo $rows['datetime']; ?></td>
-                        <?php
-                            }
-                            ((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
-                        ?>
-                        </tr>
-                    </table>
+                    <p><a href="./forum.php">Return to forum top page</a></p>
+                    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                        <table id="forum_post_table">
+                            <tr>
+                                <th class="forum_post_header">Title</th>
+                                <td><input type="text" id="forum_post_title" name="title"></td>
+                            </tr>
+                            <tr id="forum_post_form">
+                                <th class="forum_post_header" id="forum_response_header">Response</th>
+                                <td><textarea id="forum_post_text" name="input"></textarea><div id="forum_response_post_button"><button type="submit" name="post">Post</button></td>
+                            </tr>
+                        </table>
+                    </form>
                 </article>
             </div>
         </main>

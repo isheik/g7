@@ -182,7 +182,9 @@ nav#bottom_nav ul li a {
     border: 1px solid #000000;
 }
 
-#forum_topics h2 { margin-bottom: 1em; }
+#forum_topics p {
+    margin: 1em 0;
+}
 
 .forum_header_row {
     background-color: #ffffff;
@@ -264,6 +266,32 @@ nav#bottom_nav ul li a {
     background-color: #eeeeee;
 }
 
+/*************************************************************/
+#forum_post_table {
+    width: 60%;
+}
+
+#forum_add_topic {
+    padding: 1em 0;
+}
+
+#forum_add_topic p {
+    margin: 1em 0;
+}
+
+.forum_post_header {
+    width: 6.5em;
+    text-align: left;
+}
+
+#forum_post_title {
+    width: 100%;
+}
+
+#forum_post_text {
+    width: 100%;
+    height: 7em;
+}
 
 /*************************************************************/
 @media print {
