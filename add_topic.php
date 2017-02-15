@@ -9,18 +9,6 @@
     // Connect to server and select database.
     ($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD)) or die("cannot connect");
     ((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE'))) or die("cannot select DB");
-
-    // Temporarily using sample database. Need to change table name later.
-    $tbl_name='topic';
-
-    // get value of id that sent from address bar
-    $id=$_GET['id'];
-
-    // Inquiry post data
-    $sql="SELECT * FROM $tbl_name WHERE id='$id'";
-    $result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
-
-    $rows=mysqli_fetch_array($result);
 ?>
 
 
