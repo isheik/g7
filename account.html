@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Windows 10 Shortcuts</title>
+        <link rel="stylesheet" type="text/css" href="base.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header class="page_row">
+            <div class="centered">
+                <img id="header_logo" alt="logo" width="130" height="50">
+                <div id="auth">
+                    <a href="#" class="auth_button">Sign Up</a>
+                    <a href="#" class="auth_button">Log In</a>
+                </div>
+            </div>
+        </header>
+
+        <nav id="top_nav" class="site_nav page_row">
+            <div class="centered">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Lessons</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="page_row">
+            <div id="content_wrapper" class="centered">
+                <article id="account">
+                    <div  class="account_table">
+                        <h2>Login</h2>
+                        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+
+                            <table id="account_login_table">
+                                <tr><td><label for="l_user">Username:</label><input type="text" id="l_user" name="l_user"></td></tr>
+                                <tr><td><label for="l_pass">Password:</label><input type="password" id="l_pass" name="l_pass"></td></tr>
+                                <tr><td><div id="account_login_button" class="account_button"><button type="submit" name="login">Login</button></div></td></tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div  class="account_table">
+                        <h2>Sign up</h2>
+                        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                            <table id="sign_up">
+                                <tr><td><label for="s_fname">First Name:</label><input type="text" id="s_fname" name="s_fname"></td></tr>
+                                <tr><td><label for="s_lname">Last Name:</label><input type="text" id="s_lname" name="s_lname"></td></tr>
+                                <tr><td><label for="s_user">User Name:</label><input type="text" id="s_user" name="s_user"></td></tr>
+                                <tr><td><label for="s_email">Email:</label><input type="email" id="s_email" name="s_email"></td></tr>
+                                <tr><td><label for="s_remail">Retype Email:</label><input type="email" id="s_remail" name="s_remail"></td></tr>
+                                <tr><td><label for="s_pass">Password:</label><input type="password" id="s_pass" name="s_pass"></td></tr>
+                                <tr><td><label for="s_rpass">Retype Password:</label><input type="password" id="s_rpass" name="s_rpass"></td></tr>
+                                <tr><td><div id="account_sing_up_button" class="account_button"><button type="submit" name="sign_up">Sign up</button></div></td></tr>
+                            </table>
+                       </form>
+                    </div>
+                    <div  class="account_table">
+                        <h2>Deregister</h2>
+                        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                            <table id="deregister">
+                                <tr><td><label for="d_user">Username:</label><input type="text" id="d_user" name="d_user"></td></tr>
+                                <tr><td><label for="d_pass">Password:</label><input type="password" id="d_pass" name="d_pass"></td></tr>
+                                <tr><td><div id="account_deregister_button" class="account_button"><button type="submit" name="deregister">deregister</button></div></td></tr>
+                            </table>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <footer class="page_row">
+            <div class="centered">
+                <nav id="bottom_nav" class="site_nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Lessons</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </nav>
+                <div id="logo_copyright">
+                    <img id="footer_logo" alt="logo" width="65" height="25">
+                    <p>&copy; Copyright 2017. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

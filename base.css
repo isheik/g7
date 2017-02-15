@@ -315,7 +315,7 @@ nav#bottom_nav ul li a {
     border: 1px solid #000000;    
 }
 
-#shortcut_catalog th, td {
+#shortcut_catalog th, #shortcut_catalog td {
     padding: 0.1em 0.2em;
 }
 
@@ -325,6 +325,19 @@ nav#bottom_nav ul li a {
 }
 #about h2 {
     margin-bottom: 1em;
+}
+
+/*************************************************************/
+#account label {
+    display: inline-block;
+    width: 10em;
+    text-align: right;
+}
+.account_button {
+    text-align: right;
+}
+.account_table {
+    padding-top: 1em;
 }
 
 /*************************************************************/
