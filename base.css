@@ -294,6 +294,32 @@ nav#bottom_nav ul li a {
 }
 
 /*************************************************************/
+#catalog {
+    padding: 1em 0;
+}
+
+#shortcut_catalog {
+    border: 1px solid #000000;
+    width: 80%;
+    table-layout: fixed;    /* prvent the text from being out of table */
+    word-wrap:break-word;   /* use new line when the text exceeds the table width */
+    margin: 1em 0;
+}
+
+#shortcut_catalog th {
+    width: 12em;
+    border: 1px solid #000000;    
+}
+
+#shortcut_catalog td {
+    border: 1px solid #000000;    
+}
+
+#shortcut_catalog th, td {
+    padding: 0.1em 0.2em;
+}
+
+/*************************************************************/
 @media print {
     body {
         font-size: 12pt;  /* use the font-unit not depending on dpi */ 
