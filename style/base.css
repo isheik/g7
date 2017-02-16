@@ -32,12 +32,26 @@ nav ul {
 
 /*************************************************************/
 header.page_row {
-    height: 4.4em;
+    height: 7.4em;
     background-color: #0078d7;
+    /*background-color: #262DA8;*/
+    background: linear-gradient(#0078d7,#262DA8);
 }
 
 #header_logo {
-    margin-top: .62em;
+    margin-top: .3em;
+    position: relative;
+    left: -0.79em;
+    float: left;
+}
+
+#header_title {
+    color: white;
+    line-height: 3em;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 2.4em;
+    text-shadow: 0 0 0.25em hsla(0, 0%, 0%, 0.3);
 }
 
 #auth {
@@ -86,7 +100,11 @@ nav#top_nav li a {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #000;
+    border-style: solid;
+    border-color: #777;
+    border-width: 0 1px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
 }
 
 nav#top_nav li + li a { border-left-width: 0; }
@@ -104,7 +122,7 @@ nav#lessons_nav {
 
 button.categories {
     /* expanded and overall style */
-    color: #00802b;
+    color: #002db3;
     text-align: left;
     padding: .56em 1.56em .56em 1em;
     font-size: 1.3em;
@@ -154,6 +172,7 @@ footer.page_row {
 /* has class .site_nav */
 nav#bottom_nav {
     margin: .65em 0 0 3.75em;
+    height: 1px;
     width: 60%;
 }
 
@@ -174,7 +193,11 @@ nav#bottom_nav ul li a {
 }
 
 #footer_logo {
-    margin-left: 1.25em;
+    display: inline-block;
+}
+
+#copyright {
+    display: inline-block;
 }
 /*************************************************************/
 #forum_topics { padding: 1em 0; }
@@ -356,9 +379,13 @@ nav#bottom_nav ul li a {
     padding: 0.25em 1em 0.25em 1em;
 }
 
+<<<<<<< HEAD:base.css
 input[type="text"] {
     height:1.6em;
     font-size:12pt;
+=======
+.form_container_sm input[type="text"] {
+>>>>>>> fc2968f15a38843e88f9ab2561e002b532f7c5f6:style/base.css
     width: 100%;
     box-shadow: .2em .1em 3px #f2f2f2;
     /*box-shadow: 0 0 .3em hsla(0, 0%, 0%, 0); not working*/
@@ -379,10 +406,19 @@ input:focus, textarea:focus {
     margin: 5px 1px 3px 0px;
 }
 
-label {
+.form_container_sm. label {
     font-size: 0.75em;
     font-weight: thin;
 }
+/*************************************************************/
+#sitemap ul {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#sitemap ul li ul{ margin-top: 0; }
+
+#sitemap ul li ul li { margin-left: 1em; }
 
 /*************************************************************/
 @media print {
@@ -406,3 +442,40 @@ label {
 
     #auth, nav#lessons_nav, .site_nav, footer.page_row { display: none; }
 }
+
+/********************************************************************/
+/* Index css */
+#lesson_grid {
+   text-align:center;
+}
+
+#lesson_grid h1 {
+    padding: 0.5em 0 0.5em 1em;
+    text-align: left;
+}
+
+#lesson_grid figure {
+    padding-bottom: 1em;
+    padding-left: 3em;
+    display: inline-block;
+}
+
+#lesson_grid a:link {
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+}
+
+#lesson_grid a:visited {
+    color: #262DA8;
+}
+
+#lesson_grid a:hover figcaption {
+    background-color: #E0E7F0;
+}
+
+#lesson_grid img {
+    vertical-align:middle;
+}
+
+/* index css end */
