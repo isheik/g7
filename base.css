@@ -356,11 +356,11 @@ nav#bottom_nav ul li a {
     padding: 0.25em 1em 0.25em 1em;
 }
 
-input[type="text"] {
+.form_container_sm input[type="text"] {
     width: 100%;
 }
 
-label {
+.form_container_sm. label {
     font-size: 0.75em;
     font-weight: thin;
 }
