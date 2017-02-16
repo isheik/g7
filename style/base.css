@@ -32,12 +32,26 @@ nav ul {
 
 /*************************************************************/
 header.page_row {
-    height: 4.4em;
+    height: 7.4em;
     background-color: #0078d7;
+    /*background-color: #262DA8;*/
+    background: linear-gradient(#0078d7,#262DA8);
 }
 
 #header_logo {
-    margin-top: .62em;
+    margin-top: .3em;
+    position: relative;
+    left: -0.79em;
+    float: left;
+}
+
+#header_title {
+    color: white;
+    line-height: 3em;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 2.4em;
+    text-shadow: 0 0 0.25em hsla(0, 0%, 0%, 0.3);
 }
 
 #auth {
@@ -86,7 +100,11 @@ nav#top_nav li a {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #000;
+    border-style: solid;
+    border-color: #777;
+    border-width: 0 1px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
 }
 
 nav#top_nav li + li a { border-left-width: 0; }
@@ -154,6 +172,7 @@ footer.page_row {
 /* has class .site_nav */
 nav#bottom_nav {
     margin: .65em 0 0 3.75em;
+    height: 1px;
     width: 60%;
 }
 
@@ -174,7 +193,11 @@ nav#bottom_nav ul li a {
 }
 
 #footer_logo {
-    margin-left: 1.25em;
+    display: inline-block;
+}
+
+#copyright {
+    display: inline-block;
 }
 /*************************************************************/
 #forum_topics { padding: 1em 0; }
