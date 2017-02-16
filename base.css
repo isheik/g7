@@ -357,7 +357,26 @@ nav#bottom_nav ul li a {
 }
 
 input[type="text"] {
+    height:1.6em;
+    font-size:12pt;
     width: 100%;
+    box-shadow: .2em .1em 3px #f2f2f2;
+    /*box-shadow: 0 0 .3em hsla(0, 0%, 0%, 0); not working*/
+}
+input[type="text"], textarea:focus{   
+    transition: all 0.32s ease-in-out;
+    transition: all 0.33s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #8c8c8c;
+}
+
+input:focus, textarea:focus {
+    border-color: #cccccc;
+    box-shadow: 0 0 .3em #b3b3b3;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
 }
 
 label {
