@@ -39,8 +39,8 @@
             <div class="centered">
                 <img id="header_logo" alt="logo" width="130" height="50">
                 <div id="auth">
-                    <a href="#" class="auth_button">Sign Up</a>
-                    <a href="#" class="auth_button">Log In</a>
+                    <a href="account.html" class="auth_button">Sign Up</a>
+                    <a href="account.html" class="auth_button">Log In</a>
                 </div>
             </div>
         </header>
@@ -48,12 +48,12 @@
         <nav id="top_nav" class="site_nav page_row">
             <div class="centered">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Lessons</a></li>
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">Forum</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./lessons-main.html">Lessons</a></li>
+                    <li><a href="./catalog.html">Catalog</a></li>
+                    <li><a href="./forum.php">Forum</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">About</a></li>
                 </ul>
             </div>
         </nav>
@@ -115,13 +115,13 @@
             <div class="centered">
                 <nav id="bottom_nav" class="site_nav">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Lessons</a></li>
-                        <li><a href="#">Catalog</a></li>
-                        <li><a href="#">Forum</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./lessons-main.html">Lessons</a></li>
+                        <li><a href="./catalog.html">Catalog</a></li>
+                        <li><a href="./forum.php">Forum</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./sitemap.html">Sitemap</a></li>
                     </ul>
                 </nav>
                 <div id="logo_copyright">
