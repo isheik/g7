@@ -30,7 +30,7 @@
     <head>
         <meta charset="utf-8">
         <title>Windows 10 Shortcuts</title>
-        <link rel="stylesheet" type="text/css" href="base.css">
+        <link rel="stylesheet" type="text/css" href="style/base.css">
         <script src="script.js"></script>
     </head>
 
