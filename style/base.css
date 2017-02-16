@@ -364,6 +364,15 @@ nav#bottom_nav ul li a {
     font-size: 0.75em;
     font-weight: thin;
 }
+/*************************************************************/
+#sitemap ul {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#sitemap ul li ul{ margin-top: 0; }
+
+#sitemap ul li ul li { margin-left: 1em; }
 
 /*************************************************************/
 @media print {
