@@ -82,7 +82,7 @@
                 </nav>
                 <div id="logo_copyright">
                     <img id="footer_logo" alt="logo" width="65" height="25">
-                    <p>&copy; Copyright 2017. All Rights Reserved.</p>
+                    <p id="copyright">&copy; Copyright 2017. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>

@@ -104,7 +104,7 @@ nav#lessons_nav {
 
 button.categories {
     /* expanded and overall style */
-    color: #00802b;
+    color: #002db3;
     text-align: left;
     padding: .56em 1.56em .56em 1em;
     font-size: 1.3em;
@@ -386,7 +386,6 @@ label {
     }
 
     #auth, nav#lessons_nav, .site_nav, footer.page_row { display: none; }
-
 }
 
 /********************************************************************/
@@ -395,32 +394,32 @@ label {
    text-align:center;
 }
 
-#content_wrapper h1 {
+#lesson_grid h1 {
     padding: 0.5em 0 0.5em 1em;
     text-align: left;
 }
 
-#content_wrapper figure {
+#lesson_grid figure {
     padding-bottom: 1em;
-    display: inline-block;
     padding-left: 3em;
+    display: inline-block;
 }
 
-#content_wrapper a:link {
+#lesson_grid a:link {
     text-decoration: none;
     color: #0078d7;
     font-weight: bold;
 }
 
-#content_wrapper a:visited {
+#lesson_grid a:visited {
     color: #262DA8;
 }
 
-#content_wrapper a:hover figcaption {
+#lesson_grid a:hover figcaption {
     background-color: #E0E7F0;
 }
 
-#content_wrapper img {
+#lesson_grid img {
     vertical-align:middle;
 }
 
