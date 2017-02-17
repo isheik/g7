@@ -128,7 +128,7 @@ header.page_row {
 }
 
 #auth a:hover {
-    color: #ffff66;
+    color: #7FB9FF;
 }
 
 #auth a:active {
@@ -224,6 +224,7 @@ article#lesson_content {
     padding-left: 2em;
     color: #000;
     font-size: 1.1em;
+    margin: 0;
 }
 
 .lessons li a:hover{
