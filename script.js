@@ -17,7 +17,7 @@ function nav_exp_init() {
     }
 }
 
-function set_main_width() {
+function set_lessons_width() {
     // set #lessons_nav width to 100%/(number of li elements in #top_nav)
     // let #lesson_content fill the remaining width
     var percent_width = 

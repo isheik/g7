@@ -19,13 +19,12 @@
         <meta charset="utf-8">
         <title>Windows 10 Shortcuts</title>
         <link rel="stylesheet" type="text/css" href="style/base.css">
-        <script src="script.js"></script>
     </head>
 
     <body>
         <header class="page_row">
             <div class="centered">
-                <img src="images/logo_header.png" id="header_logo" alt="logo" width="120" height="108">
+                <a href="index.html"><img src="images/logo_header.png" id="header_logo" alt="logo" width="120" height="108"></a>
                 <h1 id="header_title">Windows 10 Shortcuts</h1>
                 <div id="auth">
                     <a href="account.html" class="auth_button">Sign Up</a>
