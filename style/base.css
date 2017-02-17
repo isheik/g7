@@ -85,6 +85,19 @@ article li ul, article li ol, section li ul, section li ol {
     margin: 0.5em 0;
 }
 
+input[type="text"], textarea {
+    border: 1px solid #777;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+label {
+    font-size: 0.8em;
+}
+
 /*************************************************************/
 header.page_row {
     height: 7.4em;
@@ -445,24 +458,26 @@ nav#bottom_nav ul li a {
 
 /*************************************************************/
 
-.form_container_sm {
+.form_block_sm {
     display: inline-block;
     width: 35%;
-    padding: 0.25em 1em 0.25em 1em;
+    padding: 0.25em 1em;
 }
 
-.form_container_lg {
-    padding: 0.25em 1em 0.25em 1em;
+.form_block_lg {
+    display: inline-block;
+    width: 70%;
+    padding: 0.25em 1em;
 }
 
-.form_container_sm input[type="text"] {
+.form_block_sm input[type="text"] {
     width: 100%;
-    box-shadow: .2em .1em 3px #f2f2f2;
+    box-shadow: .2em .1em 0.2em #f2f2f2;
     height:1.6em;
     font-size:12pt;
     /*box-shadow: 0 0 .3em hsla(0, 0%, 0%, 0); not working*/
 }
-.form_container_sm input[type="text"]:focus,.form_container_lg textarea:focus{   
+.form_block_sm input[type="text"]:focus,.form_block_lg textarea:focus{   
     transition: all 0.32s ease-in-out;
     outline: none;
     box-shadow: 0 0 .3em #b3b3b3;
