@@ -30,6 +30,9 @@ script { display: none; }
     margin: auto;
 }
 
+
+
+
 /*************************************************************/
 /* SITE-WIDE GENERAL STYLES                                  */
 /*************************************************************/
@@ -102,6 +105,9 @@ textarea {
 label {
     font-size: 0.8em;
 }
+
+
+
 
 /*************************************************************/
 /* HEADER                                                    */
@@ -200,6 +206,9 @@ nav#top_nav li + li a { border-left-width: 0; }
     background-color: #eee;
 }
 
+
+
+
 /*************************************************************/
 /* LESSONS NAV BAR AND CONTENT                               */
 /*************************************************************/
@@ -258,6 +267,9 @@ article#lesson_content {
     background-color:#d9d9d9;
 }
 
+
+
+
 /*************************************************************/
 /* FOOTER                                                    */
 /*************************************************************/
@@ -299,6 +311,83 @@ nav#bottom_nav ul li a {
     display: inline-block;
 }
 
+
+
+
+/********************************************************************/
+/* HOME PAGE - index.html                                           */
+/********************************************************************/
+#lesson_grid {
+   text-align:center;
+}
+
+#lesson_grid h2 {
+    padding: 0.5em 0 0.5em 1em;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+#lesson_grid figure {
+    padding-bottom: 1em;
+    padding-left: 3em;
+    display: inline-block;
+}
+
+#lesson_grid a:link {
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+}
+
+#lesson_grid a:visited {
+    color: #262DA8;
+}
+
+#lesson_grid a:hover figcaption {
+    background-color: #E0E7F0;
+}
+
+#lesson_grid img {
+    vertical-align: middle;
+    border: 1px solid #000000;
+}
+
+
+
+
+/*************************************************************/
+/* CATALOG PAGE - catalog.html                               */
+/*************************************************************/
+
+#catalog {
+    padding: 1em 0;
+}
+
+#shortcut_catalog {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    width: 80%;
+    table-layout: fixed;    /* prvent the text from being out of table */
+    word-wrap:break-word;   /* use new line when the text exceeds the table width */
+    margin: 1em auto;
+}
+
+#shortcut_catalog th {
+    width: 12em;
+    border: 1px solid #000000;    
+}
+
+#shortcut_catalog td {
+    border: 1px solid #000000;    
+}
+
+#shortcut_catalog th, #shortcut_catalog td {
+    padding: 0.1em 0.2em;
+}
+
+
+
+
 /*************************************************************/
 /* FORUM - forum.php                                         */
 /*************************************************************/
@@ -333,6 +422,9 @@ nav#bottom_nav ul li a {
 #forum_topic_cell a { text-decoration: none; }
 
 #forum_post_date_cell { text-align: center; }
+
+
+
 
 /*************************************************************/
 /* FORUM TOPIC VIEW - view_topic.php                         */
@@ -398,6 +490,9 @@ nav#bottom_nav ul li a {
     background-color: #eeeeee;
 }
 
+
+
+
 /*************************************************************/
 /* FORUM POST VIEW - add_topic.php                           */
 /*************************************************************/
@@ -428,46 +523,7 @@ nav#bottom_nav ul li a {
     height: 7em;
 }
 
-/*************************************************************/
-/* CATALOG PAGE - catalog.html                               */
-/*************************************************************/
 
-#catalog {
-    padding: 1em 0;
-}
-
-#shortcut_catalog {
-    border: 1px solid #000000;
-    border-collapse: collapse;
-    width: 80%;
-    table-layout: fixed;    /* prvent the text from being out of table */
-    word-wrap:break-word;   /* use new line when the text exceeds the table width */
-    margin: 1em auto;
-}
-
-#shortcut_catalog th {
-    width: 12em;
-    border: 1px solid #000000;    
-}
-
-#shortcut_catalog td {
-    border: 1px solid #000000;    
-}
-
-#shortcut_catalog th, #shortcut_catalog td {
-    padding: 0.1em 0.2em;
-}
-
-/*************************************************************/
-/* ABOUT PAGE - about.html                                   */
-/*************************************************************/
-
-#about {
-    padding: 1em 0;
-}
-#about h2 {
-    margin-bottom: 1em;
-}
 
 /*************************************************************/
 /* REGISTRATION AND LOGIN PAGE - account.html                */
@@ -485,6 +541,7 @@ nav#bottom_nav ul li a {
 .account_table {
     padding-top: 1em;
 }
+
 
 
 /*************************************************************/
@@ -522,66 +579,15 @@ nav#bottom_nav ul li a {
     font-size: 0.75em;
 }
 
+
+
 /*************************************************************/
-/* PRINT STYLE                                               */
+/* ABOUT PAGE - about.html                                   */
 /*************************************************************/
 
-@media print {
-    body {
-        font-size: 12pt;  /* use the font-unit not depending on dpi */ 
-    }
-
-    header.page_row {
-        background-color: #ffffff;
-    }
-
-    header.page_row .centered:after {
-        /* put copyright using Unicode hex escape */
-        content:"\00A9 Copyright 2017. All Rights Reserved."; 
-    }
-
-    article#lesson_content {
-        padding: 20px 0px;
-        float: none;
-    }
-
-    #auth, nav#lessons_nav, .site_nav, footer.page_row { display: none; }
+#about {
+    padding: 1em 0;
 }
-
-/********************************************************************/
-/* HOME PAGE - index.html                                           */
-/********************************************************************/
-#lesson_grid {
-   text-align:center;
-}
-
-#lesson_grid h2 {
-    padding: 0.5em 0 0.5em 1em;
-    font-size: 1.8em;
-    text-align: left;
-}
-
-#lesson_grid figure {
-    padding-bottom: 1em;
-    padding-left: 3em;
-    display: inline-block;
-}
-
-#lesson_grid a:link {
-    text-decoration: none;
-    color: #0078d7;
-    font-weight: bold;
-}
-
-#lesson_grid a:visited {
-    color: #262DA8;
-}
-
-#lesson_grid a:hover figcaption {
-    background-color: #E0E7F0;
-}
-
-#lesson_grid img {
-    vertical-align: middle;
-    border: 1px solid #000000;
+#about h2 {
+    margin-bottom: 1em;
 }
