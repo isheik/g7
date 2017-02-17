@@ -34,14 +34,14 @@ nav ul {
 /* SITE-WIDE GENERAL STYLES                                  */
 /*************************************************************/
 main p {
-
+    margin-top: 1.25em;
 }
 
-main a:link, a:visited {
+a:link, a:visited {
     color: #0078d7;
 }
 
-main a:hover {
+a:hover {
     color: #262DA8;
 }
 
@@ -50,13 +50,9 @@ article {
     padding: 1em;
 }
 
-/* Lists */
-/*main ul, ol {
-    text-indent: 1em;
-    line-height: 1.25em;
-}*/
+/* Lists
 
-/*main ul li ul li { margin-left: 1em; }*/
+*/
 
 /*************************************************************/
 header.page_row {
@@ -93,6 +89,10 @@ header.page_row {
     padding: .2em .5em;
     text-decoration: none;
     border-radius: 1em;
+}
+
+#auth a:link, a:visited {
+    color: #ffffff;
 }
 
 #auth a:hover {
