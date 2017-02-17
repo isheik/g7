@@ -1,3 +1,7 @@
+/*************************************************************/
+/* GLOBAL RULES                                              */
+/*************************************************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -26,18 +30,10 @@ script { display: none; }
     margin: auto;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-article {
-    font-size: 1.25em;
-    padding: 1em;
-}
-
 /*************************************************************/
 /* SITE-WIDE GENERAL STYLES                                  */
 /*************************************************************/
+
 main p {
     margin: 1.25em 0;
 }
@@ -71,6 +67,11 @@ h3 {
     font-size: 1.25em;
 }
 
+article {
+    font-size: 1.25em;
+    padding: 1em;
+}
+
 /* LISTS */
 /* The selector in this rule is necessary to target content that is in our main
 content area. This is to avoid conflicts with the nav bar. */
@@ -79,13 +80,17 @@ article ul, article ol, section ol, section ul {
     margin: 1em 0;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
 /* This alters the margin within nested lists, to group them while still
 providing some separation between levels. */
 article li ul, article li ol, section li ul, section li ol {
     margin: 0.5em 0;
 }
 
-input[type="text"], textarea {
+input, textarea {
     border: 1px solid #777;
 }
 
@@ -98,6 +103,8 @@ label {
     font-size: 0.8em;
 }
 
+/*************************************************************/
+/* HEADER                                                    */
 /*************************************************************/
 header.page_row {
     height: 7.4em;
@@ -196,6 +203,7 @@ nav#top_nav li + li a { border-left-width: 0; }
 /*************************************************************/
 /* LESSONS NAV BAR AND CONTENT                               */
 /*************************************************************/
+
 nav#lessons_nav {
     float: left;
     padding-top: 1.25em;
@@ -251,6 +259,9 @@ article#lesson_content {
 }
 
 /*************************************************************/
+/* FOOTER                                                    */
+/*************************************************************/
+
 footer.page_row {
     height: 5em;
     background-color: #2b2b2b;
@@ -287,7 +298,11 @@ nav#bottom_nav ul li a {
 #copyright {
     display: inline-block;
 }
+
 /*************************************************************/
+/* FORUM - forum.php                                         */
+/*************************************************************/
+
 #forum_topics { padding: 1em 0; }
 
 #forum_topics table,
@@ -320,6 +335,9 @@ nav#bottom_nav ul li a {
 #forum_post_date_cell { text-align: center; }
 
 /*************************************************************/
+/* FORUM TOPIC VIEW - view_topic.php                         */
+/*************************************************************/
+
 #forum_view {
     padding: 1em 0;
 }
@@ -381,6 +399,9 @@ nav#bottom_nav ul li a {
 }
 
 /*************************************************************/
+/* FORUM POST VIEW - add_topic.php                           */
+/*************************************************************/
+
 #forum_post_table {
     width: 60%;
 }
@@ -408,6 +429,9 @@ nav#bottom_nav ul li a {
 }
 
 /*************************************************************/
+/* CATALOG PAGE - catalog.html                               */
+/*************************************************************/
+
 #catalog {
     padding: 1em 0;
 }
@@ -435,6 +459,9 @@ nav#bottom_nav ul li a {
 }
 
 /*************************************************************/
+/* ABOUT PAGE - about.html                                   */
+/*************************************************************/
+
 #about {
     padding: 1em 0;
 }
@@ -443,6 +470,9 @@ nav#bottom_nav ul li a {
 }
 
 /*************************************************************/
+/* REGISTRATION AND LOGIN PAGE - account.html                */
+/*************************************************************/
+
 #account label {
     display: inline-block;
     width: 10em;
@@ -457,6 +487,8 @@ nav#bottom_nav ul li a {
 
 
 /*************************************************************/
+/* CONTACT PAGE - contact.html                               */
+/*************************************************************/
 
 .form_block_sm {
     display: inline-block;
@@ -470,14 +502,14 @@ nav#bottom_nav ul li a {
     padding: 0.25em 1em;
 }
 
-.form_block_sm input[type="text"] {
+.form_block_sm input {
     width: 100%;
     box-shadow: .2em .1em 0.2em #f2f2f2;
     height:1.6em;
     font-size:12pt;
     /*box-shadow: 0 0 .3em hsla(0, 0%, 0%, 0); not working*/
 }
-.form_block_sm input[type="text"]:focus,.form_block_lg textarea:focus{   
+.form_block_sm input:focus,.form_block_lg textarea:focus{   
     transition: all 0.32s ease-in-out;
     outline: none;
     box-shadow: 0 0 .3em #b3b3b3;
@@ -490,6 +522,9 @@ nav#bottom_nav ul li a {
 }
 
 /*************************************************************/
+/* PRINT STYLE                                               */
+/*************************************************************/
+
 @media print {
     body {
         font-size: 12pt;  /* use the font-unit not depending on dpi */ 
@@ -513,7 +548,8 @@ nav#bottom_nav ul li a {
 }
 
 /********************************************************************/
-/* Index css */
+/* HOME PAGE - index.html                                           */
+/********************************************************************/
 #lesson_grid {
    text-align:center;
 }
@@ -547,5 +583,3 @@ nav#bottom_nav ul li a {
     vertical-align: middle;
     border: 1px solid #000000;
 }
-
-/* index css end */
