@@ -91,7 +91,7 @@ header.page_row {
     border-radius: 1em;
 }
 
-#auth a:link, a:visited {
+#auth a:link, #auth a:visited {
     color: #ffffff;
 }
 
@@ -276,7 +276,7 @@ nav#bottom_nav ul li a {
 }
 
 #forum_view_table {
-    width: 60%;
+    width: 65%;
     table-layout: fixed;    /* prvent the text from being out of table */
     word-wrap:break-word;   /* use new line when the text exceeds the table width */
 }
@@ -313,7 +313,7 @@ nav#bottom_nav ul li a {
 }
 
 #forum_comment_table {
-    width: 60%;
+    width: 65%;
     table-layout: fixed;    /* prvent the text from being out of table */
     word-wrap:break-word;   /* use new line when the text exceeds the table width */
 }
