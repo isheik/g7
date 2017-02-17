@@ -2,7 +2,7 @@
 
 nav#lessons_nav {
     float: none;
-    display: table-cell;
+    display: table-cell;    
 }
 
 nav#lessons_nav h2 {
@@ -15,3 +15,7 @@ article#lesson_content {
     display: table-cell;
 }
 
+#category_list .lessons a:hover{
+    background-color:#d9d9d9;
+    margin-right:2em;
+}
