@@ -91,7 +91,7 @@ header.page_row {
     border-radius: 1em;
 }
 
-#auth a:link, a:visited {
+#auth a:link, #auth a:visited {
     color: #ffffff;
 }
 
@@ -148,7 +148,7 @@ nav#top_nav li + li a { border-left-width: 0; }
 nav#lessons_nav {
     float: left;
     padding-top: 1.25em;
-    width: 18%; /* overridden by JavaScript */
+    width: 20%;
 }
 
 nav#lessons_nav h2 {
@@ -165,7 +165,7 @@ button.categories {
     background-color: #fff;
     outline: none;
     border: none;
-    border-left: 5px solid #0078d7;
+    border-left: .3em solid #0078d7;
     cursor: pointer;
     transition: border-color 100ms ease;
 }
@@ -176,11 +176,12 @@ button.categories.collapsed {
 
 article#lesson_content {
     float: right;
-    width: 82%; /* overridden by JavaScript */
+    width: 80%;
 }
 
 .lessons {
-    /* adjusting vertical margins or padding may have unexpected results */
+    /* expansion controlled by JavaScript
+     * adjusting vertical margins or padding may have unexpected results */
     overflow: hidden;
     transition: max-height 100ms ease;
 }
@@ -188,7 +189,7 @@ article#lesson_content {
 .lessons li a {
     display: block;
     text-decoration: none;
-    text-align: center;
+    padding-left: 2em;
     color: #000;
     font-size: 1.1em;
 }
