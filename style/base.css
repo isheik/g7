@@ -30,11 +30,20 @@ nav ul {
     list-style-type: none;
 }
 
+article {
+    font-size: 1.25em;
+    padding: 1em;
+}
+
 /*************************************************************/
 /* SITE-WIDE GENERAL STYLES                                  */
 /*************************************************************/
 main p {
-    margin-top: 1.25em;
+    margin: 1.25em 0;
+}
+
+main a {
+    margin: 1.25em 0;
 }
 
 a:link, a:visited {
@@ -45,14 +54,37 @@ a:hover {
     color: #262DA8;
 }
 
-article {
-    font-size: 1.25em;
-    padding: 1em;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 2em;
+    /*margin-bottom: 1.25em;*/
 }
 
-/* Lists
+h1, h4, h5, h6 {
+    font-weight: bold;
+}
 
-*/
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+/* LISTS */
+/* The selector in this rule is necessary to target content that is in our main
+content area. This is to avoid conflicts with the nav bar. */
+article ul, article ol, section ol, section ul {
+    padding: 0 2em;
+    margin: 1em 0;
+}
+
+/* This alters the margin within nested lists, to group them while still
+providing some separation between levels. */
+article li ul, article li ol, section li ul, section li ol {
+    margin: 0.5em 0;
+}
 
 /*************************************************************/
 header.page_row {
@@ -148,7 +180,7 @@ nav#top_nav li + li a { border-left-width: 0; }
 nav#lessons_nav {
     float: left;
     padding-top: 1.25em;
-    width: 18%; /* overridden by JavaScript */
+    width: 20%;
 }
 
 nav#lessons_nav h2 {
@@ -165,7 +197,7 @@ button.categories {
     background-color: #fff;
     outline: none;
     border: none;
-    border-left: 5px solid #0078d7;
+    border-left: .3em solid #0078d7;
     cursor: pointer;
     transition: border-color 100ms ease;
 }
@@ -176,11 +208,12 @@ button.categories.collapsed {
 
 article#lesson_content {
     float: right;
-    width: 82%; /* overridden by JavaScript */
+    width: 80%;
 }
 
 .lessons {
-    /* adjusting vertical margins or padding may have unexpected results */
+    /* expansion controlled by JavaScript
+     * adjusting vertical margins or padding may have unexpected results */
     overflow: hidden;
     transition: max-height 100ms ease;
 }
@@ -188,7 +221,7 @@ article#lesson_content {
 .lessons li a {
     display: block;
     text-decoration: none;
-    text-align: center;
+    padding-left: 2em;
     color: #000;
     font-size: 1.1em;
 }

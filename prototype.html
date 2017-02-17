@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Prototype</title>
+        <link rel="stylesheet" type="text/css" href="style/base.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header class="page_row">
+            <div class="centered">
+                <a href="index.html"><img src="images/logo_header.png" id="header_logo" alt="logo" width="120" height="108"></a>
+                <h1 id="header_title">Prototype</h1>
+                <div id="auth">
+                    <a href="account.html" class="auth_button">Sign Up</a>
+                    <a href="account.html" class="auth_button">Log In</a>
+                </div>
+            </div>
+        </header>
+
+        <nav id="top_nav" class="site_nav page_row">
+            <div class="centered">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./lessons-main.html">Lessons</a></li>
+                    <li><a href="./catalog.html">Catalog</a></li>
+                    <li><a href="./forum.php">Forum</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="page_row">
+            <div id="content_wrapper" class="centered">
+                <nav id="lessons_nav">
+                    <h2>Lessons</h2>
+                    <ul id="category_list">
+                        <li>
+                            <button class="categories">Category 1</button>
+                            <ul class="lessons">
+                                <li><a href="#">Lesson 1</a></li>
+                                <li><a href="#">Lesson 2</a></li>
+                                <li><a href="#">Lesson 3</a></li>
+                                <li><a href="#">Lesson 4</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <button class="categories">Category 2</button>
+                            <ul class="lessons">
+                                <li><a href="#">Lesson 1</a></li>
+                                <li><a href="#">Lesson 2</a></li>
+                                <li><a href="#">Lesson 3</a></li>
+                                <li><a href="#">Lesson 4</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <button class="categories">Category 3</button>
+                            <ul class="lessons">
+                                <li><a href="#">Lesson 1</a></li>
+                                <li><a href="#">Lesson 2</a></li>
+                                <li><a href="#">Lesson 3</a></li>
+                                <li><a href="#">Lesson 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <script>nav_exp_init();</script>
+                </nav>
+
+                <article id="lesson_content">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim mauris et pretium molestie. Cras ac felis et orci imperdiet lobortis ut sed arcu. Mauris mollis sed arcu vitae tristique. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur vulputate quam at sem blandit, sit amet gravida orci convallis. Sed pellentesque sollicitudin tellus, eget rutrum urna porttitor ut. Sed ullamcorper, mauris vitae lacinia varius, lacus lorem porttitor <a href="#">elit</a>, non finibus tortor odio in dui.</p>
+                    
+                    <a href="#">Link</a>
+                    
+                    <section>
+                        <ul>
+                            <li>sadf</li>
+                            <li>adge adsg d</li>
+                            <li>dd</li>
+                            <li>haa</li>
+                            <li>cjvv</li>
+                        </ul>
+
+                        <ol>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Nemo fuga excepturi et!</li>
+                            <li>Eum ullam molestias molestiae.</li>
+                            <li>Laboriosam eos quidem, eius.</li>
+                            <li>Eos autem, et labore.</li>
+                            <li>More things
+                                <ul>
+                                    <li>Lorem ipsum dolor.</li>
+                                    <li>Illo, vero, tempore.</li>
+                                    <li>Debitis, autem, eaque.</li>
+                                    <li>Tempora, magnam non!</li>
+                                    <li>Commodi magnam, officiis.</li>
+                                </ul>
+                            </li>
+                            <li>Something something
+                                <ol>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Maiores alias totam dolorem dignissimos?</li>
+                                    <li>Excepturi, ea. Veniam, architecto dignissimos.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </section>
+                
+                </article>
+            </div>
+
+            <script>set_lessons_width();</script>
+        </main>
+
+        <footer class="page_row">
+            <div class="centered">
+                <nav id="bottom_nav" class="site_nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./lessons-main.html">Lessons</a></li>
+                        <li><a href="./catalog.html">Catalog</a></li>
+                        <li><a href="./forum.php">Forum</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+                <div id="logo_copyright">
+                    <img src="images/logo_footer.png" id="footer_logo" alt="logo" width="56" height="50">
+                    <p id="copyright">&copy; Copyright 2017.<br>All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
