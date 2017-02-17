@@ -31,6 +31,34 @@ nav ul {
 }
 
 /*************************************************************/
+/* SITE-WIDE GENERAL STYLES                                  */
+/*************************************************************/
+main p {
+
+}
+
+main a:link, a:visited {
+    color: #0078d7;
+}
+
+main a:hover {
+    color: #262DA8;
+}
+
+article {
+    font-size: 1.25em;
+    padding: 1em;
+}
+
+/* Lists */
+/*main ul, ol {
+    text-indent: 1em;
+    line-height: 1.25em;
+}*/
+
+/*main ul li ul li { margin-left: 1em; }*/
+
+/*************************************************************/
 header.page_row {
     height: 7.4em;
     background-color: #0078d7;
@@ -115,6 +143,8 @@ nav#top_nav li + li a { border-left-width: 0; }
 }
 
 /*************************************************************/
+/* LESSONS NAV BAR                                           */
+/*************************************************************/
 nav#lessons_nav {
     float: left;
     width: 18%; /* overridden by JavaScript */
@@ -136,11 +166,6 @@ button.categories {
 
 button.categories.collapsed {
     border-color: #000;
-}
-
-article {
-    font-size: 1.25em;
-    padding: 1em;
 }
 
 article#lesson_content {
@@ -398,15 +423,6 @@ nav#bottom_nav ul li a {
     font-size: 0.75em;
     font-weight: thin;
 }
-/*************************************************************/
-#sitemap ul {
-    margin-top: 1em;
-    margin-left: 1em;
-}
-
-#sitemap ul li ul{ margin-top: 0; }
-
-#sitemap ul li ul li { margin-left: 1em; }
 
 /*************************************************************/
 @media print {
