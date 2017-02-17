@@ -476,6 +476,7 @@ nav#bottom_nav ul li a {
 #account label {
     display: inline-block;
     width: 10em;
+    margin-right: .5em;
     text-align: right;
 }
 .account_button {
