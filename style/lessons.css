@@ -1,0 +1,57 @@
+/*************************************************************/
+/* LESSONS NAV BAR AND CONTENT                               */
+/*************************************************************/
+
+nav#lessons_nav {
+    float: left;
+    padding-top: 1.25em;
+    width: 20%;
+}
+
+nav#lessons_nav h2 {
+    font-size: 1.8em;
+    padding-bottom: .8em;
+}
+
+button.categories {
+    /* expanded and overall style */
+    color: #002db3;
+    text-align: left;
+    padding: .56em 1.56em .56em 1em;
+    font-size: 1.3em;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-left: .3em solid #0078d7;
+    cursor: pointer;
+    transition: border-color 100ms ease;
+}
+
+button.categories.collapsed {
+    border-color: #000;
+}
+
+article#lesson_content {
+    float: right;
+    width: 80%;
+}
+
+.lessons {
+    /* expansion controlled by JavaScript
+     * adjusting vertical margins or padding may have unexpected results */
+    overflow: hidden;
+    transition: max-height 100ms ease;
+}
+
+.lessons li a {
+    display: block;
+    text-decoration: none;
+    padding-left: 2em;
+    color: #000;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.lessons li a:hover{
+    background-color:#d9d9d9;
+}
