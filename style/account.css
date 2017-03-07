@@ -2,10 +2,9 @@
 /* REGISTRATION AND LOGIN PAGE - account.html                */
 /*************************************************************/
 
-#account label {
-    display: inline-block;
-    width: 10em;
-    margin-right: .5em;
+#account th {
+    width: 8em;
+    padding-right: .3em;
     text-align: right;
 }
 
