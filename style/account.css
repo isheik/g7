@@ -16,3 +16,6 @@
 .account_table {
     padding-top: 1em;
 }
+.account_table th {
+    font-weight: normal;
+}
