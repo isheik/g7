@@ -1,25 +1,31 @@
-function warnUsername(field,output){
-	message = validateUsername(field);
+// NAMES
 
-	if (message != undefined)
-		document.getElementById(output).innerHTML = message;
+function warnRealName(field,output) {
+    // message = "test message";
+
+    // if (message != undefined)
+    //     document.getElementById(output).innerHTML = message;
+
+    document.getElementById(output).innerHTML = "Real Name";
 }
 
-function validateUsername(field){
-	if (!isASCII(field))
-		return "Only alpha characters are allowed";
+function warnUsername(field,output) {
+    // var message = "";
 
-	if (!isNotBlank(field))
-		return "Username cannot be blank";
+    // if (message != undefined)
+    //     document.getElementById(output).innerHTML = message;
 
-	return "";
+    document.getElementById(output).innerHTML = "User Name";
 }
 
-function isASCII(field){
-	return /^[\x00-\x7F]*$/.test(field);
 
-}
+// EMAIL
 
-function isNotBlank(field){
+function warnEmail(field,output) {
+    // message = "test message";
 
+    // if (message != undefined)
+    //     document.getElementById(output).innerHTML = message;
+
+    document.getElementById(output).innerHTML = "Email";
 }
