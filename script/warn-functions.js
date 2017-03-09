@@ -1,24 +1,62 @@
-function warnUsername(field,output){
-	message = validateUsername(field);
+// NAMES
 
-	if (message != undefined)
-		document.getElementById(output).innerHTML = message;
+function warnRealName(field,output) {
+    // message = "test message";
+
+    // if (message != undefined)
+    //     document.getElementById(output).innerHTML = message;
+
+    document.getElementById(output).innerHTML = "Real Name";
 }
 
-function validateUsername(field){
-	if (!isASCII(field))
-		return "Only alpha characters are allowed";
+function warnUsername(field,output) {
+    // var message = "";
 
-	if (!isNotBlank(field))
-		return "Username cannot be blank";
+    // if (message != undefined)
+    //     document.getElementById(output).innerHTML = message;
 
-	return "";
+    document.getElementById(output).innerHTML = "User Name";
 }
 
-function isASCII(field){
 
+// EMAIL
+
+function warnEmail(field,output) {
+    // message = "test message";
+
+    // if (message != undefined)
+    //     document.getElementById(output).innerHTML = message;
+
+    document.getElementById(output).innerHTML = "Email";
 }
 
-function isNotBlank(field){
+function warnREmail(field1,field2,output) {
+    field1 = document.getElementById(field1).value;
+    field2 = document.getElementById(field2).value;
 
+    if (field1 != field2)
+        document.getElementById(output).innerHTML = "E-mail addresses do not match";
+    else
+        document.getElementById(output).innerHTML = "";
+}
+
+// PASSWORD
+
+function warnPassword(field,output) {
+    // message = "test message";
+
+    // if (message != undefined)
+    //     document.getElementById(output).innerHTML = message;
+
+    document.getElementById(output).innerHTML = "Password";
+}
+
+function warnRePassword(field1,field2,output) {
+    field1 = document.getElementById(field1).value;
+    field2 = document.getElementById(field2).value;
+
+    if (field1 != field2)
+        document.getElementById(output).innerHTML = "Passwords do not match";
+    else
+        document.getElementById(output).innerHTML = "";
 }
