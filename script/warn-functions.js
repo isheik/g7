@@ -16,6 +16,7 @@ function validateUsername(field){
 }
 
 function isASCII(field){
+	return /^[\x00-\x7F]*$/.test(field);
 
 }
 
