@@ -1,31 +1,25 @@
-function isASCII(field){
-	return /^[\x00-\x7F]*$/.test(field);
+function isASCII(str){
+    for(var i = 0; i < str.length; i++)
+        // change 127 to 255 for extended ASCII
+        if(str.charCodeAt(i) > 127)
+            return false;
+    return true;
 }
 
-function min5Chars(field) {
-    return field.length >= 5;
+function isLengthInRange(str, min, max) {
+    // range is inclusive
+    return min <= str.length && str.length <= max;
 }
 
-function max128Chars(field) {
-    return field.length <= 128;
+function isNotBlank(str){
+    return str != null && str.length != 0;
 }
 
-function max256Chars() {
-    field.length <= 256;
+function isValidUsername(str) {
+    // only allow alphanumeric characters, '-' and '_'
+    return /^[a-zA-Z\-_0-9]+/.test(str);
 }
 
-function max5000Chars() {
-    field.length <= 5000;
-}
-
-function isNotBlank(field){
-    return (field.length > 0);
-}
-
-function isValidUsername(field) {
-    return !(/[^a-zA-Z\-\_0-9]/.test(field));
-}
-
-function isValidEmail(field) {
-    return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})/.test(field) ;
+function isValidEmail(str) {
+    return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})/.test(str);
 }
