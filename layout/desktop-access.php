@@ -9,12 +9,12 @@
 
     <body>
 
-<?php require_once("../php_include/site_header.html") ?>
+<?php require_once("../php_include/site_header.php") ?>
 
         <main class="page_row">
             <div id="content_wrapper" class="centered">
 
-<?php require_once("../php_include/lessons_nav.html") ?>
+<?php require_once("../php_include/lessons_nav.php") ?>
 
                 <article id="lesson_content">
                     <h2>Desktop Access</h2>
@@ -22,7 +22,7 @@
             </div>
         </main>
 
-<?php require_once("../php_include/site_footer.html") ?>
+<?php require_once("../php_include/site_footer.php") ?>
 
     </body>
 </html>

@@ -8,7 +8,7 @@
 
     <body>
 
-<?php require_once("./php_include/site_header.html") ?>
+<?php require_once("./php_include/site_header.php") ?>
 
         <main class="page_row">
             <div id="content_wrapper" class="centered">
@@ -32,7 +32,7 @@
             </div>
         </main>
 
-<?php require_once("./php_include/site_footer.html") ?>
+<?php require_once("./php_include/site_footer.php") ?>
 
     </body>
 </html>
