@@ -5,7 +5,7 @@
         <title>Windows 10 Shortcuts</title>
         <link rel="stylesheet" type="text/css" href="style/base.css">
         <link rel="stylesheet" type="text/css" href="style/lessons.css">
-        <script src="script.js"></script>
+        <script src="script/lessons-nav-exp.js"></script>
     </head>
 
     <body>
