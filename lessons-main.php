@@ -5,7 +5,6 @@
         <title>Windows 10 Shortcuts</title>
         <link rel="stylesheet" type="text/css" href="style/base.css">
         <link rel="stylesheet" type="text/css" href="style/lessons.css">
-        <script src="script/lessons-nav-exp.js"></script>
     </head>
 
     <body>
@@ -14,62 +13,8 @@
 
         <main class="page_row">
             <div id="content_wrapper" class="centered">
-                <nav id="lessons_nav">
-                    <h2>Lessons</h2>
-                    <ul id="category_list">
-                        <li>
-                            <button class="categories">Essentials</button>
-                            <ul class="lessons">
-                                <li><a href="./essentials/focus-and-movement.html">
-                                        Focus &amp; Movement</a></li>
-                                <li><a href="./essentials/editing.html">
-                                        Editing</a></li>
-                                <li><a href="./essentials/file-manipulation.html">
-                                        File Manipulation</a></li>
-                                <li><a href="./essentials/quality-of-life.html">
-                                        Quality of Life</a></li>
-                            </ul>
-                        </li>
 
-                        <li>
-                            <button class="categories">Layout</button>
-                            <ul class="lessons">
-                                <li><a href="./layout/desktop-access.html">
-                                        Desktop Access</a></li>
-                                <li><a href="./layout/window-switching.html">
-                                        Window Switching</a></li>
-                                <li><a href="./layout/screen-layout.html">
-                                        Screen Layout</a></li>
-                                <li><a href="./layout/virtual-desktops.html">
-                                        Virtual Desktops</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <button class="categories">Accessibility</button>
-                            <ul class="lessons">
-                                <li><a href="./accessibility/language-select.html">
-                                        Language Select</a></li>
-                                <li><a href="./accessibility/narrator.html">
-                                        Narrator</a></li>
-                                <li><a href="./accessibility/zoom.html">
-                                        Zoom</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <button class="categories">Advanced</button>
-                            <ul class="lessons">
-                                <li><a href="./advanced/run-commands.html">
-                                        Run Commands</a></li>
-                                <li><a href="./advanced/power-user.html">
-                                        Power User</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <script>nav_exp_init();</script>
-                </nav>
+<?php require_once("./php_include/lessons_nav.html") ?>
 
                 <article id="lesson_content">
                     <h2>Lesson 1</h2>
