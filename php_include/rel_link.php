@@ -6,7 +6,4 @@
     $add_to_path = "";
     for($i = 0; $i < $depth; $i++)
         $add_to_path .= "../";
-
-    $lesson_dirs = array("essentials", "layout", "accessibility", "advanced");
-    $skip_index = array_search(end($path_array), $lesson_dirs);
 ?>

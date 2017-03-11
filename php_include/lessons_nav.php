@@ -54,6 +54,13 @@
                     </ul>
 
                     <script src="<?php echo $add_to_path ?>script/lessons-nav-exp.js"></script>
-                    <?php echo "<script>nav_exp_init($skip_index);</script>" ?>
+<?php
+    // elements of the array must be in the same order they appear in html
+    $lesson_dirs = array("essentials", "layout", "accessibility", "advanced");
+    // $path_array is defined in rel_link.php
+    $skip_index = array_search(end($path_array), $lesson_dirs);
+    echo "                    "; // indentation, completely unnecessary
+    echo "<script>nav_exp_init($skip_index);</script>";
+?>
 
                 </nav>
