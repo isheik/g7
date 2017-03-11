@@ -8,29 +8,8 @@
     </head>
 
     <body>
-        <header class="page_row">
-            <div class="centered">
-                <a href="index.html"><img src="images/logo_header.png" id="header_logo" alt="logo" width="120" height="108"></a>
-                <h1 id="header_title">Windows 10 Shortcuts</h1>
-                <div id="auth">
-                    <a href="account.html" class="auth_button">Sign Up</a>
-                    <a href="account.html" class="auth_button">Log In</a>
-                </div>
-            </div>
-        </header>
 
-        <nav id="top_nav" class="site_nav page_row">
-            <div class="centered">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./lessons-main.html">Lessons</a></li>
-                    <li><a href="./catalog.html">Catalog</a></li>
-                    <li><a href="./forum.php">Forum</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./about.html">About</a></li>
-                </ul>
-            </div>
-        </nav>
+<?php require_once("./php_include/site_header.html") ?>
 
         <main class="page_row">
             <div id="content_wrapper" class="centered">
@@ -82,25 +61,7 @@
             </div>
         </main>
 
-        <footer class="page_row">
-            <div class="centered">
-                <nav id="bottom_nav" class="site_nav">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./lessons-main.html">Lessons</a></li>
-                        <li><a href="./catalog.html">Catalog</a></li>
-                        <li><a href="./forum.php">Forum</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./sitemap.html">Sitemap</a></li>
-                    </ul>
-                </nav>
-                <div id="logo_copyright">
-                    <img src="images/logo_footer.png" id="footer_logo" alt="logo" width="56" height="50">
-                    <p id="copyright">&copy; Copyright 2017.<br>All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
+<?php require_once("./php_include/site_footer.html") ?>
 
     </body>
 </html>
