@@ -27,7 +27,7 @@ function isNotBlank(str){
 
 function isValidUsername(str) {
     // only allow alphanumeric characters, '-' and '_'
-    return /^[a-zA-Z\-_0-9]+/.test(str);
+    return /^[a-zA-Z\-_0-9]+$/.test(str);
 }
 
 function isValidEmail(str) {
@@ -98,7 +98,7 @@ function validateUsername(username) {
         message = "Only alphanumeric characters, - and _ are allowed";
     else if (!isLengthInRange(username, minLength, maxLength))
         message = "Username has to be equal to or less than 128 characters";
-
+    
     return message;
 }
 
@@ -132,7 +132,7 @@ function validateEmail(email) {
     if (!isNotBlank(email))
         message = "Please enter your email address";
     else if (!isASCII(email))
-        message = "Only alphabet characters are allowed";
+        message = "Only alphanumeric characters, $, #, -, _, . and @ are allowed";
     else if (!isValidEmail(email))
         message = "Need to take email format (e.g. abcde@gmail.com)";
     else if (!isLengthInRange(email, minLength, maxLength))
@@ -205,7 +205,7 @@ function validatePassword(password) {
     if (!isNotBlank(password))
         message = "Please enter your password";
     else if (!isASCII(password))
-        message = "Only alphanumeric characters, $, # and _ are allowed";
+        message = "Only alphanumeric characters, $, #, - and _ are allowed";
     else if (!isLengthInRange(password, minLength, maxLength))
         message = "password has to be between 5 and 128 characters";
 
