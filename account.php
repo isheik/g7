@@ -21,12 +21,17 @@
                             <table id="account_login_table">
                                 <tr>
                                     <th><label for="login_username">Username:</label></th>
-                                    <td><input type="text" id="login_username" name="login_username" onchange="warnUsername('login_username','login_username_feedback')"></td>
+                                    <td><input type="text" id="login_username"
+                                    name="login_username" placeholder="Cannot be blank"
+                                    oninput="warnUsername('login_username','login_username_feedback')">
+                                    </td>
                                     <td><label class="FBFBFB" id="login_username_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="login_password">Password:</label></th>
-                                    <td><input type="password" id="login_password" name="login_password" onchange="warnPassword('login_password','login_password_feedback')"></td>
+                                    <td><input type="password" id="login_password"
+                                    name="login_password" placeholder="Cannot be blank"
+                                    oninput="warnPassword('login_password','login_password_feedback')"></td>
                                     <td><label class="FBFBFB" id="login_password_feedback"></label></td>
                                 </tr>
                                 <tr>
@@ -45,37 +50,47 @@
                             <table id="sign_up">
                                 <tr>
                                     <th><label for="signup_firstname">First Name:</label></th>
-                                    <td><input type="text" id="signup_firstname" name="signup_firstname" onchange="warnRealName('signup_firstname','signup_firstname_feedback')"></td>
+                                    <td><input type="text" id="signup_firstname" name="signup_firstname" oninput="warnRealName('signup_firstname','signup_firstname_feedback')"></td>
                                     <td><label class="FBFBFB" id="signup_firstname_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_lastname">Last Name:</label></th>
-                                    <td><input type="text" id="signup_lastname" name="signup_lastname" onchange="warnRealName('signup_lastname','signup_lastname_feedback')"></td></td>
+                                    <td><input type="text" id="signup_lastname" name="signup_lastname" oninput="warnRealName('signup_lastname','signup_lastname_feedback')"></td></td>
                                     <td><label class="FBFBFB" id="signup_lastname_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_username">User Name:</label></th>
-                                    <td><input type="text" id="signup_username" name="signup_username" onchange="warnUsername('signup_username','signup_username_feedback')"></td>
+                                    <td><input type="text" id="signup_username"
+                                    name="signup_username" placeholder="Cannot be blank"
+                                    oninput="warnUsername('signup_username','signup_username_feedback')"></td>
                                     <td><label class="FBFBFB" id="signup_username_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_email">Email:</label></th>
-                                    <td><input type="email" id="signup_email" name="signup_email" onchange="warnEmail('signup_email','signup_email_feedback')"></td>
+                                    <td><input type="email" id="signup_email"
+                                    name="signup_email" placeholder="Cannot be blank"
+                                    oninput="warnEmail('signup_email','signup_email_feedback')"></td>
                                     <td><label class="FBFBFB" id="signup_email_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_remail">Retype Email:</label></th>
-                                    <td><input type="email" id="signup_remail" name="signup_remail" onchange="warnREmail('signup_email','signup_remail','signup_remail_feedback')"></td>
+                                    <td><input type="email" id="signup_remail"
+                                    name="signup_remail" placeholder="Cannot be blank"
+                                    oninput="warnREmail('signup_email','signup_remail','signup_remail_feedback')"></td>
                                     <td><label class="FBFBFB" id="signup_remail_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_password">Password:</label></th>
-                                    <td><input type="password" id="signup_password" name="signup_password" onchange="warnPassword('signup_password','signup_password_feedback')"></td>
+                                    <td><input type="password" id="signup_password"
+                                    name="signup_password" placeholder="Cannot be blank"
+                                    oninput="warnPassword('signup_password','signup_password_feedback')"></td>
                                     <td><label class="FBFBFB" id="signup_password_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_repassword">Retype Password:</label></th>
-                                    <td><input type="password" id="signup_repassword" name="signup_repassword" onchange="warnRePassword('signup_password','signup_repassword','signup_repassword_feedback')"></td>
+                                    <td><input type="password" id="signup_repassword"
+                                    name="signup_repassword" placeholder="Cannot be blank"
+                                    oninput="warnRePassword('signup_password','signup_repassword','signup_repassword_feedback')"></td>
                                     <td><label class="FBFBFB" id="signup_repassword_feedback"></label></td>
                                 </tr>
                                 <tr>
@@ -94,12 +109,16 @@
                             <table id="deregister">
                                 <tr>
                                     <th><label for="dereg_username">Username:</label></th>
-                                    <td><input type="text" id="dereg_username" onchange="warnUsername('dereg_username','dereg_username_feedback')"></td>
+                                    <td><input type="text" id="dereg_username"
+                                    name="dereg_username" placeholder="Cannot be blank"
+                                    oninput="warnUsername('dereg_username','dereg_username_feedback')"></td>
                                     <td><label class="FBFBFB" id="dereg_username_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="dereg_password">Password:</label></th>
-                                    <td><input type="password" id="dereg_password" name="dereg_password" onchange="warnPassword('dereg_password','dereg_password_feedback')"></td>
+                                    <td><input type="password" id="dereg_password"
+                                    name="dereg_password" placeholder="Cannot be blank"
+                                    oninput="warnPassword('dereg_password','dereg_password_feedback')"></td>
                                     <td><label class="FBFBFB" id="dereg_password_feedback"></label></td>
                                 </tr>
                                 <tr>
