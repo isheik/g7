@@ -31,3 +31,8 @@ table {
     color: #ff0000;
     padding-right: 0.3em;
 }
+
+.error {
+    white-space: nowrap;
+    font-size: 0.6em;
+}
