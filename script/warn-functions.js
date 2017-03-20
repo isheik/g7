@@ -279,3 +279,69 @@ function validateResponse(response) {
     return message;
 }
 
+// Post
+/**
+ * @param field   the element of title text field
+ * @param output  the element of error message output field
+ */
+function warnTitle(field, output) {
+    // Clear the current error text in HTML;
+    $(output).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message = validateTitle($(field).value);
+
+    if (message != undefined)
+        $(output).innerHTML = message;
+}
+
+/**
+ * @param response  the String of title to be validated
+ * 
+ * @return message  the String of error message if invalid, or null if valid
+ */
+function validateTitle(title) {
+    var minLength = 1;
+    var maxLength = 256;
+    var message = null;
+
+    if (!isNotBlank(title))
+        message = "Please enter your title";
+    else if (!isLengthInRange(title, minLength, maxLength))
+        message = "Title has to be equal to or less than 256 characters";
+
+    return message;
+}
+
+/**
+ * @param field   the element of content text field
+ * @param output  the element of error message output field
+ */
+function warnContent(field, output) {
+    // Clear the current error text in HTML;
+    $(output).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message = validateContent($(field).value);
+
+    if (message != undefined)
+        $(output).innerHTML = message;
+}
+
+/**
+ * @param response  the String of conent to be validated
+ * 
+ * @return message  the String of error message if invalid, or null if valid
+ */
+function validateContent(content) {
+    var minLength = 1;
+    var maxLength = 5000;
+    var message = null;
+
+    if (!isNotBlank(content))
+        message = "Please enter your text";
+    else if (!isLengthInRange(content, minLength, maxLength))
+        message = "Content has to be equal to or less than 5000 characters";
+
+    return message;
+}

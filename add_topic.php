@@ -20,6 +20,7 @@
         <title>Windows 10 Shortcuts</title>
         <link rel="stylesheet" type="text/css" href="style/base.css">
         <link rel="stylesheet" type="text/css" href="style/add_topic.css">
+        <script src="script/warn-functions.js"></script>
     </head>
 
     <body>
@@ -35,11 +36,20 @@
                         <table id="forum_post_table">
                             <tr>
                                 <th class="forum_post_header">Title</th>
-                                <td><input type="text" id="forum_post_title" name="title"></td>
+                                <td><input type="text" id="forum_post_title" name="title"
+                                    oninput="warnTitle('forum_post_title','forum_post_title_feedback')">
+                                </td>
+                                <td><label class="FBFBFB" id="forum_post_title_feedback"></label></td>
                             </tr>
                             <tr id="forum_post_form">
-                                <th class="forum_post_header" id="forum_response_header">Response</th>
-                                <td><textarea id="forum_post_text" name="input"></textarea><div id="forum_response_post_button"><button type="submit" name="post">Post</button></div></td>
+                                <th class="forum_post_header" id="forum_response_header">Content</th>
+                                <td><textarea id="forum_post_text" name="input"
+                                    oninput="warnContent('forum_post_text','forum_post_text_feedback')"></textarea>
+                                    <div id="forum_response_post_button"><button type="submit" name="post">Post</button></div>
+                                </td>
+                                <td id="forum_post_text_feedback_area">
+                                    <label class="FBFBFB" id="forum_post_text_feedback"></label>
+                                </td>
                             </tr>
                         </table>
                     </form>
