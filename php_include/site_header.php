@@ -4,8 +4,7 @@
                 <a href="<?php echo $add_to_path ?>index.php"><img src="<?php echo $add_to_path ?>images/logo_header.png" id="header_logo" alt="logo" width="120" height="108"></a>
                 <h1 id="header_title">Windows 10 Shortcuts</h1>
                 <div id="auth">
-                    <a href="<?php echo $add_to_path ?>account.php" class="auth_button">Sign Up</a>
-                    <a href="<?php echo $add_to_path ?>account.php" class="auth_button">Log In</a>
+                    <a href="<?php echo $add_to_path ?>account.php" class="auth_button">Sign Up/Log In</a>
                 </div>
             </div>
         </header>
