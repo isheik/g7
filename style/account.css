@@ -1,6 +1,13 @@
 /*************************************************************/
 /* REGISTRATION AND LOGIN PAGE - account.html                */
 /*************************************************************/
+h2 {
+    padding-left: 35%;
+}
+
+table {
+    margin: 0 auto;
+}
 
 #account th {
     width: 8em;
@@ -15,6 +22,12 @@
 .account_table {
     padding-top: 1em;
 }
+
 .account_table th {
     font-weight: normal;
+}
+
+.required {
+    color: #ff0000;
+    padding-right: 0.3em;
 }
