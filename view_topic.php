@@ -32,6 +32,7 @@
         <title>Windows 10 Shortcuts</title>
         <link rel="stylesheet" type="text/css" href="style/base.css">
         <link rel="stylesheet" type="text/css" href="style/view_topic.css">
+        <script src="script/warn-functions.js"></script>
     </head>
 
     <body>
@@ -61,8 +62,23 @@
                             </tr>
                             <tr id="forum_response_form">
                                 <th class="forum_view_header" id="forum_response_header">Response</th>
-                                <td colspan="3"><form method="post" action="http://webdevbasics.net/scripts/demo.php"><textarea id="forum_response_text" name="input"></textarea><div id="forum_response_post_button"><button type="submit" name="post">Post</button></div></form></td>
+                                <td colspan="3">
+                                    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                                    <textarea id="forum_response_text" name="input" placeholder="Cannot be blank" 
+                                    oninput="warnResponse('forum_response_text','forum_response_feedback')"></textarea>
+                                    <div id="forum_response_post_button">
+                                        <button type="submit" name="post">Post</button>
+                                    </div>
+                                    </form>
+                                </td>
                             </tr>
+                            <tr>
+                                <th></th>
+                                <td colspan="3" id="forum_response_feedback">
+                                </td>
+                            </tr>
+                                
+
                         </table>
                     </div>
                     <div id="forum_comment">

@@ -245,3 +245,37 @@ function validateRePassword(original,confirmation) {
     return message;
 }
 
+// Response
+/**
+ * @param field   the element of response text field
+ * @param output  the element of error message output field
+ */
+function warnResponse(field, output) {
+    // Clear the current error text in HTML;
+    $(output).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message = validateResponse($(field).value);
+
+    if (message != undefined)
+        $(output).innerHTML = message;
+}
+
+/**
+ * @param response  the String of response to be validated
+ * 
+ * @return message  the String of error message if invalid, or null if valid
+ */
+function validateResponse(response) {
+    var minLength = 1;
+    var maxLength = 5000;
+    var message = null;
+
+    if (!isNotBlank(response))
+        message = "Please enter your response";
+    else if (!isLengthInRange(response, minLength, maxLength))
+        message = "Response text has to be equal to or less than 5000 characters";
+
+    return message;
+}
+
