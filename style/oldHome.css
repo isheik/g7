@@ -1,0 +1,38 @@
+/********************************************************************/
+/* HOME PAGE - index.html                                           */
+/********************************************************************/
+
+#lesson_grid {
+   text-align:center;
+}
+
+#lesson_grid h2 {
+    padding: 0.5em 0 0.5em 1em;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+#lesson_grid figure {
+    padding-bottom: 1em;
+    padding-left: 3em;
+    display: inline-block;
+}
+
+#lesson_grid a:link {
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+}
+
+#lesson_grid a:visited {
+    color: #262DA8;
+}
+
+#lesson_grid a:hover figcaption {
+    background-color: #E0E7F0;
+}
+
+#lesson_grid img {
+    vertical-align: middle;
+    border: 1px solid #000000;
+}
