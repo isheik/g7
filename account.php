@@ -6,6 +6,23 @@
         <link rel="stylesheet" type="text/css" href="style/base.css">
         <link rel="stylesheet" type="text/css" href="style/account.css">
         <script src="script/warn-functions.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!-- plugin source: https://github.com/M1Sh0u/pStrength -->
+        <script src="script/pStrength.jquery.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#signup_password').pStrength({
+                    'changeBackground': false,
+                    'onPasswordStrengthChanged': function(passwordStrength, strengthPercentage) {
+                        if ($(this).val())
+                            $.fn.pStrength('changeBackground', this, passwordStrength);
+                        else
+                            $.fn.pStrength('resetStyle', this);
+                        $('#password_strength').html('Your password strength is ' + strengthPercentage + '%');
+                    }
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -84,6 +101,7 @@
                                     <th><label for="signup_password"><span class="required">*</span>Password:</label></th>
                                     <td><input type="password" id="signup_password" name="signup_password"
                                     oninput="warnPassword('signup_password','signup_password_feedback')">
+                                    <label id="password_strength"></label>
                                     <label class="error" id="signup_password_feedback"></label></td>
                                 </tr>
                                 <tr>
