@@ -12,11 +12,11 @@
 <?php require_once("./php_include/site_header.php") ?>
 
        <main class="page_row">
-            <div  class="centered">
+            <div id="content_wrapper" class="centered">
                 <div class="slide_show_images">
-                  <img class="mySlides" src="images/logo1.jpg" width="1000" height="400" alt="d">
-                  <img class="mySlides" src="images/logo2.jpg" width="1000" height="400" alt="d">
-                  <img class="mySlides" src="images/logo3.jpg" width="1000" height="400" alt="d">
+                  <img class="mySlides" src="images/logo1.jpg" width="100%" height="100%" alt="d">
+                  <img class="mySlides" src="images/logo2.jpg" width="100%" height="100%" alt="d">
+                  <img class="mySlides" src="images/logo3.jpg" width="100%" height="100%" alt="d">
 
                   <div class="button_allignment" style="width:100%">
                     

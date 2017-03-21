@@ -12,25 +12,27 @@
 
 <?php require_once("./php_include/site_header.php") ?>
 
-        <main class="page_row">
+        <main>
             <div id="content_wrapper" class="centered">
                 <article id="account">
                     <div  class="account_table">
                         <h2>Login</h2>
                         <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+
+
                             <table id="account_login_table">
                                 <tr>
                                     <th><label for="login_username">Username:</label></th>
                                     <td><input type="text" id="login_username" name="login_username"
                                     oninput="warnUsername('login_username','login_username_feedback')">
+                                    <label class="error" id="login_username_feedback"></label>
                                     </td>
-                                    <td><label class="error" id="login_username_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="login_password">Password:</label></th>
                                     <td><input type="password" id="login_password" name="login_password"
-                                    oninput="warnPassword('login_password','login_password_feedback')"></td>
-                                    <td><label class="error" id="login_password_feedback"></label></td>
+                                    oninput="warnPassword('login_password','login_password_feedback')">
+                                    <label class="error" id="login_password_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th></th>
@@ -40,6 +42,8 @@
                                     </td>
                                 </tr>
                             </table>
+
+
                         </form>
                     </div>
                     <div  class="account_table">
@@ -48,45 +52,45 @@
                             <table id="sign_up">
                                 <tr>
                                     <th><label for="signup_firstname">First Name:</label></th>
-                                    <td><input type="text" id="signup_firstname" name="signup_firstname" oninput="warnRealName('signup_firstname','signup_firstname_feedback')"></td>
-                                    <td><label class="error" id="signup_firstname_feedback"></label></td>
+                                    <td><input type="text" id="signup_firstname" name="signup_firstname" oninput="warnRealName('signup_firstname','signup_firstname_feedback')">
+                                    <label class="error" id="signup_firstname_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_lastname">Last Name:</label></th>
-                                    <td><input type="text" id="signup_lastname" name="signup_lastname" oninput="warnRealName('signup_lastname','signup_lastname_feedback')"></td></td>
-                                    <td><label class="error" id="signup_lastname_feedback"></label></td>
+                                    <td><input type="text" id="signup_lastname" name="signup_lastname" oninput="warnRealName('signup_lastname','signup_lastname_feedback')">
+                                    <label class="error" id="signup_lastname_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_username"><span class="required">*</span>User Name:</label></th>
                                     <td><input type="text" id="signup_username" name="signup_username"
-                                    oninput="warnUsername('signup_username','signup_username_feedback')"></td>
-                                    <td><label class="error" id="signup_username_feedback"></label></td>
+                                    oninput="warnUsername('signup_username','signup_username_feedback')">
+                                    <label class="error" id="signup_username_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_email"><span class="required">*</span>Email:</label></th>
                                     <td><input type="email" id="signup_email"
                                     name="signup_email" placeholder="example@abc.com"
-                                    oninput="warnEmail('signup_email','signup_email_feedback')"></td>
-                                    <td><label class="error" id="signup_email_feedback"></label></td>
+                                    oninput="warnEmail('signup_email','signup_email_feedback')">
+                                    <label class="error" id="signup_email_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_remail"><span class="required">*</span>Retype Email:</label></th>
                                     <td><input type="email" id="signup_remail"
                                     name="signup_remail" placeholder="example@abc.com"
-                                    oninput="warnREmail('signup_email','signup_remail','signup_remail_feedback')"></td>
-                                    <td><label class="error" id="signup_remail_feedback"></label></td>
+                                    oninput="warnREmail('signup_email','signup_remail','signup_remail_feedback')">
+                                    <label class="error" id="signup_remail_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_password"><span class="required">*</span>Password:</label></th>
                                     <td><input type="password" id="signup_password" name="signup_password"
-                                    oninput="warnPassword('signup_password','signup_password_feedback')"></td>
-                                    <td><label class="error" id="signup_password_feedback"></label></td>
+                                    oninput="warnPassword('signup_password','signup_password_feedback')">
+                                    <label class="error" id="signup_password_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_repassword"><span class="required">*</span>Retype Password:</label></th>
                                     <td><input type="password" id="signup_repassword" name="signup_repassword"
-                                    oninput="warnRePassword('signup_password','signup_repassword','signup_repassword_feedback')"></td>
-                                    <td><label class="error" id="signup_repassword_feedback"></label></td>
+                                    oninput="warnRePassword('signup_password','signup_repassword','signup_repassword_feedback')">
+                                    <label class="error" id="signup_repassword_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th></th>

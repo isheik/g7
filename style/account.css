@@ -6,11 +6,14 @@ h2 {
 }
 
 table {
-    margin-left: 30%;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 30em;
+    padding: 0.2em 0.2em 0 0;
 }
 
 input {
-    width: 17em;
+    width: 100%;
 }
 
 #account th {
@@ -38,5 +41,10 @@ input {
 
 .error {
     white-space: nowrap;
-    font-size: 0.6em;
+    /*font-size: 0.6em;*/
+
+    position: absolute;
+    left: 100%;
+    padding: 0.5em 0 0 1em;
+    color: #777;
 }

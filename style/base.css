@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 html, body {
@@ -30,6 +31,12 @@ script { display: none; }
     margin: auto;
 }
 
+#content_wrapper {
+    background-color: white;
+    min-height: 100%;
+    padding: 0 2em;
+}
+
 
 /*************************************************************/
 /* SITE-WIDE GENERAL STYLES                                  */
@@ -37,6 +44,11 @@ script { display: none; }
 
 main {
     font-size: 1.25em;
+    background: black url('../images/test-background.jpg') fixed;
+    background-size: 100% auto;
+    background-position: left center;
+    height: 100%;
+    min-height: 100%;
 }
 
 main p {
