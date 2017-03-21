@@ -2,34 +2,33 @@
 /* CONTACT PAGE - contact.html                               */
 /*************************************************************/
 
+#contact {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .form_block_sm {
     display: inline-block;
-    width: 35%;
+    width: 50%;
     padding: 0.25em 1em;
+}
+
+.form_block_sm:nth-of-type(2n-1) {
+    float: left;
+}
+
+.form_block_sm:nth-of-type(2n) {
+    float: right;
 }
 
 .form_block_lg {
+    clear: both;
     display: inline-block;
-    width: 70%;
+    width: 100%;
     padding: 0.25em 1em;
 }
 
-.form_block_sm input {
+input, textarea {
     width: 100%;
-    box-shadow: .2em .1em 0.2em #f2f2f2;
-    height:1.6em;
-    font-size:12pt;
-    /*box-shadow: 0 0 .3em hsla(0, 0%, 0%, 0); not working*/
-}
-
-.form_block_sm input:focus,.form_block_lg textarea:focus{
-    transition: all 0.32s ease-in-out;
-    outline: none;
-    box-shadow: 0 0 .3em #b3b3b3;
-    /*border: 1px solid #8c8c8c;*/
-}
-
-
-.form_container_sm label {
-    font-size: 0.75em;
+    margin: 0;
 }

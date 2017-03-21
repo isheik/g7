@@ -14,30 +14,35 @@
         <main class="page_row">
             <div id="content_wrapper" class="centered">
                 <article>
-                    <h2>Contact</h2>
 
                     <form name="contact" method="post" id="contact" action="http://webdevbasics.net/scripts/demo.php">
+                        <h2>Contact</h2>
 
-                        <label for="firstname" class="form_block_sm">First Name*<br>
-                        <input type="text" name="firstname" id="firstname"
-                               placeholder="First Name" size="26"></label>
+                        <div class="form_block_sm">
+                            <label for="firstname">First Name*</label><br>
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name" size="26">
+                        </div>
 
-                        <label for="lastname" class="form_block_sm">Last Name<br>
-                        <input type="text" name="lastname" id="lastname"
-                               placeholder="Last Name" size="26"></label>
+                        <div class="form_block_sm">
+                            <label for="lastname">Last Name</label><br>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" size="26">
+                        </div>
 
-                        <label for="email" class="form_block_sm">Email Address*<br>
-                        <input type="text" name="email" id="email"
-                               placeholder="Email Address" size="26"></label>
+                        <div class="form_block_sm">
+                            <label for="email">Email Address*</label><br>
+                            <input type="text" name="email" id="email" placeholder="Email Address" size="26">
+                        </div>
 
-                        <label for="remail" class="form_block_sm">Confirm Email Address*<br>
-                        <input type="text" name="remail" id="remail"
-                               placeholder="Email Address" size="26"></label>
+                        <div class="form_block_sm">
+                            <label for="remail">Confirm Email Address*</label><br>
+                            <input type="text" name="remail" id="remail" placeholder="Email Address" size="26">
+                        </div>
 
-                        <label for="comment" class="form_block_lg">Message*
-                        <textarea name="comment" id="comment" style="font-size:12pt; font-family:arial"
-                               rows="5" cols="82" placeholder="Type here your message..."></textarea></label><br>
-                        <button type="submit" form="contact" value="Submit">Submit</button>
+                        <div class="form_block_lg">
+                            <label for="comment">Message*</label>
+                            <textarea name="comment" id="comment" rows="5" cols="82" placeholder="Type here your message..."></textarea><br>
+                            <button type="submit" form="contact" value="Submit">Submit</button>
+                        </div>
 
                     </form>
                 </article>
