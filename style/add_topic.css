@@ -2,8 +2,13 @@
 /* FORUM POST VIEW - add_topic.php                           */
 /*************************************************************/
 
+#forum_add_topic h2 {
+    margin-left: 20%;
+}
+
 #forum_post_table {
     width: 100%;
+    margin-left: 20%;
 }
 
 #forum_add_topic {
@@ -11,7 +16,9 @@
 }
 
 #forum_add_topic p {
-    margin: 1em 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 20%;
 }
 
 .forum_post_header {
@@ -33,7 +40,7 @@
 }
 
 #forum_post_table td{
-    width: 50%;
+    width: 50%;    
 }
 
 #forum_post_text_feedback_area {

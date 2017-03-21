@@ -4,6 +4,7 @@
 
 #forum_view {
     padding: 1em 0;
+    margin-left: 15%;
 }
 
 #forum_view p {
@@ -31,10 +32,8 @@
 }
 
 #forum_response_post_button {
-    /*float: right;*/
     text-align: right;
 }
-
 
 #forum_response_text {
     width: 100%;
@@ -47,7 +46,8 @@
 }
 
 #forum_comment {
-    margin: 2em 0;
+    margin-top: 2em;
+    margin-left: 15%;
 }
 
 #forum_comment_table {
