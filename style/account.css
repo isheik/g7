@@ -9,6 +9,10 @@ table {
     margin-left: 30%;
 }
 
+input {
+    width: 17em;
+}
+
 #account th {
     width: 8em;
     padding-right: .3em;
