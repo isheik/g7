@@ -10,7 +10,8 @@
         <!-- plugin source: https://github.com/M1Sh0u/pStrength -->
         <script src="script/pStrength.jquery.js"></script>
         <script>
-            $(document).ready(function() {
+            $.noConflict();
+            jQuery(document).ready(function($) {
                 $('#signup_password').pStrength({
                     'changeBackground': false,
                     'onPasswordStrengthChanged': function(passwordStrength, strengthPercentage) {
