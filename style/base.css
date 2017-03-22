@@ -34,6 +34,7 @@ script { display: none; }
 #content_wrapper {
     background-color: white;
     min-height: 100%;
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.3);
 }
 
 /*************************************************************/
@@ -157,8 +158,8 @@ label {
 header.page_row {
     height: 7.4em;
     background-color: #0078d7;
-    /*background-color: #262DA8;*/
     background: linear-gradient(#0078d7,#262DA8);
+    z-index: 10;
 }
 
 #header_logo {
@@ -213,6 +214,10 @@ nav.site_nav ul {
 }
 
 nav.site_nav ul li { display: table-cell; }
+
+#top_nav {
+    z-index: 10;
+}
 
 nav#top_nav {
     background-color: #2b2b2b;
