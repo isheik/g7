@@ -50,10 +50,9 @@
         <main class="page_row">
             <div id="content_wrapper" class="centered">
                 <article id="account">
-                    <div  class="account_table">
+                    <div class="account_table">
                         <h2>Login</h2>
                         <form method="post" action="http://webdevbasics.net/scripts/demo.php">
-
 
                             <table id="account_login_table">
                                 <tr>
@@ -81,7 +80,7 @@
 
                         </form>
                     </div>
-                    <div  class="account_table">
+                    <div class="account_table">
                         <h2>Sign up</h2>
                         <form method="post" action="http://webdevbasics.net/scripts/demo.php">
                             <table id="sign_up">
@@ -145,14 +144,12 @@
                                 <tr>
                                     <th><label for="dereg_username">Username:</label></th>
                                     <td><input type="text" id="dereg_username" name="dereg_username"
-                                    oninput="warnUsername('dereg_username','dereg_username_feedback')"></td>
-                                    <td><label class="error" id="dereg_username_feedback"></label></td>
+                                    oninput="warnUsername('dereg_username','dereg_username_feedback')"><label class="error" id="dereg_username_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="dereg_password">Password:</label></th>
                                     <td><input type="password" id="dereg_password" name="dereg_password"
-                                    oninput="warnPassword('dereg_password','dereg_password_feedback')"></td>
-                                    <td><label class="error" id="dereg_password_feedback"></label></td>
+                                    oninput="warnPassword('dereg_password','dereg_password_feedback')"><label class="error" id="dereg_password_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th></th>

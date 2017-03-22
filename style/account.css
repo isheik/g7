@@ -5,34 +5,17 @@ h2 {
     padding-left: 35%;
 }
 
-table {
-    margin: 0 auto;
-    border: 1px solid black;
+#account table {
     width: 30em;
-    padding: 0.2em 0.2em 0 0;
 }
 
-input {
-    width: 100%;
-}
-
-#account th {
-    width: 8em;
-    padding-right: .3em;
+#account table th {
     text-align: right;
-    vertical-align: top;
+    width: 8em;
 }
 
 .account_button {
     text-align: right;
-}
-
-.account_table {
-    padding-top: 1em;
-}
-
-.account_table th {
-    font-weight: normal;
 }
 
 .required {
