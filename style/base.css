@@ -34,14 +34,14 @@ script { display: none; }
 #content_wrapper {
     background-color: white;
     min-height: 100%;
-    padding: 0 2em;
 }
-
 
 /*************************************************************/
 /* SITE-WIDE GENERAL STYLES                                  */
 /*************************************************************/
 
+/* BLOCK/CONTAINER ELEMENTS */
+/* Primarily semantic elements:; article, section, main, etc. */
 main {
     font-size: 1.25em;
     background: black url('../images/test-background.jpg') fixed;
@@ -51,11 +51,32 @@ main {
     min-height: 100%;
 }
 
-main p {
-    margin: 1.25em 0;
+article {
+    padding: 1em 2em;
 }
 
-main a {
+/* TABLES */
+
+table {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+th, td {
+    padding: 0.2em 0.3em 0 0.3em;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+
+/* TEXT ELEMENTS */
+/* Includes various text elements that are used across the site, but particularly
+in the main body of the content. */
+
+main p, main a {
     margin: 1.25em 0;
 }
 
@@ -84,10 +105,6 @@ h3 {
     font-size: 1.25em;
 }
 
-article {
-    padding: 1em;
-}
-
 /* LISTS */
 /* The selector in this rule is necessary to target content that is in our main
 content area. This is to avoid conflicts with the nav bar. */
@@ -110,17 +127,15 @@ input, textarea {
     border: 1px solid #777;
     box-shadow: .2em .1em 0.2em #f2f2f2;
     font-size: 1em;
-    margin: 0.05em 0;
-}
-
-input {
-    height: 1.6em;
+    margin: 0.05em;
+    min-height: 1.6em;
+    width: 100%;
+    padding: 0 0.3em;
 }
 
 textarea {
     resize: vertical;
     font-family: inherit;
-    width: 100%;
 }
 
 input:focus, textarea:focus {
@@ -132,7 +147,6 @@ input:focus, textarea:focus {
 
 label {
     font-size: 0.8em;
-    /*color: red;*/
 }
 
 

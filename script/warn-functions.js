@@ -498,3 +498,23 @@ function warnDereg(field1, field2, output1, output2) {
     }
     return true;
 }
+
+/**
+ * @param field    the element of response text field
+ * @param output   the element of error message for response
+ * 
+ * @return result  the boolean of the validation result
+ */
+function warnViewTopic(field, output) {
+    // Clear the current error text in HTML;
+    $(output).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message = validateResponse($(field).value);
+
+    if (message != undefined) {
+        $(output).innerHTML = message;
+        return false;
+    }
+    return true;
+}

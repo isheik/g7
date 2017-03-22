@@ -63,12 +63,13 @@
                             <tr id="forum_response_form">
                                 <th class="forum_view_header" id="forum_response_header">Response</th>
                                 <td colspan="3">
-                                    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
-                                    <textarea id="forum_response_text" name="input" placeholder="Cannot be blank" 
-                                    oninput="warnResponse('forum_response_text','forum_response_feedback')"></textarea>
-                                    <div id="forum_response_post_button">
-                                        <button type="submit" name="post">Post</button>
-                                    </div>
+                                    <form method="post" action="http://webdevbasics.net/scripts/demo.php" 
+                                        onsubmit="return warnViewTopic('forum_response_text', 'forum_response_feedback')">
+                                        <textarea id="forum_response_text" name="input" 
+                                            oninput="warnResponse('forum_response_text', 'forum_response_feedback')"></textarea>
+                                        <div id="forum_response_post_button">
+                                            <button type="submit" name="post">Post</button>
+                                        </div>
                                     </form>
                                 </td>
                             </tr>
