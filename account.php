@@ -47,7 +47,7 @@
 
 <?php require_once("./php_include/site_header.php") ?>
 
-        <main>
+        <main class="page_row">
             <div id="content_wrapper" class="centered">
                 <article id="account">
                     <div  class="account_table">
