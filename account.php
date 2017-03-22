@@ -52,9 +52,9 @@
                 <article id="account">
                     <div  class="account_table">
                         <h2>Login</h2>
-                        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
-
-
+                        <form method="post" action="http://webdevbasics.net/scripts/demo.php"
+                            onsubmit="return warnLogin('login_username', 'login_password', 
+                             'login_username_feedback', 'login_password_feedback')">
                             <table id="account_login_table">
                                 <tr>
                                     <th><label for="login_username">Username:</label></th>
@@ -83,16 +83,23 @@
                     </div>
                     <div  class="account_table">
                         <h2>Sign up</h2>
-                        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                        <form method="post" action="http://webdevbasics.net/scripts/demo.php" 
+                            onsubmit="return warnRegistration('signup_firstname', 'signup_lastname', 'signup_username',
+                             'signup_email', 'signup_remail', 'signup_password', 'signup_repassword', 
+                             'signup_firstname_feedback', 'signup_lastname_feedback', 'signup_username_feedback',
+                             'signup_email_feedback', 'signup_remail_feedback', 'signup_password_feedback',
+                             'signup_repassword_feedback')">
                             <table id="sign_up">
                                 <tr>
                                     <th><label for="signup_firstname">First Name:</label></th>
-                                    <td><input type="text" id="signup_firstname" name="signup_firstname" oninput="warnRealName('signup_firstname','signup_firstname_feedback')">
+                                    <td><input type="text" id="signup_firstname" name="signup_firstname" 
+                                    oninput="warnRealName('signup_firstname','signup_firstname_feedback')">
                                     <label class="error" id="signup_firstname_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_lastname">Last Name:</label></th>
-                                    <td><input type="text" id="signup_lastname" name="signup_lastname" oninput="warnRealName('signup_lastname','signup_lastname_feedback')">
+                                    <td><input type="text" id="signup_lastname" name="signup_lastname" 
+                                    oninput="warnRealName('signup_lastname','signup_lastname_feedback')">
                                     <label class="error" id="signup_lastname_feedback"></label></td>
                                 </tr>
                                 <tr>
@@ -140,7 +147,9 @@
                     </div>
                     <div  class="account_table">
                         <h2>Deregister</h2>
-                        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                        <form method="post" action="http://webdevbasics.net/scripts/demo.php"
+                            onsubmit="return warnDereg('dereg_username', 'dereg_password', 
+                             'dereg_username_feedback', 'dereg_password_feedback')">
                             <table id="deregister">
                                 <tr>
                                     <th><label for="dereg_username">Username:</label></th>

@@ -373,3 +373,128 @@ function warnPost(field1, field2, output1, output2) {
     }
     return true;
 }
+
+
+/**
+ * @param field1   the element of firstname text field
+ * @param field2   the element of lastname text field
+ * @param field3   the element of username field
+ * @param field4   the element of email text field
+ * @param field5   the element of remail text field
+ * @param field6   the element of password text field
+ * @param field7   the element of rpassword text field
+ * @param output1  the element of error message for firstname
+ * @param output2  the element of error message for lastname
+ * @param output3  the element of error message for username
+ * @param output4  the element of error message for email
+ * @param output5  the element of error message for remail
+ * @param output6  the element of error message for password
+ * @param output7  the element of error message for rpassword
+ * 
+ * @return result  the boolean of the validation result
+ */
+function warnRegistration(field1, field2, field3, field4, field5, field6, field7,
+     output1, output2, output3, output4, output5, output6, output7) {
+
+    // Clear the current error text in HTML;
+    $(output1).innerHTML = "";
+    $(output2).innerHTML = "";
+    $(output3).innerHTML = "";
+    $(output4).innerHTML = "";
+    $(output5).innerHTML = "";
+    $(output6).innerHTML = "";
+    $(output7).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message1 = validateRealname($(field1).value);
+    var message2 = validateRealname($(field2).value);
+    var message3 = validateUsername($(field3).value);
+    var message4 = validateEmail($(field4).value);
+    var message5 = validateREmail($(field4).value, $(field5).value);
+    var message6 = validatePassword($(field6).value);
+    var message7 = validateRePassword($(field6).value, $(field7).value);
+
+    if (message1 != undefined || message2 != undefined || message3 != undefined
+         || message4 != undefined || message5 != undefined || message6 != undefined
+          || message7 != undefined) {
+        if (message1 != undefined)
+            $(output1).innerHTML = message1;
+
+        if (message2 != undefined)
+            $(output2).innerHTML = message2;
+
+        if (message3 != undefined)
+            $(output3).innerHTML = message3;
+
+        if (message4 != undefined)
+            $(output4).innerHTML = message4;
+
+        if (message5 != undefined)
+            $(output5).innerHTML = message5;
+
+        if (message6 != undefined)
+            $(output6).innerHTML = message6;
+
+        if (message7 != undefined)
+            $(output7).innerHTML = message7;
+
+        return false;
+    }
+    return true;
+}
+
+/**
+ * @param field1   the element of username text field
+ * @param field2   the element of password text field
+ * @param output1  the element of error message for username
+ * @param output2  the element of error message for password
+ * 
+ * @return result  the boolean of the validation result
+ */
+function warnLogin(field1, field2, output1, output2) {
+    // Clear the current error text in HTML;
+    $(output1).innerHTML = "";
+    $(output2).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message1 = validateUsername($(field1).value);
+    var message2 = validatePassword($(field2).value);
+
+    if (message1 != undefined || message2 != undefined) {
+        if (message1 != undefined)
+            $(output1).innerHTML = message1;
+
+        if (message2 != undefined)
+            $(output2).innerHTML = message2;
+        return false;
+    }
+    return true;
+}
+
+/**
+ * @param field1   the element of username text field
+ * @param field2   the element of password text field
+ * @param output1  the element of error message for username
+ * @param output2  the element of error message for password
+ * 
+ * @return result  the boolean of the validation result
+ */
+function warnDereg(field1, field2, output1, output2) {
+    // Clear the current error text in HTML;
+    $(output1).innerHTML = "";
+    $(output2).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message1 = validateUsername($(field1).value);
+    var message2 = validatePassword($(field2).value);
+
+    if (message1 != undefined || message2 != undefined) {
+        if (message1 != undefined)
+            $(output1).innerHTML = message1;
+
+        if (message2 != undefined)
+            $(output2).innerHTML = message2;
+        return false;
+    }
+    return true;
+}
