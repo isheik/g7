@@ -19,7 +19,24 @@
                             $.fn.pStrength('changeBackground', this, passwordStrength);
                         else
                             $.fn.pStrength('resetStyle', this);
-                        $('#password_strength').html('Your password strength is ' + strengthPercentage + '%');
+
+                        var message = ""
+
+                        if (strengthPercentage <= 0)
+                            message = "";
+                        else if (strengthPercentage < 20)
+                            message = "Very weak";
+                        else if (strengthPercentage < 40)
+                            message = "Weak";
+                        else if (strengthPercentage < 60)
+                            message = "Medium";
+                        else if (strengthPercentage < 80)
+                            message = "Strong";
+                        else
+                            message = "Very strong";
+
+                        $('#password_strength').html(message);
+                        // $('#password_strength').html('Your password strength is ' + strengthPercentage + '%');
                     }
                 });
             });
