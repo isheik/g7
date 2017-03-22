@@ -32,7 +32,9 @@
                 <article id="forum_add_topic">
                     <h2>Forum</h2>
                     <p><a href="./forum.php">Return to forum top page</a></p>
-                    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                    <form method="post" action="http://webdevbasics.net/scripts/demo.php"
+                        onsubmit="return warnPost('forum_post_title', 'forum_post_text', 
+                        'forum_post_title_feedback', 'forum_post_text_feedback')">
                         <table id="forum_post_table">
                             <tr>
                                 <th class="forum_post_header">Title</th>

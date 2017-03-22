@@ -345,3 +345,31 @@ function validateContent(content) {
 
     return message;
 }
+
+/**
+ * @param field1   the element of title text field
+ * @param field2   the element of content text field
+ * @param output1  the element of error message for title
+ * @param output2  the element of error message for content
+ * 
+ * @return result  the boolean of the validation result
+ */
+function warnPost(field1, field2, output1, output2) {
+    // Clear the current error text in HTML;
+    $(output1).innerHTML = "";
+    $(output2).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message1 = validateTitle($(field1).value);
+    var message2 = validateContent($(field2).value);
+
+    if (message1 != undefined || message2 != undefined) {
+        if (message1 != undefined)
+            $(output1).innerHTML = message1;
+
+        if (message2 != undefined)
+            $(output2).innerHTML = message2;
+        return false;
+    }
+    return true;
+}
