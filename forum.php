@@ -40,9 +40,9 @@
                     <p><a href="./add_topic.php">Create a new topic</a></p>
                     <table>
                         <tr class="forum_header_row">
-                            <th id="forum_post_id_header"><strong>Post #</strong></th>
-                            <th id="forum_topic_header"><strong>TOPIC</strong></th>
-                            <th id="forum_post_date_header"><strong>POSTED DATE</strong></th>
+                            <th class="forum_post_id_header"><strong>Post #</strong></th>
+                            <th class="forum_topic_header"><strong>TOPIC</strong></th>
+                            <th class="forum_post_date_header"><strong>POSTED DATE</strong></th>
                         </tr>
 
                         <!-- enumrate topics from SQL result -->
@@ -50,9 +50,9 @@
                             while($rows=mysqli_fetch_array($result)){ 
                         ?>
                         <tr class="forum_contents_row">
-                            <td id="forum_post_id_cell"><?php echo $rows['id']; ?></td>
-                            <td id="forum_topic_cell"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a></td>
-                            <td id="forum_post_date_cell"><?php echo $rows['datetime']; ?></td>
+                            <td class="forum_post_id_cell"><?php echo $rows['id']; ?></td>
+                            <td class="forum_topic_cell"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a></td>
+                            <td class="forum_post_date_cell"><?php echo $rows['datetime']; ?></td>
                         <?php
                             }
                             ((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
