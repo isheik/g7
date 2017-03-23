@@ -5,19 +5,6 @@ h2 {
     padding-left: 35%;
 }
 
-#account table {
-    width: 30em;
-}
-
-#account table th {
-    text-align: right;
-    width: 8em;
-}
-
-#account th, #account td {
-    border: none;
-}
-
 .account_button {
     text-align: right;
 }
@@ -32,3 +19,4 @@ h2 {
     top: 0.7em;
     right: 0.7em;
 }
+

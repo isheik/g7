@@ -35,24 +35,25 @@
                     <form method="post" action="http://webdevbasics.net/scripts/demo.php"
                         onsubmit="return warnPost('forum_post_title', 'forum_post_text', 
                         'forum_post_title_feedback', 'forum_post_text_feedback')">
-                        <table id="forum_post_table">
+                        <table id="forum_post_table" class="layout_table">
+
                             <tr>
-                                <th class="forum_post_header">Title</th>
+                                <th><label for="forum_post_title">Title:</label></th>
                                 <td><input type="text" id="forum_post_title" name="title"
                                     oninput="warnTitle('forum_post_title','forum_post_title_feedback')">
+                                    <label class="error" id="forum_post_title_feedback"></label>
                                 </td>
-                                <td><label class="FBFBFB" id="forum_post_title_feedback"></label></td>
                             </tr>
+
                             <tr id="forum_post_form">
-                                <th class="forum_post_header" id="forum_response_header">Content</th>
+                                <th><label for="forum_post_text">Content:</label></th>
                                 <td><textarea id="forum_post_text" name="input"
                                     oninput="warnContent('forum_post_text','forum_post_text_feedback')"></textarea>
-                                    <div id="forum_response_post_button"><button type="submit" name="post">Post</button></div>
-                                </td>
-                                <td id="forum_post_text_feedback_area">
-                                    <label class="FBFBFB" id="forum_post_text_feedback"></label>
+                                    <label class="error" id="forum_post_text_feedback"></label>
+                                    <button type="submit" name="post">Post</button>
                                 </td>
                             </tr>
+
                         </table>
                     </form>
                 </article>

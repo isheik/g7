@@ -55,7 +55,7 @@
                         <form method="post" action="http://webdevbasics.net/scripts/demo.php"
                             onsubmit="return warnLogin('login_username', 'login_password', 
                              'login_username_feedback', 'login_password_feedback')">
-                            <table id="account_login_table">
+                            <table class="layout_table" id="account_login_table">
                                 <tr>
                                     <th><label for="login_username">Username:</label></th>
                                     <td><input type="text" id="login_username" name="login_username"
@@ -87,7 +87,7 @@
                              'signup_firstname_feedback', 'signup_lastname_feedback', 'signup_username_feedback',
                              'signup_email_feedback', 'signup_remail_feedback', 'signup_password_feedback',
                              'signup_repassword_feedback')">
-                            <table id="sign_up">
+                            <table class="layout_table" id="sign_up">
                                 <tr>
                                     <th><label for="signup_firstname">First Name:</label></th>
                                     <td><input type="text" id="signup_firstname" name="signup_firstname" 
@@ -148,7 +148,7 @@
                         <form method="post" action="http://webdevbasics.net/scripts/demo.php"
                             onsubmit="return warnDereg('dereg_username', 'dereg_password', 
                              'dereg_username_feedback', 'dereg_password_feedback')">
-                            <table id="deregister">
+                            <table class="layout_table" id="deregister">
                                 <tr>
                                     <th><label for="dereg_username">Username:</label></th>
                                     <td><input type="text" id="dereg_username" name="dereg_username"
