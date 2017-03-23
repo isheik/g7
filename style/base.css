@@ -19,12 +19,12 @@ body {
     font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Verdana', sans-serif;
 }
 
+script { display: none; }
+
 .page_row {
     display: table-row;
     width: 100%;
 }
-
-script { display: none; }
 
 .centered {
     width: 1000px;
@@ -35,6 +35,12 @@ script { display: none; }
     background-color: white;
     min-height: 100%;
     box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.clearfix:after {
+    content: "";
+    overflow: hidden;
+    clear: both;
 }
 
 /*************************************************************/

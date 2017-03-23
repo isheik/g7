@@ -3,73 +3,74 @@
 /*************************************************************/
 
 .left_arrow {
-    padding-left:16px;
-    float:left;
-    cursor:pointer
+    padding-left: 16px;
+    float: left;
+    cursor: pointer
 }
 .right_arrow {
-    padding-right:16px;
-    float:right;
-    cursor:pointer
+    padding-right: 16px;
+    float: right;
+    cursor: pointer
 }
 
 .slide_show_images {
-    position:relative;
-    padding:0.5em 0
+    padding: 0.5em 0;
+
 }
 
-.button_allignment {
-    text-align:center;
-    margin-top:16px;
-    margin-bottom:16px;
-    color:#fff;
-    position:absolute;
-    left:50%;
-    bottom:0;
-    transform:translate(-50%,0%);
-    -ms-transform:translate(-50%,0%)
+.button_alignment {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%)
 }
 
 .mySlides {
-    display:none
+    display: none
 }
 
 .button_configuration {
-    background-color:#000;
-    color:#fff;
-    display:inline-block;
-    padding-left:8px;
-    padding-right:8px;
-    text-align:center;
-    border-radius:50%;
-    cursor:pointer;
-    height:13px;
-    width:13px;
-    padding:0;
-    background-color:transparent;
-    border:1px solid #ccc;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid #ccc;
 }
 
 
-.white,.hover-white:hover {
-    color:#000;
-    background-color:#fff
+.white,.hover-white: hover {
+    color: #000;
+    background-color: #fff
 }
 
 div h2 {
-    margin:auto;
-    padding:1.875em 4em 0 4em;
+    margin: auto;
+    padding: 1.875em 4em 0 4em;
 }
 
 div .p {
-    margin:auto;
-    padding:1.875em 9.375em 4em;
+    margin: auto;
+    padding: 1.875em 9.375em 4em;
 }
 
 
-.featured-content {
+.featured_content {
     display: inline-block;
-    width: 49%;
-    text-align:center;
-    padding-bottom:3em;
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-bottom: 3em;
 }
