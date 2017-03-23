@@ -3,19 +3,20 @@
 /*************************************************************/
 
 .left_arrow {
-    padding-left: 16px;
+    padding-left: 1em;
     float: left;
     cursor: pointer;
 }
 .right_arrow {
-    padding-right: 16px;
+    padding-right: 1em;
     float: right;
     cursor: pointer;
 }
 
 .slide_show_images {
+    overflow: hidden;
+    height: 15em;
     padding: 0.5em 0;
-    
 }
 
 .button_alignment {
@@ -31,7 +32,7 @@
 }
 
 .mySlides {
-    display: none
+    display: none;
 }
 
 .button_configuration {
@@ -51,26 +52,16 @@
 }
 
 
-.white,.hover-white: hover {
+.white, .hover-white:hover {
     color: #000;
-    background-color: #fff;
-}
-
-div h2 {
-    margin: auto;
-    padding: 1.875em 4em 0 4em;
-}
-
-div .p {
-    margin: auto;
-    padding: 1.875em 9.375em 4em;
+    background-color: rgba(255,255,255,0.9);
 }
 
 
 .featured_content {
     display: inline-block;
-    width: 50%;
-    float: left;
+    width: 49%;
     text-align: center;
-    padding-bottom: 3em;
+    vertical-align: text-top;
+    padding: 1em;
 }
