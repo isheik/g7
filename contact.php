@@ -29,7 +29,7 @@
                         <div class="form_block_sm">
                             <label for="lastname">Last Name</label><br>
                             <input type="text" name="lastname" id="lastname" placeholder="Last Name" size="26">
-                        </div>
+                        </div><br class="clear">
 
                         <div class="form_block_sm">
                             <label for="email">Email Address*</label><br>

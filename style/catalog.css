@@ -3,18 +3,18 @@
 /*************************************************************/
 
 #catalog table {
-    width: 80%;
+	width: 80%;
 }
 
 #shortcut_catalog th {
-    width: 12em;
-    border: 1px solid #000000;
+	width: 12em;
+	border: 1px solid #000000;
 }
 
 #shortcut_catalog td {
-    border: 1px solid #000000;
+	border: 1px solid #000000;
 }
 
 #shortcut_catalog th, #shortcut_catalog td {
-    padding: 0.1em 0.2em;
+	padding: 0.1em 0.2em;
 }

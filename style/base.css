@@ -43,6 +43,10 @@ script { display: none; }
     clear: both;
 }
 
+.clear {
+    clear: both;
+}
+
 /*************************************************************/
 /* SITE-WIDE GENERAL STYLES                                  */
 /*************************************************************/
@@ -154,6 +158,16 @@ input:focus, textarea:focus {
 
 label {
     font-size: 0.8em;
+}
+
+.error {
+    white-space: wrap;
+    font-size: 0.7em;
+    left: 0.5em;
+    top: -0.3em;
+    color: #777;
+    width: 100%;
+    line-height: 0.5em;
 }
 
 
