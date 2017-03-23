@@ -5,6 +5,7 @@
         <title>Contact</title>
         <link rel="stylesheet" type="text/css" href="style/base.css">
         <link rel="stylesheet" type="text/css" href="style/contact.css">
+        <script src="script/warn-functions.js"></script>
     </head>
 
     <body>
@@ -20,7 +21,9 @@
 
                         <div class="form_block_sm">
                             <label for="firstname">First Name*</label><br>
-                            <input type="text" name="firstname" id="firstname" placeholder="First Name" size="26">
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name" size="26"
+                                oninput="warnRealName('firstname', 'firstname_feedback')">
+                            <label class="error" id="firstname_feedback"></label>
                         </div>
 
                         <div class="form_block_sm">
