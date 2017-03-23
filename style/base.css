@@ -81,7 +81,7 @@ article {
 /* TABLES */
 
 table {
-    margin: 0 auto;
+    margin: 1em auto;
     table-layout: fixed;
     word-wrap: break-word;
 
@@ -105,7 +105,6 @@ th, td {
 
 .layout_table th {
     text-align: right;
-    width: 8em;
 }
 
 .layout_table th, .layout_table td {

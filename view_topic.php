@@ -41,41 +41,37 @@
 
         <main class="page_row">
             <div id="content_wrapper" class="centered">
-                <article>
+                <article id="forum_post">
                     <div id="forum_view">
                         <h2>Forum</h2>
                         <p><a href="./forum.php">Return to forum top page</a></p>
-                        <table id="forum_view_table">
+                        <table id="forum_view_table" class="layout_table">
                             <tr>
-                                <th class="forum_view_header">Posted by</th>
-                                <td class="forum_view_body"><strong>testuser</strong></td>
-                                <th class="forum_view_header">Posted Date</th>
+                                <th class=" forum_view_header"><label>Author:</label></th>
+                                <td class="forum_view_body">testuser</td>
+                                <th class=" forum_view_header"><label>Date:</label></th>
                                 <td class="forum_view_body"><?php echo $rows['datetime']; ?></td>
                             </tr>
                             <tr>
-                                <th class="forum_view_header">Title</th>
+                                <th class="forum_view_header"><label>Title:</label></th>
                                 <td colspan="3" class="forum_view_body"><strong><?php echo $rows['topic']; ?></strong></td>
                             </tr>
                             <tr>
-                                <th class="forum_view_header">Content</th>
+                                <th class="forum_view_header"><label>Content:</label></th>
                                 <td colspan="3" class="forum_view_body"><?php echo $rows['detail']; ?></td>
                             </tr>
+                        </table>
+                        <table class="layout_table">
                             <tr id="forum_response_form">
-                                <th class="forum_view_header" id="forum_response_header">Response</th>
+                                <th class="forum_view_header" id="forum_response_header"><label for="forum_response_text">Response:</label></th>
                                 <td colspan="3">
                                     <form method="post" action="http://webdevbasics.net/scripts/demo.php" 
                                         onsubmit="return warnViewTopic('forum_response_text', 'forum_response_feedback')">
                                         <textarea id="forum_response_text" name="input" 
                                             oninput="warnResponse('forum_response_text', 'forum_response_feedback')"></textarea>
-                                        <div id="forum_response_post_button">
-                                            <button type="submit" name="post">Post</button>
-                                        </div>
+                                        <label class="error" id="forum_response_feedback"></label>
+                                        <button type="submit" name="post">Post</button>
                                     </form>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <td colspan="3" id="forum_response_feedback">
                                 </td>
                             </tr>
                                 
@@ -93,13 +89,13 @@
 
                             while($rows=mysqli_fetch_array($result2)){
                         ?>
-                        <table id="forum_comment_table">
+                        <table id="forum_comment_table" class="layout_table">
                             <tr>
-                                <th class="forum_comment_header">commentator</th>
+                                <th class="forum_comment_header"><label>Commentator:</label></th>
                                 <td class="forum_comment_body"><?php echo $rows['response']; ?></td>
                             </tr>
                         </table>
-                        <?php
+                       <?php
                             }
                             ((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
                         ?>
