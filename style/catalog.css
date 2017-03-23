@@ -4,17 +4,11 @@
 
 #catalog table {
 	width: 80%;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0;
 }
 
 #shortcut_catalog th {
 	width: 12em;
-	border: 1px solid #000000;
-}
-
-#shortcut_catalog td {
-	border: 1px solid #000000;
-}
-
-#shortcut_catalog th, #shortcut_catalog td {
-	padding: 0.1em 0.2em;
 }

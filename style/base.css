@@ -52,12 +52,6 @@ script { display: none; }
     z-index: 5;
 }
 
-/*.clearfix:after {
-    content: "";
-    overflow: hidden;
-    clear: both;
-}*/
-
 .clear {
     clear: both;
 }
@@ -74,7 +68,7 @@ main {
 }
 
 article {
-    padding: 1em 2em;
+    padding: 1em 2em 2em 2em;
     height: 100%;
 }
 
@@ -88,17 +82,27 @@ article {
 
 table {
     margin: 0 auto;
-    border: 1px solid black;
-    border-collapse: collapse;
     table-layout: fixed;
     word-wrap: break-word;
+
+    /*border-collapse: collapse;*/
+    border-collapse: separate;
+    border: 1px solid black;
+    border-spacing: 0;
 }
 
 th, td {
     padding: 0.2em 0.3em 0 0.3em;
     vertical-align: top;
     font-weight: normal;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
 }
+/*th, td {
+    padding: 0.1em 0.2em;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}*/
 
 
 /* TEXT ELEMENTS */

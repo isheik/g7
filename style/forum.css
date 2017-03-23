@@ -2,33 +2,41 @@
 /* FORUM - forum.php                                         */
 /*************************************************************/
 
-#forum_topics { padding: 1em 0; }
-
-#forum_topics table,
-#forum_topics th,
-#forum_topics td {
-    border: 1px solid #000000;
-}
-
 #forum_topics p {
-    margin: 1em 0;
+	margin: 1em 0;
 }
 
-.forum_header_row {
-    background-color: #ffffff;
-    text-align: center;
+/*#forum_topics tr,
+#forum_topics td,
+#forum_topics th {
+	border: 1px solid black;
+	margin: 1em;
+}*/
+
+.forum_post_id_header {
+	width: 8%;
 }
 
-#forum_post_id_header { width: 8%; }
+.forum_topic_header {
+	width: 75%;
+}
 
-#forum_topic_header { width: 75%; }
+.forum_post_date_header {
+	width: 17%;
+}
 
-#forum_post_date_header { width: 17%; }
+.forum_post_id_cell {
+	text-align: center;
+}
 
-#forum_post_id_cell { text-align: center; }
+.forum_topic_cell {
+	padding: 0.2em 0.5em;
+}
 
-#forum_topic_cell { padding: 0.2em 0.5em; }
+.forum_topic_cell a {
+	text-decoration: none;
+}
 
-#forum_topic_cell a { text-decoration: none; }
-
-#forum_post_date_cell { text-align: center; }
+.forum_post_date_cell {
+	text-align: center;
+}
