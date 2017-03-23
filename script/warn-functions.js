@@ -347,6 +347,39 @@ function validateContent(content) {
 }
 
 /**
+ * @param field   the element of message text field
+ * @param output  the element of error message output field
+ */
+function warnMessage(field, output) {
+    // Clear the current error text in HTML;
+    $(output).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message = validateMessage($(field).value);
+
+    if (message != undefined)
+        $(output).innerHTML = message;
+}
+
+/**
+ * @param response  the String of message to be validated
+ * 
+ * @return message  the String of error message if invalid, or null if valid
+ */
+function validateMessage(content) {
+    var minLength = 1;
+    var maxLength = 100000;
+    var message = null;
+
+    if (!isNotBlank(content))
+        message = "Please enter your text";
+    else if (!isLengthInRange(content, minLength, maxLength))
+        message = "Content has to be equal to or less than 100000 character";
+
+    return message;
+}
+
+/**
  * @param field1   the element of title text field
  * @param field2   the element of content text field
  * @param output1  the element of error message for title
@@ -514,6 +547,44 @@ function warnViewTopic(field, output) {
 
     if (message != undefined) {
         $(output).innerHTML = message;
+        return false;
+    }
+    return true;
+}
+
+function warnContact(field1, field2, field3, field4, field5, 
+    output1, output2, output3, output4, output5) {
+    // Clear the current error text in HTML;
+    $(output1).innerHTML = "";
+    $(output2).innerHTML = "";
+    $(output3).innerHTML = "";
+    $(output4).innerHTML = "";
+    $(output5).innerHTML = "";
+
+    // If username is invalid, get an error message
+    var message1 = validateRealname($(field1).value);
+    var message2 = validateRealname($(field2).value);
+    var message3 = validateEmail($(field3).value);
+    var message4 = validateREmail($(field3).value, $(field4).value);
+    var message5 = validateMessage($(field5).value);
+
+    if (message1 != undefined || message2 != undefined || message3 != undefined
+         || message4 != undefined || message5 != undefined) {
+        if (message1 != undefined)
+            $(output1).innerHTML = message1;
+
+        if (message2 != undefined)
+            $(output2).innerHTML = message2;
+
+        if (message3 != undefined)
+            $(output3).innerHTML = message3;
+
+        if (message4 != undefined)
+            $(output4).innerHTML = message4;
+
+        if (message5 != undefined)
+            $(output5).innerHTML = message5;
+
         return false;
     }
     return true;
