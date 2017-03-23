@@ -29,21 +29,21 @@
                         </div>
                     </div>
                 
-                    <div>
-                        <p class="p">Lorem ipsum dolor sit amet, Suspendisse dignissim Lorem ipsum dolor sit amet, conLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim Lorem ipsum dolor sit amet, con</p>
-                    </div>
+                    <section class="highlight">
+                        <p>Lorem ipsum dolor sit amet, Suspendisse dignissim Lorem ipsum dolor sit amet, conLorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim Lorem ipsum dolor sit amet, con</p>
+                    </section>
                     
                     
                     <div class="featured_content">
                         <img src="images/abcd.jpg" height="200" width="400" alt="p">
                         <h3>About us</h3>
-                        <p>Find out about our organization, mission, our methods, and the results of our decades of advocacy.</p>
+                        <p>Find out about our organization, mission, our methods, and the results of our dec</p>
                     </div>
                     
                     <div class="featured_content">
                         <img src="images/abcd.jpg" height="200" width="400" alt="p">
                         <h3>Take action</h3>
-                        <p>Ready to take the first step? You can start with beginner level and become a expert</p>
+                        <p>Ready to take the first step? You can start with beginner level and become a exp</p>
                     </div>
                 </article>
             </div>   
