@@ -39,7 +39,7 @@
                         <div class="form_block_sm">
                             <label for="email">Email Address<span class="required">*</span></label><br>
                             <input type="text" required name="email" id="email" placeholder="Email Address" size="26"
-                                oninput="warnEmail('email', 'remail', 'email_feedback', 'remail_feedback')">
+                                oninput="warnEmail('email', 'email_feedback'); warnREmail('email', 'remail', 'remail_feedback');">
                             <label class="error" id="email_feedback"></label>
                         </div>
 
@@ -55,8 +55,8 @@
                             <textarea required name="comment" id="comment" rows="5" cols="82" placeholder="Type here your message..."
                                 oninput="warnMessage('comment', 'comment_feedback')"></textarea><br>
                             <label class="error" id="comment_feedback"></label>
+                            <button id="contact_submit_button" type="submit" form="contact" value="Submit">Submit</button>
                         </div>
-                        <button id="contact_submit_button" type="submit" form="contact" value="Submit">Submit</button>
                     </form>
                 </article>
             </div>

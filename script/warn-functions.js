@@ -108,19 +108,15 @@ function validateUsername(username) {
  * @param field   the element of email text field
  * @param output  the element of error message output field
  */
-function warnEmail(field1, field2, output1, output2) {
+function warnEmail(field,output) {
     // Clear the current error text in HTML;
-    $(output1).innerHTML = "";
-    $(output2).innerHTML = "";
+    $(output).innerHTML = "";
 
     // If username is invalid, get an error message
-    var message1 = validateEmail($(field1).value);
-    var message2 = validateREmail($(field1).value, $(field2).value);
+    var message = validateEmail($(field).value);
 
-    if (message1 != undefined)
-        $(output1).innerHTML = message1;
-    if (message2 != undefined)
-        $(output2).innerHTML = message2;
+    if (message != undefined)
+        $(output).innerHTML = message;
 }
 
 /**
@@ -184,20 +180,16 @@ function validateREmail(original,confirmation) {
  * @param field   the element of password text field
  * @param output  the element of error message output field
  */
-function warnPassword(field1, field2, output1, output2) {
+function warnPassword(field,output) {
     // Clear the current error text in HTML;
-    $(output1).innerHTML = "";
-    $(output2).innerHTML = "";
+    $(output).innerHTML = "";
 
     // If username is invalid, get an error message
-    var message1 = validatePassword($(field1).value);
-    var message2 = validateRePassword($(field1).value, $(field2).value);
+    var message = validatePassword($(field).value);
 
     // If the error message is defined, put it to HTML
-    if (message1 != undefined)
-        $(output1).innerHTML = message1;
-    if (message2 != undefined)
-        $(output2).innerHTML = message2;
+    if (message != undefined)
+        $(output).innerHTML = message;
 }
 
 /**

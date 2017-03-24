@@ -115,7 +115,7 @@
                                     <th><label for="signup_email"><span class="required">*</span>Email:</label></th>
                                     <td><input type="email" id="signup_email"
                                     name="signup_email" placeholder="example@abc.com"
-                                    oninput="warnEmail('signup_email','signup_remail','signup_email_feedback','signup_remail_feedback')" 
+                                    oninput="warnEmail('signup_email','signup_email_feedback'); warnREmail('signup_email','signup_remail','signup_remail_feedback');" 
                                     maxlength="128" required>
                                     <label class="error" id="signup_email_feedback"></label></td>
                                 </tr>
@@ -130,7 +130,7 @@
                                 <tr>
                                     <th><label for="signup_password"><span class="required">*</span>Password:</label></th>
                                     <td><input type="password" id="signup_password" name="signup_password"
-                                    oninput="warnPassword('signup_password','signup_repassword','signup_password_feedback','signup_repassword_feedback')" 
+                                    oninput="warnPassword('signup_password','signup_password_feedback'); warnRePassword('signup_password','signup_repassword','signup_repassword_feedback');" 
                                     maxlength="128" required>
                                     <label id="password_strength"></label>
                                     <label class="error" id="signup_password_feedback"></label></td>
