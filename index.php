@@ -38,12 +38,14 @@
                         <img src="images/abcd.jpg" height="200" width="400" alt="p">
                         <h3>About us</h3>
                         <p>Find out about our organization, mission, our methods, and the results of our dec</p>
+                        <div><a href="about.php">Learn more<img src="images/right.png" height="" width="" alt="arrow"></a></div>
                     </div>
                     
                     <div class="featured_content">
                         <img src="images/abcd.jpg" height="200" width="400" alt="p">
                         <h3>Take action</h3>
                         <p>Ready to take the first step? You can start with beginner level and become a exp</p>
+                        <div><a href="lessons-main.php">Learn more<img src="images/right.png" height="" width="" alt="arrow"></a></div>
                     </div>
                 </article>
             </div>   
