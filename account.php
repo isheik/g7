@@ -69,14 +69,8 @@
                                     <td><input type="password" id="login_password" name="login_password"
                                     oninput="warnPassword('login_password','login_password_feedback')" 
                                     maxlength="128" required>
-                                    <label class="error" id="login_password_feedback"></label></td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td>
-                                        <div id="account_login_button" class="account_button">
-                                        <button type="submit" name="login">Login</button></div>
-                                    </td>
+                                    <label class="error" id="login_password_feedback"></label>
+                                    <button type="submit" name="login">Login</button></td>
                                 </tr>
                             </table>
                         </form>
@@ -140,14 +134,8 @@
                                     <td><input type="password" id="signup_repassword" name="signup_repassword"
                                     oninput="warnRePassword('signup_password','signup_repassword','signup_repassword_feedback')"
                                     maxlength="128" required>
-                                    <label class="error" id="signup_repassword_feedback"></label></td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td>
-                                        <div id="account_sing_up_button" class="account_button">
-                                        <button type="submit" name="sign_up">Sign up</button></div>
-                                    </td>
+                                    <label class="error" id="signup_repassword_feedback"></label>
+                                    <button type="submit" name="sign_up">Sign up</button></td>
                                 </tr>
                             </table>
                        </form>
@@ -170,14 +158,8 @@
                                     <td><input type="password" id="dereg_password" name="dereg_password"
                                     oninput="warnPassword('dereg_password','dereg_password_feedback')"
                                     maxlength="128" required>
-                                    <label class="error" id="dereg_password_feedback"></label></td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td>
-                                        <div id="account_deregister_button" class="account_button">
-                                        <button type="submit" name="deregister">deregister</button></div>
-                                    </td>
+                                    <label class="error" id="dereg_password_feedback"></label>
+                                    <button type="submit" name="deregister">deregister</button></td>
                                 </tr>
                             </table>
                         </form>

@@ -34,11 +34,6 @@ input, textarea {
     resize: none;
 }
 
-#contact_submit_button {
-    margin-right: 1.5em;
-    float: right;
-}
-
 .required {
     color: #ff0000;
     padding-left: 0.3em;
