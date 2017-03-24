@@ -67,7 +67,7 @@
                                 <td colspan="3">
                                     <form method="post" action="http://webdevbasics.net/scripts/demo.php" 
                                         onsubmit="return warnViewTopic('forum_response_text', 'forum_response_feedback')">
-                                        <textarea id="forum_response_text" name="input" 
+                                        <textarea required id="forum_response_text" name="input" 
                                             oninput="warnResponse('forum_response_text', 'forum_response_feedback')"></textarea>
                                         <label class="error" id="forum_response_feedback"></label>
                                         <button type="submit" name="post">Post</button>

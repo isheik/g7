@@ -39,7 +39,7 @@
 
                             <tr>
                                 <th><label for="forum_post_title">Title:</label></th>
-                                <td><input type="text" id="forum_post_title" name="title"
+                                <td><input required maxlength="128" type="text" id="forum_post_title" name="title"
                                     oninput="warnTitle('forum_post_title','forum_post_title_feedback')">
                                     <label class="error" id="forum_post_title_feedback"></label>
                                 </td>
@@ -47,7 +47,7 @@
 
                             <tr id="forum_post_form">
                                 <th><label for="forum_post_text">Content:</label></th>
-                                <td><textarea id="forum_post_text" name="input"
+                                <td><textarea required id="forum_post_text" name="input"
                                     oninput="warnContent('forum_post_text','forum_post_text_feedback')"></textarea>
                                     <label class="error" id="forum_post_text_feedback"></label>
                                     <button type="submit" name="post">Post</button>

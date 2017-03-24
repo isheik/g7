@@ -38,21 +38,21 @@
 
                         <div class="form_block_sm">
                             <label for="email">Email Address<span class="required">*</span></label><br>
-                            <input type="text" name="email" id="email" placeholder="Email Address" size="26"
+                            <input type="text" required name="email" id="email" placeholder="Email Address" size="26"
                                 oninput="warnEmail('email', 'remail', 'email_feedback', 'remail_feedback')">
                             <label class="error" id="email_feedback"></label>
                         </div>
 
                         <div class="form_block_sm">
                             <label for="remail">Confirm Email Address<span class="required">*</span></label><br>
-                            <input type="text" name="remail" id="remail" placeholder="Email Address" size="26"
+                            <input type="text" required name="remail" id="remail" placeholder="Email Address" size="26"
                                 oninput="warnREmail('email', 'remail', 'remail_feedback')">
                             <label class="error" id="remail_feedback"></label>
                         </div>
 
                         <div class="form_block_lg">
                             <label for="comment">Message<span class="required">*</span></label>
-                            <textarea name="comment" id="comment" rows="5" cols="82" placeholder="Type here your message..."
+                            <textarea required name="comment" id="comment" rows="5" cols="82" placeholder="Type here your message..."
                                 oninput="warnMessage('comment', 'comment_feedback')"></textarea><br>
                             <label class="error" id="comment_feedback"></label>
                         </div>
