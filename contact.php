@@ -23,7 +23,7 @@
                         <h2>Contact</h2>
 
                         <div class="form_block_sm">
-                            <label for="firstname">First Name<span class="required">*</span></label><br>
+                            <label for="firstname">First Name</label><br>
                             <input type="text" name="firstname" id="firstname" placeholder="First Name" size="26"
                                 oninput="warnRealName('firstname', 'firstname_feedback')">
                             <label class="error" id="firstname_feedback"></label>
@@ -39,7 +39,7 @@
                         <div class="form_block_sm">
                             <label for="email">Email Address<span class="required">*</span></label><br>
                             <input type="text" name="email" id="email" placeholder="Email Address" size="26"
-                                oninput="warnEmail('email', 'email_feedback')">
+                                oninput="warnEmail('email', 'remail', 'email_feedback', 'remail_feedback')">
                             <label class="error" id="email_feedback"></label>
                         </div>
 
