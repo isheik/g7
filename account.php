@@ -52,7 +52,7 @@
                 <article id="account">
                     <div class="account_table">
                         <h2>Login</h2>
-                        <form method="post" action="http://webdevbasics.net/scripts/demo.php"
+                        <form method="post" action="<?php echo $add_to_path ?>login.php"
                             onsubmit="return warnLogin('login_username', 'login_password', 
                              'login_username_feedback', 'login_password_feedback')">
                             <table class="layout_table" id="account_login_table">
@@ -75,9 +75,10 @@
                             </table>
                         </form>
                     </div>
+
                     <div class="account_table">
                         <h2>Sign up</h2>
-                        <form method="post" action="http://webdevbasics.net/scripts/demo.php" 
+                        <form method="post" action="register.php" 
                             onsubmit="return warnRegistration('signup_firstname', 'signup_lastname', 'signup_username',
                              'signup_email', 'signup_remail', 'signup_password', 'signup_repassword', 
                              'signup_firstname_feedback', 'signup_lastname_feedback', 'signup_username_feedback',
