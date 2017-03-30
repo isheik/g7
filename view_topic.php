@@ -54,7 +54,7 @@
                         <table id="forum_view_table" class="layout_table">
                             <tr>
                                 <th class=" forum_view_header"><label>Author:</label></th>
-                                <td class="forum_view_body">testuser</td>
+                                <td class="forum_view_body"><?php echo $rows['member_id']; ?></td>
                                 <th class=" forum_view_header"><label>Date:</label></th>
                                 <td class="forum_view_body"><?php echo $rows['datetime']; ?></td>
                             </tr>
@@ -67,13 +67,16 @@
                                 <td colspan="3" class="forum_view_body"><?php echo $rows['detail']; ?></td>
                             </tr>
                         </table>
+
+
                         <table class="layout_table">
                             <tr id="forum_response_form">
                                 <th class="forum_view_header" id="forum_response_header"><label for="forum_response_text">Response:</label></th>
                                 <td colspan="3">
-                                    <form method="post" action="http://webdevbasics.net/scripts/demo.php" 
+                                    <form method="post" action="add_response.php" 
                                         onsubmit="return warnViewTopic('forum_response_text', 'forum_response_feedback')">
-                                        <textarea required id="forum_response_text" name="input" 
+                                        <input name="id" type="hidden" value="<?php echo $id; ?>">
+                                        <textarea required id="forum_response_text" name="response" 
                                             oninput="warnResponse('forum_response_text', 'forum_response_feedback')"></textarea>
                                         <label class="error" id="forum_response_feedback"></label>
                                         <button type="submit" name="post">Post</button>
@@ -97,7 +100,7 @@
                         ?>
                         <table id="forum_comment_table" class="layout_table">
                             <tr>
-                                <th class="forum_comment_header"><label>Commentator:</label></th>
+                                <th class="forum_comment_header"><label><?php echo $rows['member_id']; ?>:</label></th>
                                 <td class="forum_comment_body"><?php echo $rows['response']; ?></td>
                             </tr>
                         </table>
