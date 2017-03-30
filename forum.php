@@ -37,7 +37,7 @@
             <div id="content_wrapper" class="centered">
                 <article id="forum_topics">
                     <h2>Forum</h2>
-                    <p><a href="./add_topic.php">Create a new topic</a></p>
+                    <p><a href="./post.php">Create a new topic</a></p>
                     <table>
                         <tr class="forum_header_row">
                             <th class="forum_post_id_header"><strong>Post #</strong></th>
