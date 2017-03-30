@@ -6,6 +6,12 @@
     // Load config file if it was not.
     require_once('config.php'); 
 
+    // If not logged in, redirects the user to the log-in page
+    if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
+        header("location:" . $add_to_path . " account.php");
+        exit();
+    }
+
     // Connect to server and select database.
     ($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD)) or die("cannot connect");
     ((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE'))) or die("cannot select DB");
