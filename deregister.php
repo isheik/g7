@@ -55,9 +55,13 @@
     }
     
     //Create query
-    $sql="DELETE FROM members WHERE login='$login' AND passwd='".md5($_REQUEST['login_password'])."'";
+    $sql="DELETE FROM members WHERE login='$login'";
     $result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
-    
+
+    echo $result . "<br>" . mysqli_affected_rows($result);
+
+    session_write_close();
+
     //Check whether the query was successful or not
     if($result) {
         if(mysqli_affected_rows($result) > 0) {
@@ -73,8 +77,8 @@
             // exit();
         }else {
             //Login failed
-            $errmsg_arr[] = 'Login failed';
-            echo "Something went wrong";
+            // $errmsg_arr[] = 'Login failed';
+            // echo "Something went wrong";
             // $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
             // header("location: login_form.php");
             exit();
