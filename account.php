@@ -143,7 +143,7 @@
                     </div>
                     <div  class="account_table">
                         <h2>Deregister</h2>
-                        <form method="post" action="http://webdevbasics.net/scripts/demo.php"
+                        <form method="post" action="deregister.php"
                             onsubmit="return warnDereg('dereg_username', 'dereg_password', 
                              'dereg_username_feedback', 'dereg_password_feedback')">
                             <table class="layout_table" id="deregister">
