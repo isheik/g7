@@ -4,7 +4,7 @@
     session_start();
 
     // Load config file if it was not.
-    require_once('config.php'); 
+    require_once('config.php');
 
     // If not logged in, redirects the user to the log-in page
     if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
@@ -73,17 +73,17 @@
                             <tr id="forum_response_form">
                                 <th class="forum_view_header" id="forum_response_header"><label for="forum_response_text">Response:</label></th>
                                 <td colspan="3">
-                                    <form method="post" action="add_response.php" 
+                                    <form method="post" action="add_response.php"
                                         onsubmit="return warnViewTopic('forum_response_text', 'forum_response_feedback')">
                                         <input name="id" type="hidden" value="<?php echo $id; ?>">
-                                        <textarea required id="forum_response_text" name="response" 
+                                        <textarea required id="forum_response_text" name="response"
                                             oninput="warnResponse('forum_response_text', 'forum_response_feedback')"></textarea>
                                         <label class="error" id="forum_response_feedback"></label>
                                         <button type="submit" name="post">Post</button>
                                     </form>
                                 </td>
                             </tr>
-                                
+
 
                         </table>
                     </div>

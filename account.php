@@ -53,13 +53,13 @@
                     <div class="account_table">
                         <h2>Login</h2>
                         <form method="post" action="<?php echo $add_to_path ?>login.php"
-                            onsubmit="return warnLogin('login_username', 'login_password', 
+                            onsubmit="return warnLogin('login_username', 'login_password',
                              'login_username_feedback', 'login_password_feedback')">
                             <table class="layout_table" id="account_login_table">
                                 <tr>
                                     <th><label for="login_username">Username:</label></th>
                                     <td><input type="text" id="login_username" name="login_username"
-                                    oninput="warnUsername('login_username','login_username_feedback')" 
+                                    oninput="warnUsername('login_username','login_username_feedback')"
                                     maxlength="128" required>
                                     <label class="error" id="login_username_feedback"></label>
                                     </td>
@@ -67,7 +67,7 @@
                                 <tr>
                                     <th><label for="login_password">Password:</label></th>
                                     <td><input type="password" id="login_password" name="login_password"
-                                    oninput="warnPassword('login_password','login_password_feedback')" 
+                                    oninput="warnPassword('login_password','login_password_feedback')"
                                     maxlength="128" required>
                                     <label class="error" id="login_password_feedback"></label>
                                     <button type="submit" name="login">Login</button></td>
@@ -78,31 +78,31 @@
 
                     <div class="account_table">
                         <h2>Sign up</h2>
-                        <form method="post" action="register.php" 
+                        <form method="post" action="register.php"
                             onsubmit="return warnRegistration('signup_firstname', 'signup_lastname', 'signup_username',
-                             'signup_email', 'signup_remail', 'signup_password', 'signup_repassword', 
+                             'signup_email', 'signup_remail', 'signup_password', 'signup_repassword',
                              'signup_firstname_feedback', 'signup_lastname_feedback', 'signup_username_feedback',
                              'signup_email_feedback', 'signup_remail_feedback', 'signup_password_feedback',
                              'signup_repassword_feedback')">
                             <table class="layout_table" id="sign_up">
                                 <tr>
                                     <th><label for="signup_firstname">First Name:</label></th>
-                                    <td><input type="text" id="signup_firstname" name="signup_firstname" 
-                                    oninput="warnRealName('signup_firstname','signup_firstname_feedback')" 
+                                    <td><input type="text" id="signup_firstname" name="signup_firstname"
+                                    oninput="warnRealName('signup_firstname','signup_firstname_feedback')"
                                     maxlength="128">
                                     <label class="error" id="signup_firstname_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_lastname">Last Name:</label></th>
-                                    <td><input type="text" id="signup_lastname" name="signup_lastname" 
-                                    oninput="warnRealName('signup_lastname','signup_lastname_feedback')" 
+                                    <td><input type="text" id="signup_lastname" name="signup_lastname"
+                                    oninput="warnRealName('signup_lastname','signup_lastname_feedback')"
                                     maxlength="128">
                                     <label class="error" id="signup_lastname_feedback"></label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_username"><span class="required">*</span>User Name:</label></th>
                                     <td><input type="text" id="signup_username" name="signup_username"
-                                    oninput="warnUsername('signup_username','signup_username_feedback')" 
+                                    oninput="warnUsername('signup_username','signup_username_feedback')"
                                     maxlength="128" required>
                                     <label class="error" id="signup_username_feedback"></label></td>
                                 </tr>
@@ -110,7 +110,7 @@
                                     <th><label for="signup_email"><span class="required">*</span>Email:</label></th>
                                     <td><input type="email" id="signup_email"
                                     name="signup_email" placeholder="example@abc.com"
-                                    oninput="warnEmail('signup_email','signup_email_feedback'); warnREmail('signup_email','signup_remail','signup_remail_feedback');" 
+                                    oninput="warnEmail('signup_email','signup_email_feedback'); warnREmail('signup_email','signup_remail','signup_remail_feedback');"
                                     maxlength="128" required>
                                     <label class="error" id="signup_email_feedback"></label></td>
                                 </tr>
@@ -125,7 +125,7 @@
                                 <tr>
                                     <th><label for="signup_password"><span class="required">*</span>Password:</label></th>
                                     <td><input type="password" id="signup_password" name="signup_password"
-                                    oninput="warnPassword('signup_password','signup_password_feedback'); warnRePassword('signup_password','signup_repassword','signup_repassword_feedback');" 
+                                    oninput="warnPassword('signup_password','signup_password_feedback'); warnRePassword('signup_password','signup_repassword','signup_repassword_feedback');"
                                     maxlength="128" required>
                                     <label id="password_strength"></label>
                                     <label class="error" id="signup_password_feedback"></label></td>
@@ -144,7 +144,7 @@
                     <div  class="account_table">
                         <h2>Deregister</h2>
                         <form method="post" action="http://webdevbasics.net/scripts/demo.php"
-                            onsubmit="return warnDereg('dereg_username', 'dereg_password', 
+                            onsubmit="return warnDereg('dereg_username', 'dereg_password',
                              'dereg_username_feedback', 'dereg_password_feedback')">
                             <table class="layout_table" id="deregister">
                                 <tr>

@@ -4,7 +4,7 @@
     session_start();
 
     // Load config file if it was not.
-    require_once('config.php'); 
+    require_once('config.php');
 
     // If not logged in, redirects the user to the log-in page
     if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
@@ -39,7 +39,7 @@
                     <h2>Forum</h2>
                     <p><a href="./forum.php">Return to forum top page</a></p>
                     <form method="post" action="add_topic.php"
-                        onsubmit="return warnPost('forum_post_title', 'forum_post_text', 
+                        onsubmit="return warnPost('forum_post_title', 'forum_post_text',
                         'forum_post_title_feedback', 'forum_post_text_feedback')">
                         <table id="forum_post_table" class="layout_table">
 

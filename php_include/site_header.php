@@ -16,7 +16,7 @@
                 <a href="<?= $add_to_path ?>index.php"><img src="<?= $add_to_path ?>images/logo_header.png" id="header_logo" alt="logo" width="120" height="108"></a>
                 <h1 id="header_title">Windows 10 Shortcuts</h1>
                 <div id="auth">
-                    <?php 
+                    <?php
                     if (isLoggedIn()) {
                         echo "<span>Welcome, " . $_SESSION['SESS_FIRST_NAME'] . " " . $_SESSION['SESS_LAST_NAME'] . "</span>";
                         echo '<a href="' . $add_to_path . 'logout.php" class="auth_button">Log Out</a>';
