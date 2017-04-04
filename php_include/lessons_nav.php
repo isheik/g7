@@ -11,8 +11,6 @@
                                         Selection</a></li>
                                 <li><a href="<?php echo $add_to_path ?>essentials/editing.php">
                                         Editing</a></li>
-                                <li><a href="<?= $add_to_path ?>essentials/file-manipulation.php">
-                                        File Manipulation</a></li>
                                 <li><a href="<?= $add_to_path ?>essentials/quality-of-life.php">
                                         Quality of Life</a></li>
                             </ul>
@@ -44,7 +42,7 @@
                             </ul>
                         </li>
 
-                        <li>
+ <!--                        <li>
                             <button class="categories">Advanced</button>
                             <ul class="lessons">
                                 <li><a href="<?= $add_to_path ?>advanced/run-commands.php">
@@ -52,7 +50,7 @@
                                 <li><a href="<?= $add_to_path ?>advanced/power-user.php">
                                         Power User</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
 
                     <script src="<?= $add_to_path ?>script/lessons-nav-exp.js"></script>

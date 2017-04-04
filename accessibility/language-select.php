@@ -18,6 +18,7 @@
 
                 <article id="lesson_content">
                     <h2>Language Select</h2>
+                    <p>If you've ever wondered why your keys are suddenly typing abnormal symbols, you've fallen victim to language select. <kbd>Win + space</kbd> allows you to switch keyboard layouts. This is great if you speak or write in multiple languages, but can be quite the annoyance if you've never dealt with it before.</p>
                 </article>
             </div>
         </main>
