@@ -18,6 +18,11 @@
 
                 <article id="lesson_content">
                     <h2>Desktop Access</h2>
+                    <p>Windows 10 provides a couple of keyboard shortcuts that let you quickly skip to your desktop. This is handy when you're multitasking and having lots of windows open.</p>
+
+                    <p>The first is <kbd>win + D</kbd>. This will minimize everything and take you straight to your desktop. If you press <kbd>win + D</kbd> a second time immediately after, all your windows will be restored, exactly the way they were before.</p>
+
+                    <p>If you just want to check on your desktop, say to view your widgets, you can press <kbd>win + '</kbd> (that's the comma button). This just makes all your apps transparent and gives you a brief glance to help you get your bearings.</p>
                 </article>
             </div>
         </main>

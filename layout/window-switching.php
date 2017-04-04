@@ -18,6 +18,17 @@
 
                 <article id="lesson_content">
                     <h2>Window Switching</h2>
+                    <p>Once you start running a bunch of apps at a time, being able to switch between them accurately becomes very important. Fortunately, Windows 10 provides a large number of ways to do this, and we're going to talk about them here.</p>
+
+                    <h3>Flipping Between Apps</h3>
+                    <p>First up, the mighty <kbd>alt + tab</kbd>. This shortcut has been a staple of Windows since the turn of the century, and provides a couple of handy tricks.</p>
+
+                    <p>Quickly tapping <kbd>alt + tab</kbd> will let you flip between two applications. Holding <kbd>alt</kbd> and pressing <kbd>tab</kbd> repeatedly will allow you to step through each app that you have open. Releasing <kbd>alt</kbd> will let you stop on that app. The beauty of this is that now if you use the tap method, you will flip back and forth between this and the most recent other app you had selected.</p>
+
+                    <p>An alternative to this is <kbd>alt + esc</kbd>. This performs the same functionality, but without the pop-up display.</p>
+
+                    <h3>Tiling</h3>
+                    <p><kbd>Win + tab</kbd> 
                 </article>
             </div>
         </main>
