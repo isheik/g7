@@ -18,7 +18,7 @@
 
                     <form name="contact" method="post" id="contact" action="http://webdevbasics.net/scripts/demo.php"
                         onsubmit="return warnContact('firstname', 'lastname', 'email', 'remail', 'comment',
-                            'firstname_feedback', 'lastname_feedback', 'email_feedback', 'remail_feedback', 
+                            'firstname_feedback', 'lastname_feedback', 'email_feedback', 'remail_feedback',
                                 'comment_feedback')">
                         <h2>Contact</h2>
 

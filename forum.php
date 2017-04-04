@@ -4,7 +4,7 @@
     session_start();
 
     // Load config file if it was not.
-    require_once('config.php'); 
+    require_once('config.php');
 
     // If not logged in, redirects the user to the log-in page
     if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
@@ -52,8 +52,8 @@
                         </tr>
 
                         <!-- enumrate topics from SQL result -->
-                        <?php 
-                            while($rows=mysqli_fetch_array($result)){ 
+                        <?php
+                            while($rows=mysqli_fetch_array($result)){
                         ?>
                         <tr class="forum_contents_row">
                             <td class="forum_post_id_cell"><?php echo $rows['id']; ?></td>

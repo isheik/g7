@@ -98,7 +98,7 @@ function validateUsername(username) {
         message = "Only alphanumeric characters, - and _ are allowed";
     else if (!isLengthInRange(username, minLength, maxLength))
         message = "Username has to be equal to or less than 128 characters";
-    
+
     return message;
 }
 
@@ -160,7 +160,7 @@ function warnREmail(field1,field2,output) {
 /**
  * @param original      the String of original email to be validated
  * @param confirmation  the String of confirmation email to be validated
- * 
+ *
  * @return message  the String of error message if invalid, or null if valid
  */
 function validateREmail(original,confirmation) {
@@ -231,7 +231,7 @@ function warnRePassword(field1,field2,output) {
 /**
  * @param original      the String of original password to be validated
  * @param confirmation  the String of confirmation password to be validated
- * 
+ *
  * @return message  the String of error message if invalid, or null if valid
  */
 function validateRePassword(original,confirmation) {
@@ -263,7 +263,7 @@ function warnResponse(field, output) {
 
 /**
  * @param response  the String of response to be validated
- * 
+ *
  * @return message  the String of error message if invalid, or null if valid
  */
 function validateResponse(response) {
@@ -297,7 +297,7 @@ function warnTitle(field, output) {
 
 /**
  * @param response  the String of title to be validated
- * 
+ *
  * @return message  the String of error message if invalid, or null if valid
  */
 function validateTitle(title) {
@@ -330,7 +330,7 @@ function warnContent(field, output) {
 
 /**
  * @param response  the String of conent to be validated
- * 
+ *
  * @return message  the String of error message if invalid, or null if valid
  */
 function validateContent(content) {
@@ -363,7 +363,7 @@ function warnMessage(field, output) {
 
 /**
  * @param response  the String of message to be validated
- * 
+ *
  * @return message  the String of error message if invalid, or null if valid
  */
 function validateMessage(content) {
@@ -384,7 +384,7 @@ function validateMessage(content) {
  * @param field2   the element of content text field
  * @param output1  the element of error message for title
  * @param output2  the element of error message for content
- * 
+ *
  * @return result  the boolean of the validation result
  */
 function warnPost(field1, field2, output1, output2) {
@@ -423,7 +423,7 @@ function warnPost(field1, field2, output1, output2) {
  * @param output5  the element of error message for remail
  * @param output6  the element of error message for password
  * @param output7  the element of error message for rpassword
- * 
+ *
  * @return result  the boolean of the validation result
  */
 function warnRegistration(field1, field2, field3, field4, field5, field6, field7,
@@ -481,7 +481,7 @@ function warnRegistration(field1, field2, field3, field4, field5, field6, field7
  * @param field2   the element of password text field
  * @param output1  the element of error message for username
  * @param output2  the element of error message for password
- * 
+ *
  * @return result  the boolean of the validation result
  */
 function warnLogin(field1, field2, output1, output2) {
@@ -509,7 +509,7 @@ function warnLogin(field1, field2, output1, output2) {
  * @param field2   the element of password text field
  * @param output1  the element of error message for username
  * @param output2  the element of error message for password
- * 
+ *
  * @return result  the boolean of the validation result
  */
 function warnDereg(field1, field2, output1, output2) {
@@ -535,7 +535,7 @@ function warnDereg(field1, field2, output1, output2) {
 /**
  * @param field    the element of response text field
  * @param output   the element of error message for response
- * 
+ *
  * @return result  the boolean of the validation result
  */
 function warnViewTopic(field, output) {
@@ -552,7 +552,7 @@ function warnViewTopic(field, output) {
     return true;
 }
 
-function warnContact(field1, field2, field3, field4, field5, 
+function warnContact(field1, field2, field3, field4, field5,
     output1, output2, output3, output4, output5) {
     // Clear the current error text in HTML;
     $(output1).innerHTML = "";
