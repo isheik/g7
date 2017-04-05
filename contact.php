@@ -15,11 +15,14 @@
         <main class="page_row">
             <div id="content_wrapper" class="centered">
                 <article>
-
-                    <form name="contact" method="post" id="contact" action="http://webdevbasics.net/scripts/demo.php"
+                    <form name="contact" method="post" id="contact" action="./formmail.php"
                         onsubmit="return warnContact('firstname', 'lastname', 'email', 'remail', 'comment',
                             'firstname_feedback', 'lastname_feedback', 'email_feedback', 'remail_feedback',
                                 'comment_feedback')">
+                        <input type="hidden" name="recipients" value="winshortcuts@gmail.com"/>
+                        <input type="hidden" name="subject" value="Contact from site form"/>
+                        <input type="hidden" name="good_url" value="./index.php"/>
+                        <input type="hidden" name="mail_options" value="Exclude=realname;remail"/>
                         <h2>Contact</h2>
 
                         <div class="form_block_sm">
