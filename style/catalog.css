@@ -9,6 +9,6 @@
 	border-spacing: 0;
 }
 
-#shortcut_catalog th {
+.shortcut_catalog th {
 	width: 12em;
 }
