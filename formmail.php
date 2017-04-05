@@ -2625,7 +2625,7 @@ function SetRealDocumentRoot()
     //
 if ($HOOK_DIR !== "")
     if (!@include("$HOOK_DIR/fmhookpreinit.inc.php"))
-		@include("$HOOK_DIR/fmhookpreinit.inc");
+        @include("$HOOK_DIR/fmhookpreinit.inc");
 
 if (!empty($SESSION_NAME))
     session_name($SESSION_NAME);
@@ -12913,7 +12913,7 @@ if (isset($aGetVars["return"]) && is_numeric($aGetVars["return"]))
     //
 if ($HOOK_DIR !== "")
     if (!@include("$HOOK_DIR/fmhookpostinit.inc.php"))
-		@include("$HOOK_DIR/fmhookpostinit.inc");
+        @include("$HOOK_DIR/fmhookpostinit.inc");
 
     //
     // check configuration values for potential security problems
@@ -12982,7 +12982,7 @@ if ($SPECIAL_VALUES["file_names"] !== "")
     //
 if ($HOOK_DIR !== "")
     if (!@include("$HOOK_DIR/fmhookload.inc.php"))
-		@include("$HOOK_DIR/fmhookload.inc");
+        @include("$HOOK_DIR/fmhookload.inc");
 
 if ($FORM_INI_FILE !== "")
 {
@@ -12992,7 +12992,7 @@ if ($FORM_INI_FILE !== "")
         //
     if ($HOOK_DIR !== "")
         if (!@include("$HOOK_DIR/fmhookinifile.inc.php"))
-		    @include("$HOOK_DIR/fmhookinifile.inc");
+            @include("$HOOK_DIR/fmhookinifile.inc");
 }
 
 $bDoneSomething = false;
@@ -13264,7 +13264,7 @@ if ($bIsGetMethod && count($aFormVars) == 0)
     //
 if ($HOOK_DIR !== "")
     if (!@include("$HOOK_DIR/fmhookprechecks.inc.php"))
-		@include("$HOOK_DIR/fmhookprechecks.inc");
+        @include("$HOOK_DIR/fmhookprechecks.inc");
 
     //
     // check for required fields
@@ -13288,7 +13288,7 @@ CheckCaptchaSubmit();
     //
 if ($HOOK_DIR !== "")
     if (!@include("$HOOK_DIR/fmhookchecks.inc.php"))
-		@include("$HOOK_DIR/fmhookchecks.inc");
+        @include("$HOOK_DIR/fmhookchecks.inc");
 
 if (!empty($SPECIAL_VALUES["fmmodules"]))
 {
@@ -13479,7 +13479,7 @@ if (!empty($SPECIAL_VALUES["fmcompute"]))
         //
     if ($HOOK_DIR !== "")
         if (!@include("$HOOK_DIR/fmhookcompute.inc.php"))
-		    @include("$HOOK_DIR/fmhookcompute.inc");
+            @include("$HOOK_DIR/fmhookcompute.inc");
 }
 
 $bGotGoBack = $bGotNextForm = $bGotGoodTemplate = $bGotGoodUrl = false;
@@ -13516,7 +13516,7 @@ MultiFormLogic();
     //
 if ($HOOK_DIR !== "")
     if (!@include("$HOOK_DIR/fmhookmulti.inc.php"))
-		@include("$HOOK_DIR/fmhookmulti.inc");
+        @include("$HOOK_DIR/fmhookmulti.inc");
 
     //
     // write to the CSV database
@@ -13536,7 +13536,7 @@ if (!empty($CSVDIR) && isset($SPECIAL_VALUES["csvfile"]) &&
         //
     if ($HOOK_DIR !== "")
         if (!@include("$HOOK_DIR/fmhookpostcsv.inc.php"))
-		    @include("$HOOK_DIR/fmhookpostcsv.inc");
+            @include("$HOOK_DIR/fmhookpostcsv.inc");
     $bDoneSomething = true;
 }
 
@@ -13550,14 +13550,14 @@ if (!empty($LOGDIR) && isset($SPECIAL_VALUES["logfile"]) && !empty($SPECIAL_VALU
         //
     if ($HOOK_DIR !== "")
         if (!@include("$HOOK_DIR/fmhookprelog.inc.php"))
-		    @include("$HOOK_DIR/fmhookprelog.inc");
+            @include("$HOOK_DIR/fmhookprelog.inc");
     WriteLog($LOGDIR."/".basename($SPECIAL_VALUES["logfile"]));
         //
         // Hook system: after writing log file
         //
     if ($HOOK_DIR !== "")
         if (!@include("$HOOK_DIR/fmhookpostlog.inc.php"))
-		    @include("$HOOK_DIR/fmhookpostlog.inc");
+            @include("$HOOK_DIR/fmhookpostlog.inc");
     $bDoneSomething = true;
 }
 
@@ -13576,7 +13576,7 @@ if (isset($SPECIAL_VALUES["crm_url"]) && isset($SPECIAL_VALUES["crm_spec"]) &&
             //
         if ($HOOK_DIR !== "")
             if (!@include("$HOOK_DIR/fmhookprecrm.inc.php"))
-		        @include("$HOOK_DIR/fmhookprecrm.inc");
+                @include("$HOOK_DIR/fmhookprecrm.inc");
         if (!SendToCRM($sCRM,$aCRMReturnData))
         {
                 //

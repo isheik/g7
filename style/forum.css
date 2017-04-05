@@ -3,40 +3,40 @@
 /*************************************************************/
 
 #forum_topics p {
-	margin: 1em 0;
+    margin: 1em 0;
 }
 
 /*#forum_topics tr,
 #forum_topics td,
 #forum_topics th {
-	border: 1px solid black;
-	margin: 1em;
+    border: 1px solid black;
+    margin: 1em;
 }*/
 
 .forum_post_id_header {
-	width: 8%;
+    width: 8%;
 }
 
 .forum_topic_header {
-	width: 75%;
+    width: 75%;
 }
 
 .forum_post_date_header {
-	width: 17%;
+    width: 17%;
 }
 
 .forum_post_id_cell {
-	text-align: center;
+    text-align: center;
 }
 
 .forum_topic_cell {
-	padding: 0.2em 0.5em;
+    padding: 0.2em 0.5em;
 }
 
 .forum_topic_cell a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .forum_post_date_cell {
-	text-align: center;
+    text-align: center;
 }
