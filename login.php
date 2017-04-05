@@ -60,7 +60,8 @@
 
 	//Check whether the query was successful or not
 	if($result) {
-		if(mysqli_num_rows($result) == 1) {
+		$num_rows = mysqli_num_rows($result);
+		if($num_rows == 1) {
 			//Login Successful
 			session_regenerate_id();
 			$member = mysqli_fetch_assoc($result);
@@ -75,6 +76,7 @@
 			//Login failed
 			$errmsg_arr[] = 'Login failed';
 			$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+            $_SESSION['USER_NOT_FOUND'] = $num_rows == 0;
 			header("location: account.php");
 			exit();
 		}
