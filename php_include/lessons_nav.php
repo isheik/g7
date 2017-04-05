@@ -7,9 +7,9 @@
                             <ul class="lessons">
                                 <li><a href="<?= $add_to_path ?>essentials/focus-and-movement.php">
                                         Focus &amp; Movement</a></li>
-                                <li><a href="<?php echo $add_to_path ?>essentials/selection.php">
+                                <li><a href="<?= $add_to_path ?>essentials/selection.php">
                                         Selection</a></li>
-                                <li><a href="<?php echo $add_to_path ?>essentials/editing.php">
+                                <li><a href="<?= $add_to_path ?>essentials/editing.php">
                                         Editing</a></li>
                                 <li><a href="<?= $add_to_path ?>essentials/quality-of-life.php">
                                         Quality of Life</a></li>
