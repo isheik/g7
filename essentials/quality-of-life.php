@@ -21,13 +21,13 @@
                     <p>With the basics out of the way, we'll cover a few of shortcuts that will make your life in Windows 10 a little easier, before moving on to more advanced stuff.</p>
 
                     <h3>Windows Explorer</h3>
-                    <p>Explorer is Windows 10's built-in browser for navigating the filesystem. By pressing the <kbd>win + e</kbd> keys, you can launch explorer from anywhere.</p>
+                    <p>Explorer is Windows 10's built-in browser for navigating the filesystem. By pressing the <kbd>Win</kbd> + <kbd>E</kbd> keys, you can launch explorer from anywhere.</p>
 
                     <h3>Lock</h3>
-                    <p>Extremely handy if you need to step away from your computer for a few minutes in a public place, <kbd>win + L</kbd> will lock your screen, leaving your account signed on but requiring your password before anyone can interact with it.</p>
+                    <p>Extremely handy if you need to step away from your computer for a few minutes in a public place, <kbd>Win</kbd> + <kbd>L</kbd> will lock your screen, leaving your account signed on but requiring your password before anyone can interact with it.</p>
 
                     <h3>Quick Links Menu</h3>
-                    <p>The quick-links menu is a "lite" start menu, with basic functions, including your power options, control panel, and account settings, but without all your regular software. While this may seem counter intuitive, it's much easier than hunting through your huge list of programs if all you want to do is restart your computer. The keyboard shortcut for quick links is <kbd>win + x</kbd>.</p>
+                    <p>The quick-links menu is a "lite" start menu, with basic functions, including your power options, control panel, and account settings, but without all your regular software. While this may seem counter intuitive, it's much easier than hunting through your huge list of programs if all you want to do is restart your computer. The keyboard shortcut for quick links is <kbd>Win</kbd> + <kbd>x</kbd>.</p>
                 </article>
             </div>
         </main>

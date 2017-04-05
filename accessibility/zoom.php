@@ -18,7 +18,7 @@
 
                 <article id="lesson_content">
                     <h2>Zoom</h2>
-                    <p>The zoom tool is a holdover from the early 2000's. While it may not be as useful these days thanks to touch screens and gestures, it can still be handy for people with vision problems. Pressing <kbd>win + (+)</kbd> (that's windows and the "plus" key) will open the magnifier. From here, pressing <kbd>win + (+)</kbd> or <kbd>win + (-)</kbd> will zoom in or out.</p>
+                    <p>The zoom tool is a holdover from the early 2000's. While it may not be as useful these days thanks to touch screens and gestures, it can still be handy for people with vision problems. Pressing <kbd>Win</kbd> + <kbd>+</kbd> (that's windows and the "plus" key) will open the magnifier. From here, pressing <kbd>win</kbd> + <kbd>+</kbd> or <kbd>win</kbd> + <kbd>-</kbd> will zoom in or out.</p>
                 </article>
             </div>
         </main>
