@@ -6,6 +6,7 @@ nav#lessons_nav {
     display: inline-block;
     vertical-align: text-top;
     padding-top: 0.6em;
+    padding-bottom: 1em;
     width: 20%;
 }
 
