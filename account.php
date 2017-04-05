@@ -111,7 +111,14 @@
                                     <td><input type="text" id="signup_username" name="signup_username"
                                     oninput="warnUsername('signup_username','signup_username_feedback')"
                                     maxlength="128" required>
-                                    <label class="error" id="signup_username_feedback"></label></td>
+                                    <label class="error" id="signup_username_feedback">
+                                    <?php
+                                            if ($_SESSION['DUPLICATE_USERNAME']) {
+                                                echo "Username already taken.";
+                                                $_SESSION['DUPLICATE_USERNAME'] = false;
+                                            }
+                                    ?>
+                                    </label></td>
                                 </tr>
                                 <tr>
                                     <th><label for="signup_email"><span class="required">*</span>Email:</label></th>
