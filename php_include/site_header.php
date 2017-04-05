@@ -18,7 +18,7 @@
                 <div id="auth">
                     <?php
                     if (isLoggedIn()) {
-                        echo "<span>Welcome, " . $_SESSION['SESS_FIRST_NAME'] . " " . $_SESSION['SESS_LAST_NAME'] . "</span>";
+                        echo "<span class='username'>Welcome, " . $_SESSION['SESS_LOGIN'] . "</span>";
                         echo '<a href="' . $add_to_path . 'logout.php" class="auth_button">Log Out</a>';
                     } else {
                         echo '<a href="' . $add_to_path . 'account.php" class="auth_button">Sign Up/Log In</a>';
