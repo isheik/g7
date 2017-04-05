@@ -141,30 +141,6 @@
                             </table>
                        </form>
                     </div>
-                    <div  class="account_table">
-                        <h2>Deregister</h2>
-                        <form method="post" action="deregister.php"
-                            onsubmit="return warnDereg('dereg_username', 'dereg_password', 
-                             'dereg_username_feedback', 'dereg_password_feedback')">
-                            <table class="layout_table" id="deregister">
-                                <tr>
-                                    <th><label for="dereg_username">Username:</label></th>
-                                    <td><input type="text" id="dereg_username" name="dereg_username"
-                                    oninput="warnUsername('dereg_username','dereg_username_feedback')"
-                                    maxlength="128" required>
-                                    <label class="error" id="dereg_username_feedback"></label></td>
-                                </tr>
-                                <tr>
-                                    <th><label for="dereg_password">Password:</label></th>
-                                    <td><input type="password" id="dereg_password" name="dereg_password"
-                                    oninput="warnPassword('dereg_password','dereg_password_feedback')"
-                                    maxlength="128" required>
-                                    <label class="error" id="dereg_password_feedback"></label>
-                                    <button type="submit" name="deregister">deregister</button></td>
-                                </tr>
-                            </table>
-                        </form>
-                    </div>
                 </article>
             </div>
         </main>

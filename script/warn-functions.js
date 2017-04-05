@@ -505,34 +505,6 @@ function warnLogin(field1, field2, output1, output2) {
 }
 
 /**
- * @param field1   the element of username text field
- * @param field2   the element of password text field
- * @param output1  the element of error message for username
- * @param output2  the element of error message for password
- *
- * @return result  the boolean of the validation result
- */
-function warnDereg(field1, field2, output1, output2) {
-    // Clear the current error text in HTML;
-    $(output1).innerHTML = "";
-    $(output2).innerHTML = "";
-
-    // If username is invalid, get an error message
-    var message1 = validateUsername($(field1).value);
-    var message2 = validatePassword($(field2).value);
-
-    if (message1 != undefined || message2 != undefined) {
-        if (message1 != undefined)
-            $(output1).innerHTML = message1;
-
-        if (message2 != undefined)
-            $(output2).innerHTML = message2;
-        return false;
-    }
-    return true;
-}
-
-/**
  * @param field    the element of response text field
  * @param output   the element of error message for response
  *
