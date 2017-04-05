@@ -7,10 +7,10 @@
     require_once('config.php');
 
     // If not logged in, redirects the user to the log-in page
-    if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
-        header("location:" . $add_to_path . " account.php");
-        exit();
-    }
+    // if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
+    //     header("location:" . $add_to_path . " account.php");
+    //     exit();
+    // }
 
     // Connect to server and select database.
     ($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD)) or die("cannot connect");
@@ -68,6 +68,12 @@
                             </tr>
                         </table>
 
+                        <?php
+
+                            if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
+                                echo '<p>Please <a href="./account.php">log in / register</a> to post replies.</p>';
+                            } else {
+                        ?>
 
                         <table class="layout_table">
                             <tr id="forum_response_form">
@@ -83,9 +89,11 @@
                                     </form>
                                 </td>
                             </tr>
-
-
                         </table>
+
+                        <?php
+                            }
+                        ?>
                     </div>
                     <div id="forum_comment">
                         <h3>Comments</h3>

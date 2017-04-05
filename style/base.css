@@ -3,61 +3,61 @@
 /*************************************************************/
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
 }
 
 html {
-	overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 html, body {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	display: table;
-	width: 100%;
-	font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Verdana', sans-serif;
+    display: table;
+    width: 100%;
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Verdana', sans-serif;
 }
 
 /* This is a fix for displaying fixed backgrounds in chrome properly. */
 body:before {
-	background-color: black;
-	background-size: cover;
-	z-index: -3;
-	content: " ";
-	position: fixed;
-	background: url('../images/background.jpg') no-repeat left center;
-	background-size: 100% auto;
-	will-change: transform;
-	width: 100%;
-	height: 100%;
+    background-color: black;
+    background-size: cover;
+    z-index: -3;
+    content: " ";
+    position: fixed;
+    background: url('../images/background.jpg') no-repeat left center;
+    background-size: 100% auto;
+    will-change: transform;
+    width: 100%;
+    height: 100%;
 }
 
 script { display: none; }
 
 .page_row {
-	display: table-row;
-	width: 100%;
+    display: table-row;
+    width: 100%;
 }
 
 .centered {
-	width: 1000px;
-	margin: auto;
+    width: 1000px;
+    margin: auto;
 }
 
 #content_wrapper {
-	background-color: white;
-	min-height: 100%;
-	box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.3);
-	z-index: 5;
+    background-color: white;
+    min-height: 100%;
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.3);
+    z-index: 5;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 /*************************************************************/
@@ -67,52 +67,52 @@ script { display: none; }
 /* BLOCK/CONTAINER ELEMENTS */
 /* Primarily semantic elements:; article, section, main, etc. */
 main {
-	font-size: 1.25em;
-	height: 100%;
+    font-size: 1.25em;
+    height: 100%;
 }
 
 article {
-	padding: 1em 2em 2em 2em;
-	height: 100%;
+    padding: 1em 2em 2em 2em;
+    height: 100%;
 }
 
 /* Highlight. For highlighting important stuff that's not necessarily a blockquote. */
 .highlight {
-	margin: 2em auto;
-	width: 50%;
+    margin: 2em auto;
+    width: 50%;
 }
 
 /* TABLES */
 
 table {
-	margin: 1em auto;
-	table-layout: fixed;
-	word-wrap: break-word;
+    margin: 1em auto;
+    table-layout: fixed;
+    word-wrap: break-word;
 
-	/*border-collapse: collapse;*/
-	border-collapse: separate;
-	border: 1px solid black;
-	border-spacing: 0;
+    /*border-collapse: collapse;*/
+    border-collapse: separate;
+    border: 1px solid black;
+    border-spacing: 0;
 }
 
 th, td {
-	padding: 0.2em 0.3em 0 0.3em;
-	vertical-align: top;
-	font-weight: normal;
-	border-right: 1px solid #aaa;
-	border-bottom: 1px solid #aaa;
+    padding: 0.2em 0.3em 0 0.3em;
+    vertical-align: top;
+    font-weight: normal;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
 }
 
 .layout_table {
-	width: 30em;
+    width: 30em;
 }
 
 .layout_table th {
-	text-align: right;
+    text-align: right;
 }
 
 .layout_table th, .layout_table td {
-	border: none;
+    border: none;
 }
 
 /* TEXT ELEMENTS */
@@ -120,97 +120,118 @@ th, td {
 in the main body of the content. */
 
 main p, main a {
-	margin: 1.25em 0;
+    margin: 1.25em 0;
 }
 
 a:link, a:visited {
-	color: #0078d7;
+    color: #0078d7;
 }
 
 a:hover {
-	color: #262DA8;
+    color: #262DA8;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 500;
-	line-height: 2em;
+    font-weight: 500;
+    line-height: 2em;
 }
 
 h1, h4, h5, h6 {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 h1 {
-	font-size: 2em;
+    font-size: 2em;
 }
 
 h3 {
-	font-size: 1.25em;
+    font-size: 1.25em;
 }
 
 /* LISTS */
 /* The selector in this rule is necessary to target content that is in our main
 content area. This is to avoid conflicts with the nav bar. */
 article ul, article ol, section ol, section ul {
-	padding: 0 2em;
-	margin: 1em 0;
+    padding: 0 2em;
+    margin: 1em 0;
 }
 
 nav ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 /* This alters the margin within nested lists, to group them while still
 providing some separation between levels. */
 article li ul, article li ol, section li ul, section li ol {
-	margin: 0.5em 0;
+    margin: 0.5em 0;
 }
 
 input, textarea {
-	border: 1px solid #777;
-	box-shadow: .2em .1em 0.2em #f2f2f2;
-	font-size: 1em;
-	margin: 0.05em;
-	min-height: 1.6em;
-	width: 100%;
-	padding: 0 0.3em;
+    border: 1px solid #777;
+    box-shadow: .2em .1em 0.2em #f2f2f2;
+    font-size: 1em;
+    margin: 0.05em;
+    min-height: 1.6em;
+    width: 100%;
+    padding: 0 0.3em;
 }
 
 textarea {
-	resize: vertical;
-	font-family: inherit;
+    resize: vertical;
+    font-family: inherit;
 }
 
 input:focus, textarea:focus {
-	transition: all 0.32s ease-in-out;
-	outline: none;
-	box-shadow: 0 0 .3em #b3b3b3;
-	/*border: 1px solid #8c8c8c;*/
+    transition: all 0.32s ease-in-out;
+    outline: none;
+    box-shadow: 0 0 .3em #b3b3b3;
+    /*border: 1px solid #8c8c8c;*/
 }
 
 button {
-	font-size: 0.7em;
-	border-radius: 0.2em;
-	border: 1px solid #aaa;
-	background: linear-gradient(#eee,#ccc);
-	padding: 0.1em 0.75em 0.2em 0.75em;
-	margin: 0.3em 0.1em;
-	height: 2em;
-	float: right;
+    font-size: 0.7em;
+    border-radius: 0.2em;
+    border: 1px solid #aaa;
+    background: linear-gradient(#eee,#ccc);
+    padding: 0.1em 0.75em 0.2em 0.75em;
+    margin: 0.3em 0.1em;
+    height: 2em;
+    float: right;
 }
 
 label {
-	font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 .error {
-	white-space: wrap;
-	font-size: 0.7em;
-	left: 0.5em;
-	top: -0.3em;
-	color: #777;
-	width: 100%;
-	line-height: 0.5em;
+    white-space: wrap;
+    font-size: 0.7em;
+    left: 0.5em;
+    top: -0.3em;
+    color: #777;
+    width: 100%;
+    line-height: 0.5em;
+}
+
+.keyboard_key {
+    border: 1px solid #444;
+    border-radius: 0.2em;
+    box-shadow: 0.2em 0.2em 0.3em 0 hsla(0, 0%, 0%, 0.2);
+
+    font-family: courier;
+    font-size: 0.8em;
+    font-weight: bold;
+
+    padding: 0.25em 1em;
+}
+
+kbd {
+    border: 1px solid #BBB;
+    border-radius: 0.2em;
+
+    box-shadow: 0.1em 0.1em 0.1em 0 hsla(0, 0%, 0%, 0.1);
+
+    padding: 0.15em 0.25em 0 0.25em;
 }
 
 
@@ -219,142 +240,147 @@ label {
 /*************************************************************/
 
 header.page_row {
-	height: 7.4em;
-	background-color: #0078d7;
-	background: linear-gradient(#0078d7,#262DA8);
-	z-index: 10;
+    height: 7.4em;
+    background-color: #0078d7;
+    background: linear-gradient(#0078d7,#262DA8);
+    z-index: 10;
 }
 
 #header_logo {
-	margin-top: .3em;
-	position: relative;
-	left: -0.79em;
-	float: left;
+    margin-top: .3em;
+    position: relative;
+    left: -0.79em;
+    float: left;
 }
 
 #header_title {
-	color: white;
-	line-height: 3em;
-	display: inline-block;
-	font-weight: 300;
-	font-size: 2.4em;
-	text-shadow: 0 0 0.25em hsla(0, 0%, 0%, 0.3);
+    color: white;
+    line-height: 3em;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 2.4em;
+    text-shadow: 0 0 0.25em hsla(0, 0%, 0%, 0.3);
 }
 
 /* #AUTH id targets the sign-up and log-in buttons in the header */
 #auth {
-	float: right;
-	margin-top: 1em;
+    float: right;
+    margin-top: 1em;
 }
 
 .auth_button {
-	background-color: #000;
-	color: #fff;
-	padding: .2em .5em;
-	text-decoration: none;
-	border-radius: 1em;
+    background-color: #000;
+    color: #fff;
+    padding: .2em .5em;
+    text-decoration: none;
+    border-radius: 1em;
 }
 
 #auth a:link, #auth a:visited {
-	color: #ffffff;
+    color: #ffffff;
 }
 
 #auth a:hover {
-	color: #91CFFF;
+    color: #91CFFF;
 }
 
 #auth a:active {
-	color: #000;
-	background-color: #eee;
+    color: #000;
+    background-color: #eee;
 }
 
 nav.site_nav ul {
-	/* helps distribute nav buttons evenly along the nav bar
-	 * needs 'display: table-cell' in the child elements (li) to work properly */
-	display: table;
-	table-layout: fixed;
-	width: 100%;
+    /* helps distribute nav buttons evenly along the nav bar
+     * needs 'display: table-cell' in the child elements (li) to work properly */
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 }
 
 nav.site_nav ul li { display: table-cell; }
 
 #top_nav {
-	z-index: 10;
+    z-index: 10;
 }
 
 nav#top_nav {
-	background-color: #2b2b2b;
-	height: 1px;
+    background-color: #2b2b2b;
+    height: 1px;
 }
 
 /* inherits from .site_nav */
 nav#top_nav li a {
-	display: block;
-	height: 2.5em;
-	/* vertically align text, make same as height */
-	line-height: 2.5em;
-	font-size: 1.5em;
-	color: #fff;
-	text-align: center;
-	text-decoration: none;
-	border-style: solid;
-	border-color: #777;
-	border-width: 0 1px;
-	letter-spacing: 0.05em;
-	font-weight: 300;
+    display: block;
+    height: 2.5em;
+    /* vertically align text, make same as height */
+    line-height: 2.5em;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #777;
+    border-width: 0 1px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
 }
 
 nav#top_nav li + li a { border-left-width: 0; }
 
 #top_nav a:hover {
-	color: #000;
-	background-color: #d9d9d9;
+    color: #000;
+    background-color: #d9d9d9;
 }
 
 #top_nav a:active {
-	color: #000;
-	background-color: #eee;
+    color: #000;
+    background-color: #eee;
 }
 
+span.username {
+    color: white;
+    opacity: 0.9;
+    margin-right: 1em;
+}
 
 /*************************************************************/
 /* FOOTER                                                    */
 /*************************************************************/
 
 footer.page_row {
-	height: 5em;
-	background-color: #2b2b2b;
-	color: #fff;
-	z-index: 100;
+    height: 5em;
+    background-color: #2b2b2b;
+    color: #fff;
+    z-index: 100;
 }
 
 /* has class .site_nav */
 nav#bottom_nav {
-	margin: .65em 0 0 3.75em;
-	height: 1px;
-	width: 60%;
+    margin: .65em 0 0 3.75em;
+    height: 1px;
+    width: 60%;
 }
 
 nav#bottom_nav ul li {
-	text-align: center;
+    text-align: center;
 }
 
 nav#bottom_nav ul li a {
-	color: #fff;
+    color: #fff;
 }
 
 #bottom_nav a:hover {
-	color: #91CFFF;
+    color: #91CFFF;
 }
 
 #logo_copyright {
-	float: right;
+    float: right;
 }
 
 #footer_logo {
-	display: inline-block;
+    display: inline-block;
 }
 
 #copyright {
-	display: inline-block;
+    display: inline-block;
 }
