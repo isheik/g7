@@ -18,7 +18,7 @@
 
                 <article id="lesson_content">
                     <h2>Narrator</h2>
-                    <p>Narrator is Windows 10's built-in screen reader. It's designed for people with vision problems who still want to use a computer. You can activate it by pressing <kbd>win + enter</kbd>. Once active, it provides controls for navigating web pages, and will display a blue highlight around whatever it is currently focused on. You can turn it back off using the same shortcut.</p>
+                    <p>Narrator is Windows 10's built-in screen reader. It's designed for people with vision problems who still want to use a computer. You can activate it by pressing <kbd>Win</kbd> + <kbd>Enter</kbd>. Once active, it provides controls for navigating web pages, and will display a blue highlight around whatever it is currently focused on. You can turn it back off using the same shortcut.</p>
                 </article>
             </div>
         </main>
