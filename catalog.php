@@ -18,7 +18,7 @@
                     <h4>General Shortcuts</h4>
                     <table class="shortcut_catalog">
                         <tr>
-                            <th>Ctrl + X</th>
+                            <th><kbd>Ctrl</kbd> + <kbd>X</kbd></th>
                             <td>Cut the selected item</td>
                         </tr>
                         <tr>

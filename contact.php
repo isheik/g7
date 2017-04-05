@@ -21,7 +21,7 @@
                                 'comment_feedback')">
                         <input type="hidden" name="recipients" value="winshortcuts@gmail.com"/>
                         <input type="hidden" name="subject" value="Contact from site form"/>
-                        <input type="hidden" name="good_url" value="./index.php"/>
+                        <input type="hidden" name="good_url" value="./contact_sent.php"/>
                         <input type="hidden" name="mail_options" value="Exclude=realname;remail"/>
                         <h2>Contact</h2>
 
