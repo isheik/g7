@@ -316,6 +316,11 @@ nav#top_nav li + li a { border-left-width: 0; }
 	background-color: #eee;
 }
 
+span.username {
+	color: white;
+	opacity: 0.9;
+	margin-right: 1em;
+}
 
 /*************************************************************/
 /* FOOTER                                                    */
