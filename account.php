@@ -61,7 +61,14 @@
                                     <td><input type="text" id="login_username" name="login_username"
                                     oninput="warnUsername('login_username','login_username_feedback')"
                                     maxlength="128" required>
-                                    <label class="error" id="login_username_feedback"></label>
+                                    <label class="error" id="login_username_feedback">
+                                        <?php
+                                            if ($_SESSION['USER_NOT_FOUND']) {
+                                                echo "Username not found.";
+                                                $_SESSION['USER_NOT_FOUND'] = false;
+                                            }
+                                        ?>
+                                    </label>
                                     </td>
                                 </tr>
                                 <tr>
