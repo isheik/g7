@@ -72,7 +72,7 @@
         if($result) {
             if(mysqli_num_rows($result) > 0) {
                 $errmsg_arr[] = 'Login ID already in use';
-                $errflag = true;
+                $_SESSION['DUPLICATE_USERNAME'] = $errflag = true;
             }
             @((mysqli_free_result($result) || (is_object($result) && (get_class($result) == "mysqli_result"))) ? true : false);
         }
