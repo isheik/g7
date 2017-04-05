@@ -7,10 +7,10 @@
     require_once('config.php');
 
     // If not logged in, redirects the user to the log-in page
-    if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
-        header("location:" . $add_to_path . " account.php");
-        exit();
-    }
+    // if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
+    //     header("location:" . $add_to_path . " account.php");
+    //     exit();
+    // }
 
     // Connect to server and select database.
     ($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD)) or die("cannot connect");
@@ -38,6 +38,13 @@
                 <article id="forum_add_topic">
                     <h2>Forum</h2>
                     <p><a href="./forum.php">Return to forum top page</a></p>
+
+                    <?php 
+                        if(!isset($_SESSION['SESS_MEMBER_ID']) || (trim($_SESSION['SESS_MEMBER_ID']) == '')) {
+                            echo '<p>Please <a href="./account.php">log in / register</a> to post.</p>';
+                        } else {
+                    ?>
+
                     <form method="post" action="add_topic.php"
                         onsubmit="return warnPost('forum_post_title', 'forum_post_text',
                         'forum_post_title_feedback', 'forum_post_text_feedback')">
@@ -62,6 +69,10 @@
 
                         </table>
                     </form>
+
+                    <?php
+                        }
+                    ?>
                 </article>
             </div>
         </main>
