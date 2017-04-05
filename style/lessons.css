@@ -12,6 +12,7 @@ nav#lessons_nav {
 
 nav#lessons_nav h2 {
     font-size: 1.8em;
+    padding-left: 1em;
     padding-bottom: .8em;
 }
 
@@ -55,7 +56,7 @@ article#lesson_content {
     text-decoration: none;
     padding-left: 2em;
     color: #000;
-    font-size: 1.1em;
+    font-size: .9em;
     margin: 0;
 }
 
