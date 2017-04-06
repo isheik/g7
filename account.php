@@ -61,14 +61,7 @@
                                     <td><input type="text" id="login_username" name="login_username"
                                     oninput="warnUsername('login_username','login_username_feedback')"
                                     maxlength="128" required>
-                                    <label class="error" id="login_username_feedback">
-                                        <?php
-                                            if ($_SESSION['USER_NOT_FOUND']) {
-                                                echo "Username not found.";
-                                                $_SESSION['USER_NOT_FOUND'] = false;
-                                            }
-                                        ?>
-                                    </label>
+                                    <label class="error" id="login_username_feedback"></label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -76,7 +69,14 @@
                                     <td><input type="password" id="login_password" name="login_password"
                                     oninput="warnPassword('login_password','login_password_feedback')"
                                     maxlength="128" required>
-                                    <label class="error" id="login_password_feedback"></label>
+                                    <label class="error" id="login_password_feedback">
+                                        <?php
+                                            if ($_SESSION['USER_NOT_FOUND']) {
+                                                echo "Invalid Username/Password.";
+                                                $_SESSION['USER_NOT_FOUND'] = false;
+                                            }
+                                        ?>
+                                    </label>
                                     <button type="submit" name="login">Login</button></td>
                                 </tr>
                             </table>
