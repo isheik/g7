@@ -66,7 +66,7 @@
                             <td class="forum_topic_cell"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><br><p class="forum_preview"><?php echo substr($rows['detail'],0,256); ?></p></td>
                             <td class="forum_post_date_cell">
                                 <?php
-                                    echo DateTime::createFromFormat('d/m/y H:i:s', $rows['datetime'])->format('F jS, Y G:i:s');
+                                    echo DateTime::createFromFormat('d/m/y H:i:s', $rows['datetime'])->format('M d, Y G:i:s');
                                 ?>
                             </td>
                         <?php

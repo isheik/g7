@@ -58,7 +58,7 @@
                                 <th class=" forum_view_header"><label>Date:</label></th>
                                 <td class="forum_view_body">
                                     <?php
-                                        echo DateTime::createFromFormat('d/m/y H:i:s', $rows['datetime'])->format('F jS, Y G:i:s');
+                                        echo DateTime::createFromFormat('d/m/y H:i:s', $rows['datetime'])->format('M d, Y G:i:s');
                                     ?>
                                 </td>
                             </tr>
