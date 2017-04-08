@@ -64,7 +64,7 @@
                             </tr>
                             <tr>
                                 <th class="forum_view_header"><label>Content:</label></th>
-                                <td colspan="3" class="forum_view_body"><?php echo substr($rows['detail'],128); ?></td>
+                                <td colspan="3" class="forum_view_body"><?php echo $rows['detail']; ?></td>
                             </tr>
                         </table>
 

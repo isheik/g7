@@ -63,7 +63,7 @@
                         ?>
                         <tr class="forum_contents_row">
                             <td class="forum_post_id_cell"><?php echo $rows['login']; ?></td>
-                            <td class="forum_topic_cell"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><br><p class="forum_preview"><?php echo $rows['detail']; ?></p></td>
+                            <td class="forum_topic_cell"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><br><p class="forum_preview"><?php echo substr($rows['detail'],0,256); ?></p></td>
                             <td class="forum_post_date_cell"><?php echo $rows['datetime']; ?></td>
                         <?php
                             }
