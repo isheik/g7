@@ -22,11 +22,11 @@
                             <td>Cut the selected item</td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>C (or Ctrl</kbd> + <kbd>Insert)</kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>C</kbd> (or <kbd>Ctrl</kbd> + <kbd>Insert</kbd> )</th>
                             <td>Copy the selected item</td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>V (or Shift</kbd> + <kbd>Insert)</kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>V</kbd> (or <kbd>Shift</kbd> + <kbd>Insert</kbd> )</th>
                             <td>Paste the selected item</td>
                         </tr>
                         <tr>
@@ -62,7 +62,7 @@
                             <td>Cycle through screen elements in a window or on the desktop </td>
                         </tr>
                         <tr>
-                            <th><kbd>F10 </kbd></th>
+                            <th><kbd>F10</kbd></th>
                             <td>Activate the Menu bar in the active app </td>
                         </tr>
                         <tr>
@@ -74,11 +74,11 @@
                             <td>Cycle through items in the order in which they were opened</td>
                         </tr>
                         <tr>
-                            <th><kbd>Alt</kbd> + <kbd>underlined letter </kbd></th>
+                            <th><kbd>Alt</kbd> + <kbd>underlined letter key</kbd></th>
                             <td>Perform the command for that letter </td>
                         </tr>
                         <tr>
-                            <th><kbd>Alt</kbd> + <kbd>Enter </kbd></th>
+                            <th><kbd>Alt</kbd> + <kbd>Enter</kbd></th>
                             <td>Display properties for the selected item</td>
                         </tr>
                         <tr>
@@ -98,7 +98,7 @@
                             <td>Move up one screen</td>
                         </tr>
                         <tr>
-                            <th><kbd>Alt</kbd> + <kbd>Page Down </kbd></th>
+                            <th><kbd>Alt</kbd> + <kbd>Page Down</kbd></th>
                             <td>Move down one screen</td>
                         </tr>
                         <tr>
@@ -110,11 +110,11 @@
                             <td>Select all items in a document or window</td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>D (or Delete)</kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>D</kbd> (or <kbd>Delete</kbd> )</th>
                             <td>Delete the selected item and move it to the Recycle Bin </td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>R (or F5)</kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>R</kbd> (or <kbd>F5</kbd> )</th>
                             <td>Refresh the active window</td>
                         </tr>
                         <tr>
@@ -134,7 +134,7 @@
                             <td>Move the cursor to the beginning of the next paragraph</td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>Up arrow </kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>Up arrow</kbd></th>
                             <td>Move the cursor to the beginning of the previous paragraph</td>
                         </tr>
                         <tr>
@@ -142,15 +142,15 @@
                             <td>Use the arrow keys to switch between all open apps</td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>arrow keys </kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>arrow key </kbd></th>
                             <td>When a group or tile is in focus on the Start menu, move it in the direction specified</td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>arrow key (to move to an item)</kbd> + <kbd>Spacebar</kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>arrow key</kbd> + <kbd>Spacebar</kbd></th>
                             <td>Select multiple individual items in a window or on the desktop</td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>Shift with an arrow key</kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>arrow key</kbd></th>
                             <td>Select a block of text</td>
                         </tr>
                         <tr>
@@ -166,15 +166,15 @@
                             <td>Switch the keyboard layout when multiple keyboard layouts are available </td>
                         </tr>
                         <tr>
-                            <th><kbd>Ctrl</kbd> + <kbd>Spacebar </kbd></th>
+                            <th><kbd>Ctrl</kbd> + <kbd>Spacebar</kbd></th>
                             <td>Turn the Chinese input method editor (IME) on or off</td>
                         </tr>
                         <tr>
-                            <th><kbd>Shift</kbd> + <kbd>F10 </kbd></th>
+                            <th><kbd>Shift</kbd> + <kbd>F10</kbd></th>
                             <td>Display the shortcut menu for the selected item </td>
                         </tr>
                         <tr>
-                            <th><kbd>Shift with any arrow key</kbd></th>
+                            <th><kbd>Shift</kbd> + <kbd>arrow key</kbd></th>
                             <td>Select more than one item in a window or on the desktop, or select text in a document</td>
                         </tr>
                         <tr>
@@ -182,7 +182,7 @@
                             <td>Delete the selected item without moving it to the Recycle Bin first </td>
                         </tr>
                         <tr>
-                            <th><kbd>Right arrow </kbd></th>
+                            <th><kbd>Right arrow</kbd></th>
                             <td>Open the next menu to the right, or open a submenu</td>
                         </tr>
                         <tr>
@@ -197,7 +197,7 @@
                     <h4>Windows key shortcuts</h4>
                     <table class="shortcut_catalog">
                         <tr>
-                            <th><kbd>Windows key </kbd></th>
+                            <th><kbd>Windows key</kbd></th>
                             <td>Open or close Start </td>
                         </tr>
                         <tr>
@@ -297,7 +297,7 @@
                             <td>Show the commands available in an app in full-screen mode</td>
                         </tr>
                         <tr>
-                            <th><kbd>Windows key</kbd> + <kbd>comma (,)</kbd></th>
+                            <th><kbd>Windows key</kbd> + <kbd> , </kbd></th>
                             <td>Temporarily peek at the desktop </td>
                         </tr>
                         <tr>
@@ -365,7 +365,7 @@
                             <td>Restore/minimize active desktop windows vertically, maintaining width</td>
                         </tr>
                         <tr>
-                            <th><kbd>Windows key</kbd> + <kbd>Shift</kbd> + <kbd>Left arrow or Right arrow</kbd></th>
+                            <th><kbd>Windows key</kbd> + <kbd>Shift</kbd> + <kbd>Left arrow</kbd> or <kbd>Right arrow</kbd></th>
                             <td>Move an app or window in the desktop from one monitor to another</td>
                         </tr>
                         <tr>
@@ -381,11 +381,11 @@
                             <td>Open Narrator</td>
                         </tr>
                         <tr>
-                            <th><kbd>Windows key</kbd> + <kbd>forward slash (/)</kbd></th>
+                            <th><kbd>Windows key</kbd> + <kbd> / </kbd></th>
                             <td>Begin IME reconversion</td>
                         </tr>
                         <tr>
-                            <th><kbd>Windows key</kbd> + <kbd>plus (+) or minus (-)</kbd></th>
+                            <th><kbd>Windows key</kbd> + <kbd> + </kbd> or <kbd> - </kbd></th>
                             <td>Zoom in or out using Magnifier</td>
                         </tr>
                         <tr>
@@ -428,15 +428,15 @@
                             <td>Create a new folder</td>
                         </tr>
                         <tr>
-                            <th><kbd>Num Lock</kbd> + <kbd>asterisk (*) </kbd></th>
+                            <th><kbd>Num Lock</kbd> + <kbd> * </kbd></th>
                             <td>Display all subfolders under the selected folder</td>
                         </tr>
                         <tr>
-                            <th><kbd>Num Lock</kbd> + <kbd>plus (+) </kbd></th>
+                            <th><kbd>Num Lock</kbd> + <kbd> + </kbd></th>
                             <td>Display the contents of the selected folder </td>
                         </tr>
                         <tr>
-                            <th><kbd>Num Lock</kbd> + <kbd>minus (-)</kbd></th>
+                            <th><kbd>Num Lock</kbd> + <kbd> - </kbd></th>
                             <td>Collapse the selected folder</td>
                         </tr>
                         <tr>
@@ -495,7 +495,7 @@
                             <td>Switch between virtual desktops you’ve created on the right </td>
                         </tr>
                         <tr>
-                            <th><kbd>Windows key</kbd> + <kbd>Ctrl</kbd> + <kbd>Left arrow </kbd></th>
+                            <th><kbd>Windows key</kbd> + <kbd>Ctrl</kbd> + <kbd>Left arrow</kbd></th>
                             <td>Switch between virtual desktops you’ve created on the left</td>
                         </tr>
                         <tr>
