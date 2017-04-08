@@ -13,8 +13,18 @@
     margin: 1em;
 }*/
 
+#forum_topics p.forum_preview {
+    font-size: 0.8em;
+    max-width: 35em;
+    max-height: 3.4em;
+    overflow: hidden;
+    margin: 0.1em 0 0.6em 0;
+    color: #222;
+}
+
 .forum_post_id_header {
-    width: 8%;
+    max-width: 8em;
+    overflow: hidden;
 }
 
 .forum_topic_header {
@@ -26,7 +36,9 @@
 }
 
 .forum_post_id_cell {
-    text-align: center;
+    text-align: left;
+    max-width: 8em;
+    overflow: hidden;
 }
 
 .forum_topic_cell {
