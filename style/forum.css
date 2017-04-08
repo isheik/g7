@@ -22,6 +22,19 @@
     color: #222;
 }
 
+
+
+#forum_topics p.forum_preview::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35em;
+    height: 0.3em;
+    background: linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.8));
+    z-index: 15;
+}
+
 .forum_post_id_header {
     max-width: 8em;
     overflow: hidden;
