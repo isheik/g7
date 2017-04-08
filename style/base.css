@@ -274,6 +274,7 @@ header.page_row {
     padding: .2em .5em;
     text-decoration: none;
     border-radius: 1em;
+    float: right;
 }
 
 #auth a:link, #auth a:visited {
@@ -340,7 +341,11 @@ nav#top_nav li + li a { border-left-width: 0; }
 span.username {
     color: white;
     opacity: 0.9;
+    margin-top: 0.2em;
     margin-right: 1em;
+    max-width: 15em;
+    word-wrap: break-word;
+    float: right;
 }
 
 /*************************************************************/

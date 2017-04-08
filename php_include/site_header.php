@@ -18,8 +18,8 @@
                 <div id="auth">
                     <?php
                     if (isLoggedIn()) {
-                        echo "<span class='username'>Welcome, " . $_SESSION['SESS_LOGIN'] . "</span>";
                         echo '<a href="' . $add_to_path . 'logout.php" class="auth_button">Log Out</a>';
+                        echo "<span class='username'>Welcome, " . $_SESSION['SESS_LOGIN'] . "</span>";
                     } else {
                         echo '<a href="' . $add_to_path . 'account.php" class="auth_button">Sign Up/Log In</a>';
                     }
