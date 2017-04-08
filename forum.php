@@ -20,7 +20,7 @@
     $tbl_name='topic';
 
     // Inquiry forum post data
-    $sql="SELECT * FROM $tbl_name ORDER BY id DESC";
+    $sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id ORDER BY id DESC";
     $result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 ?>
 
@@ -52,7 +52,7 @@
                     ?></p>
                     <table>
                         <tr class="forum_header_row">
-                            <th class="forum_post_id_header"><strong>Post #</strong></th>
+                            <th class="forum_post_id_header"><strong>AUTHOR</strong></th>
                             <th class="forum_topic_header"><strong>TOPIC</strong></th>
                             <th class="forum_post_date_header"><strong>POSTED DATE</strong></th>
                         </tr>
@@ -62,7 +62,7 @@
                             while($rows=mysqli_fetch_array($result)){
                         ?>
                         <tr class="forum_contents_row">
-                            <td class="forum_post_id_cell"><?php echo $rows['id']; ?></td>
+                            <td class="forum_post_id_cell"><?php echo $rows['login']; ?></td>
                             <td class="forum_topic_cell"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a></td>
                             <td class="forum_post_date_cell"><?php echo $rows['datetime']; ?></td>
                         <?php

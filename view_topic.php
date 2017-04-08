@@ -23,7 +23,7 @@
     $id=$_GET['id'];
 
     // Inquiry post data
-    $sql="SELECT * FROM $tbl_name WHERE id='$id'";
+    $sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id WHERE id='$id'";
     $result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 
     $rows=mysqli_fetch_array($result);
@@ -54,7 +54,7 @@
                         <table id="forum_view_table" class="layout_table">
                             <tr>
                                 <th class=" forum_view_header"><label>Author:</label></th>
-                                <td class="forum_view_body"><?php echo $rows['member_id']; ?></td>
+                                <td class="forum_view_body"><?php echo $rows['login']; ?></td>
                                 <th class=" forum_view_header"><label>Date:</label></th>
                                 <td class="forum_view_body"><?php echo $rows['datetime']; ?></td>
                             </tr>
@@ -101,14 +101,14 @@
                         <?php
                             $tbl_name2="response"; // Switch to table "response"
 
-                            $sql2="SELECT * FROM $tbl_name2 WHERE topic_id='$id' ORDER BY id DESC";
+                            $sql2="SELECT * FROM $tbl_name2 JOIN members ON members.member_id = response.member_id WHERE topic_id='$id' ORDER BY id DESC";
                             $result2=mysqli_query($GLOBALS["___mysqli_ston"], $sql2);
 
                             while($rows=mysqli_fetch_array($result2)){
                         ?>
                         <table id="forum_comment_table" class="layout_table">
                             <tr>
-                                <th class="forum_comment_header"><label><?php echo $rows['member_id']; ?>:</label></th>
+                                <th class="forum_comment_header"><label><?php echo $rows['login']; ?>:</label></th>
                                 <td class="forum_comment_body"><?php echo $rows['response']; ?></td>
                             </tr>
                         </table>
