@@ -242,7 +242,7 @@ kbd {
 header.page_row {
     height: 7.4em;
     background-color: #0078d7;
-    background: linear-gradient(#0078d7,#262DA8);
+    background: linear-gradient(#10adf2,#0A275D);
     z-index: 10;
 }
 
