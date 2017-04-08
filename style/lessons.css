@@ -18,7 +18,7 @@ nav#lessons_nav h2 {
 
 #lessons_nav button.categories {
     /* expanded and overall style */
-    color: #002db3;
+    color: #0078d7;
     text-align: left;
     padding: .56em 1.56em .56em 1em;
     font-size: 1.3em;
@@ -32,9 +32,11 @@ nav#lessons_nav h2 {
     float: none;
     cursor: pointer;
     transition: border-color 100ms ease;
+    transition: color 100ms ease;
 }
 
 #lessons_nav button.categories.collapsed {
+    color: #0b41b0;
     border-color: #000;
 }
 
