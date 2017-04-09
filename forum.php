@@ -54,7 +54,7 @@
                         <tr class="forum_header_row">
                             <th class="forum_post_id_header"><strong>AUTHOR</strong></th>
                             <th class="forum_topic_header"><strong>TOPIC</strong></th>
-                            <th class="forum_post_date_header"><strong>POSTED DATE</strong></th>
+                            <th class="forum_post_date_header"><strong>POSTED</strong></th>
                         </tr>
 
                         <!-- enumrate topics from SQL result -->
@@ -66,7 +66,10 @@
                             <td class="forum_topic_cell"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><br><p class="forum_preview"><?php echo substr($rows['detail'],0,256); ?></p></td>
                             <td class="forum_post_date_cell">
                                 <?php
-                                    echo DateTime::createFromFormat('d/m/y H:i:s', $rows['datetime'])->format('M&\n\b\s\p;d,&\n\b\s\p;Y G:i:s');
+                                    $dateObj = DateTime::createFromFormat('d/m/y H:i:s', $rows['datetime']);
+
+                                    echo '<span class="date">' . $dateObj->format('M&\n\b\s\p;j,&\n\b\s\p;Y') . '</span>' .
+                                         '<span class="time">' . $dateObj->format('g:i a') . '</span>';
                                 ?>
                             </td>
                         <?php

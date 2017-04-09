@@ -2,16 +2,13 @@
 /* FORUM - forum.php                                         */
 /*************************************************************/
 
+#forum_topics table {
+    width: 100%;
+}
+
 #forum_topics p {
     margin: 1em 0;
 }
-
-/*#forum_topics tr,
-#forum_topics td,
-#forum_topics th {
-    border: 1px solid black;
-    margin: 1em;
-}*/
 
 #forum_topics p.forum_preview {
     font-size: 0.8em;
@@ -35,17 +32,20 @@
     z-index: 15;
 }
 
+#forum_topics th {
+    padding-bottom: 0.2em;
+}
+
 .forum_post_id_header {
-    max-width: 8em;
-    overflow: hidden;
+    width: 15%;
 }
 
 .forum_topic_header {
-    width: 75%;
+    width: 70%;
 }
 
 .forum_post_date_header {
-    width: 17%;
+    width: 15%;
 }
 
 .forum_post_id_cell {
@@ -63,5 +63,17 @@
 }
 
 .forum_post_date_cell {
-    text-align: center;
+    text-align: right;
+    padding: 0.2em 0.3em;
+}
+
+.date {
+    display: block;
+}
+
+.time {
+    display: block;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    color: #444;
 }
