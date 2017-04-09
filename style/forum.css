@@ -102,7 +102,12 @@
 .forum_view_body {
     padding: 0.2em 0.2em 0.2em 1em;
     background: linear-gradient(#eee, #eee) no-repeat 0.35em;
+}
 
+.forum_view_date {
+    padding: 0.2em 0.2em 0.2em 1em;
+    background: linear-gradient(#eee, #eee) no-repeat 0.35em;
+    text-align: right;
 }
 
 #forum_response_header {

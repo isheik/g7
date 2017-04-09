@@ -56,9 +56,12 @@
                                 <th class=" forum_view_header"><label>Author:</label></th>
                                 <td class="forum_view_body"><?php echo $rows['login']; ?></td>
                                 <th class=" forum_view_header"><label>Date:</label></th>
-                                <td class="forum_view_body">
+                                <td class="forum_view_date">
                                     <?php
-                                        echo DateTime::createFromFormat('d/m/y H:i:s', $rows['datetime'])->format('M&\n\b\s\p;d,&\n\b\s\p;Y G:i:s');
+                                        $dateObj = DateTime::createFromFormat('d/m/y H:i:s', $rows['datetime']);
+
+                                        echo '<span class="date">' . $dateObj->format('M&\n\b\s\p;j,&\n\b\s\p;Y') . '</span>' .
+                                             '<span class="time">' . $dateObj->format('g:i a') . '</span>';
                                     ?>
                                 </td>
                             </tr>
