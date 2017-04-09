@@ -17,7 +17,7 @@
                     <h2>About</h2>
                     <p>Welcome to Windows 10 Shortcuts, a project by five first-year students in the Computer Systems Technology program at British Columbia Institute of Technology (BCIT). For most of us, this has been our first introduction to many different web technologies, including HTML5, CSS, JavaScript, PHP, and SQL. We hope it provides you with something genuinely useful.</p>
 
-                    <h3>Alireza Satteri</h3>
+                    <h3>Alireza Sattari</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eius earum, eum inventore veniam cumque accusantium saepe commodi, assumenda dolorem placeat rerum dolores? Sed ea eaque, consequatur id earum eveniet repudiandae voluptates nesciunt dolorem, totam laborum numquam explicabo minus. Unde molestiae, ipsa deserunt dignissimos esse pariatur, error eos itaque similique natus cumque praesentium, iure libero labore officiis aliquid ab sit!</p>
 
                     <h3>Karanveer Singh</h3>

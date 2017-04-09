@@ -15,9 +15,9 @@
             <div id="content_wrapper" class="centered">
                 <article class="clearfix">
                     <div class="slide_show_images">
-                        <img class="mySlides" src="images/logo1.jpg" width="100%" height="auto" alt="d">
-                        <img class="mySlides" src="images/logo2.jpg" width="100%" height="auto" alt="d">
-                        <img class="mySlides" src="images/logo3.jpg" width="100%" height="auto" alt="d">
+                        <img class="mySlides" src="images/logo1.jpg" width="100%" height="auto" alt="pic1">
+                        <img class="mySlides" src="images/logo2.jpg" width="100%" height="auto" alt="pic2">
+                        <img class="mySlides" src="images/logo3.jpg" width="100%" height="auto" alt="pic3">
 
                         <div class="button_alignment" style="width:100%">
                             <div class="left_arrow" onclick="plusDivs(-1)">&#10094;</div>
