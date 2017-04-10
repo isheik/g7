@@ -19,7 +19,11 @@
                     <?php
                     if (isLoggedIn()) {
                         echo '<a href="' . $add_to_path . 'logout.php" class="auth_button">Log Out</a>';
-                        echo "<span class='username'>Welcome, " . $_SESSION['SESS_LOGIN'] . "</span>";
+                        if (isset($_SESSION['SESS_LOGIN'])) {
+                            echo "<span class='username'>Welcome, " . $_SESSION['SESS_LOGIN'] . "</span>";
+                        } else {
+                            echo "<span class='username'>Welcome, " . $_SESSION['SESS_FIRST_NAME'] . "</span>";
+                        }
                     } else {
                         echo '<a href="' . $add_to_path . 'account.php" class="auth_button">Sign Up/Log In</a>';
                     }
