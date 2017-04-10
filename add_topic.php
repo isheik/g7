@@ -8,8 +8,8 @@
     $tbl_name="topic"; // Table name
 
     // get data that sent from form
-    $topic=$_POST['post_title'];
-    $detail=$_POST['post_contents'];
+    $topic=addslashes($_POST['post_title']);
+    $detail=addslashes($_POST['post_contents']);
     $member_id=$_SESSION['SESS_MEMBER_ID'];
     $datetime=date("d/m/y h:i:s"); //create date time
 

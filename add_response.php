@@ -11,7 +11,7 @@ $tbl_name="response"; // Table name
 $id=$_POST['id'];
 
 // get values that sent from form
-$response=$_POST['response'];
+$response=addslashes($_POST['response']);
 $member_id=$_SESSION['SESS_MEMBER_ID'];
 
 $datetime=date("d/m/y H:i:s"); // create date and time
