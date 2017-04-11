@@ -34,17 +34,17 @@
                     </section>
 
                     <div class="featured_content">
-                        <img src="images/smallImg2.jpg" height="200" width="400" alt="p">
+                        <a href="lessons-main.php"><img src="images/smallImg2.jpg" height="200" width="400" alt="p"></a>
                         <h3>Lessons</h3>
                         <p>View our lessons to get started. From beginner to advanced, we've got you covered.</p>
-                        <div><a href="lessons-main.php">Learn more<img src="images/right.png" height="" width="" alt="arrow"></a></div>
+                        <div><a href="lessons-main.php">Get Started<img src="images/right.png" height="" width="" alt="arrow"></a></div>
                     </div>
 
                     <div class="featured_content">
-                        <img src="images/abcd.jpg" height="200" width="400" alt="p">
+                        <a href="about.php"><img src="images/abcd.jpg" height="200" width="400" alt="p"></a>
                         <h3>About us</h3>
                         <p>Five BCIT students sharing knowledge and trying to make the world a better place.</p>
-                        <div><a href="about.php">Learn more<img src="images/right.png" height="" width="" alt="arrow"></a></div>
+                        <div><a href="about.php">Learn More<img src="images/right.png" height="" width="" alt="arrow"></a></div>
                     </div>
                 </article>
             </div>
